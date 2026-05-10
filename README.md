@@ -7,7 +7,7 @@
 | 路径 | 用途 |
 |------|------|
 | [`notes/`](notes/) | 学习笔记与专题整理（按主题自建子目录） |
-| [`docs/`](docs/) | 模板、术语表、长期索引类文档 |
+| [`docs/`](docs/) | 模板、术语表、长期索引类文档；外部学习资料见 [`docs/learning-resources.md`](docs/learning-resources.md) |
 | [`projects/`](projects/) | 独立实践仓库或子项目（每个实验一个子文件夹） |
 
 ## 建议使用方式
