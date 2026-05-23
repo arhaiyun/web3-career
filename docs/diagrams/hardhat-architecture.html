@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hardhat 架构与核心认知</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface-2: #243044;
+      --border: #3d4f66;
+      --text: #e8eef4;
+      --muted: #94a3b8;
+      --accent: #f59e0b;
+      --accent-2: #38bdf8;
+      --accent-3: #34d399;
+      --accent-4: #a78bfa;
+      --danger: #f87171;
+      --group-bg: rgba(56, 189, 248, 0.06);
+      --radius: 10px;
+      --font: "SF Pro Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --mono: ui-monospace, "Cascadia Code", "Fira Code", monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 28px 32px 40px;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .diagram-header {
+      max-width: 1100px;
+      margin: 0 auto 28px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    .diagram-header h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .diagram-header p { margin: 0; color: var(--muted); font-size: 0.9rem; max-width: 72ch; }
+
+    .diagram-canvas {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .section-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 12px;
+    }
+
+    .row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 800px) {
+      .row-2 { grid-template-columns: 1fr; }
+    }
+
+    .group {
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      background: var(--group-bg);
+    }
+    .group-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent-2);
+      margin-bottom: 14px;
+      letter-spacing: 0.06em;
+    }
+
+    .layer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .component {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      min-width: 120px;
+      flex: 1 1 120px;
+      max-width: 200px;
+      text-align: center;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: border-color 0.15s;
+    }
+    .component:hover { border-color: var(--accent-2); }
+    .component small {
+      display: block;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 5px;
+      font-size: 0.68rem;
+      line-height: 1.35;
+    }
+    .component.primary { border-color: var(--accent); box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.2); }
+    .component.tool { border-color: var(--accent-2); }
+    .component.chain { border-color: var(--accent-3); }
+    .component.output { border-color: var(--accent-4); }
+    .component code {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--accent-2);
+      font-weight: 500;
+    }
+
+    .connector {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.75rem;
+      padding: 4px 0;
+      font-weight: 500;
+    }
+    .connector strong { color: var(--accent-2); }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 700px) {
+      .flow-grid { grid-template-columns: 1fr; }
+    }
+    .flow-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .flow-card h3 {
+      margin: 0 0 10px;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+    .flow-steps {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .flow-steps li { margin-bottom: 6px; }
+    .flow-steps li strong { color: var(--text); }
+
+    .knowledge-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 900px) {
+      .knowledge-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .knowledge-card {
+      background: var(--surface-2);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      border-left: 3px solid var(--accent-2);
+    }
+    .knowledge-card h4 {
+      margin: 0 0 6px;
+      font-size: 0.78rem;
+      color: var(--text);
+    }
+    .knowledge-card p {
+      margin: 0;
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+
+    .network-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.72rem;
+    }
+    .network-table th,
+    .network-table td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+    }
+    .network-table th {
+      background: var(--surface-2);
+      color: var(--accent-2);
+      font-weight: 600;
+    }
+    .network-table td { color: var(--muted); }
+    .network-table td:first-child { color: var(--text); font-weight: 600; font-family: var(--mono); }
+
+    .tree {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--muted);
+      text-align: left;
+      line-height: 1.6;
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+    }
+    .tree .dir { color: var(--accent-2); }
+    .tree .file { color: var(--accent-3); }
+    .tree .gen { color: var(--muted); opacity: 0.85; }
+
+    .diagram-legend {
+      max-width: 1100px;
+      margin: 28px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+    .diagram-legend span::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .leg-core::before { background: var(--accent); }
+    .leg-tool::before { background: var(--accent-2); }
+    .leg-chain::before { background: var(--accent-3); }
+    .leg-out::before { background: var(--accent-4); }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--surface-2);
+      color: var(--accent-2);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header class="diagram-header">
+    <h1>Hardhat 完整架构与核心认知</h1>
+    <p>
+      以太坊智能合约本地开发环境：以 Hardhat Runtime Environment（HRE）为核心，
+      串联配置、插件、任务、编译产物与多种网络。本图对应本仓库
+      <code style="color:var(--accent-2)">projects/hardhat-learning</code> 实践结构。
+    </p>
+  </header>
+
+  <main class="diagram-canvas" role="img" aria-label="Hardhat 架构全景：运行时、项目结构、任务流、网络与核心概念">
+
+    <!-- 1. 系统上下文 -->
+    <section>
+      <p class="section-title">① 系统上下文 — 谁在用、连到哪里</p>
+      <div class="group">
+        <div class="layer">
+          <div class="component">
+            开发者
+            <small>编写 Solidity / 测试 / 脚本</small>
+          </div>
+          <div class="component tool">
+            CLI
+            <small><code>npx hardhat &lt;task&gt;</code></small>
+          </div>
+          <div class="component primary">
+            Hardhat
+            <small>任务调度 · 配置加载 · 插件注入</small>
+            <span class="badge">HRE 核心</span>
+          </div>
+          <div class="component chain">
+            区块链网络
+            <small>内存链 / 本地节点 / 测试网 RPC</small>
+          </div>
+        </div>
+        <div class="connector">开发者 → <strong>CLI 命令</strong> → Hardhat 解析 <strong>hardhat.config.js</strong> → 选定 <strong>network</strong> → 连接 EVM</div>
+      </div>
+    </section>
+
+    <!-- 2. HRE 内部 -->
+    <section>
+      <p class="section-title">② 运行时架构 — HRE（Hardhat Runtime Environment）</p>
+      <div class="group">
+        <div class="group-label">Hardhat Runtime Environment</div>
+        <div class="layer">
+          <div class="component primary">
+            config
+            <small>solidity 版本、networks、paths</small>
+          </div>
+          <div class="component tool">
+            tasks
+            <small>compile · test · run · node · clean</small>
+          </div>
+          <div class="component tool">
+            plugins
+            <small>toolbox → ethers, chai, coverage…</small>
+          </div>
+          <div class="component">
+            ethers
+            <small>合约工厂、部署、调用（经插件）</small>
+          </div>
+          <div class="component">
+            network
+            <small>当前连接的 provider 与 accounts</small>
+          </div>
+        </div>
+        <div class="connector">插件在启动时 <strong>扩展</strong> tasks 与 HRE 对象；所有脚本通过 <strong>require("hardhat")</strong> 访问同一 HRE</div>
+      </div>
+    </section>
+
+  <div class="row-2">
+    <!-- 3. 项目结构 -->
+    <section>
+      <p class="section-title">③ 项目结构（本仓库实践）</p>
+      <div class="tree">
+        <span class="dir">projects/hardhat-learning/</span><br>
+        ├── <span class="file">hardhat.config.js</span> ← 入口配置<br>
+        ├── <span class="file">package.json</span><br>
+        ├── <span class="dir">contracts/</span> <span class="file">Greeter.sol</span><br>
+        ├── <span class="dir">test/</span> <span class="file">Greeter.js</span><br>
+        ├── <span class="dir">scripts/</span> <span class="file">deploy.js</span><br>
+        ├── <span class="gen">artifacts/</span> <span class="gen">← 编译 ABI/字节码（gitignore）</span><br>
+        ├── <span class="gen">cache/</span> <span class="gen">← 增量编译缓存</span><br>
+        └── <span class="file">.env</span> <span class="gen">← RPC、私钥（勿提交）</span>
+      </div>
+    </section>
+
+    <!-- 4. 网络 -->
+    <section>
+      <p class="section-title">④ 网络认知 — 三种常用模式</p>
+      <table class="network-table">
+        <thead>
+          <tr>
+            <th>network</th>
+            <th>场景</th>
+            <th>特点</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>hardhat</td>
+            <td>默认 test / run</td>
+            <td>内存 EVM，极速，状态可重置</td>
+          </tr>
+          <tr>
+            <td>localhost</td>
+            <td>前端联调、dApp</td>
+            <td>连接 <code>npx hardhat node</code>（8545）</td>
+          </tr>
+          <tr>
+            <td>sepolia</td>
+            <td>测试网验证</td>
+            <td>JSON-RPC + 私钥；需测试 ETH</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+    <!-- 5. 任务流 -->
+    <section>
+      <p class="section-title">⑤ 核心任务流 — 从源码到链上</p>
+      <div class="flow-grid">
+        <div class="flow-card">
+          <h3>compile</h3>
+          <ol class="flow-steps">
+            <li>读取 <strong>contracts/*.sol</strong></li>
+            <li>Solidity 编译器（版本与 pragma 一致）</li>
+            <li>写入 <strong>artifacts/</strong> + <strong>cache/</strong></li>
+          </ol>
+        </div>
+        <div class="flow-card">
+          <h3>test</h3>
+          <ol class="flow-steps">
+            <li>启动 Hardhat Network（内存链）</li>
+            <li>Mocha 执行 <strong>test/*.js</strong></li>
+            <li>ethers 部署合约并断言</li>
+          </ol>
+        </div>
+        <div class="flow-card">
+          <h3>run / node</h3>
+          <ol class="flow-steps">
+            <li><strong>node</strong>：持久本地链 + 预置账户</li>
+            <li><strong>run scripts/deploy.js</strong>：部署到选定网络</li>
+            <li>输出合约地址供前端/浏览器使用</li>
+          </ol>
+        </div>
+      </div>
+      <div class="connector" style="margin-top:14px">
+        典型路径：<strong>编写合约</strong> → compile → test →（可选）node + deploy:local →（可选）sepolia 部署
+      </div>
+    </section>
+
+    <!-- 6. 数据流 -->
+    <section>
+      <p class="section-title">⑥ 部署数据流（Greeter 示例）</p>
+      <div class="group">
+        <div class="layer">
+          <div class="component">
+            deploy.js
+            <small>getContractFactory</small>
+          </div>
+          <div class="component tool">ethers + signer</div>
+          <div class="component primary">Greeter.deploy()</div>
+          <div class="component output">artifacts/Greeter.json</div>
+          <div class="component chain">EVM 存储 greeting</div>
+        </div>
+        <div class="connector">
+          <strong>ABI + bytecode</strong>（artifacts）+ <strong>签名交易</strong> → 链上合约地址 → 调用 <code>greet()</code> / <code>setGreeting()</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 核心认知 -->
+    <section>
+      <p class="section-title">⑦ 核心认知卡片 — 学完应能回答</p>
+      <div class="knowledge-grid">
+        <div class="knowledge-card" style="border-left-color: var(--accent)">
+          <h4>HRE 是什么？</h4>
+          <p>一次命令执行期间的「运行时上下文」：配置、网络、ethers、任务注册表的总线。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--accent-2)">
+          <h4>插件做什么？</h4>
+          <p>扩展 CLI 任务与 HRE API；toolbox 打包测试、ethers、编译器下载等能力。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--accent-3)">
+          <h4>artifacts 用途？</h4>
+          <p>含 ABI 与 bytecode；测试/脚本部署时由 Hardhat 自动关联合约名。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--accent-4)">
+          <h4>内存链 vs 本地节点？</h4>
+          <p>测试用内存链随进程销毁；hardhat node 持久运行，适合 MetaMask 联调。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--accent-2)">
+          <h4>Gas 从哪来？</h4>
+          <p>内存链/本地链账户自带测试 ETH；测试网需水龙头充值。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--accent-3)">
+          <h4>config vs .env？</h4>
+          <p>config 写结构与默认值；敏感信息（私钥、RPC URL）放 .env。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--accent)">
+          <h4>compile 与 test 关系？</h4>
+          <p>test 前通常已编译；改 Solidity 后需重新 compile。</p>
+        </div>
+        <div class="knowledge-card" style="border-left-color: var(--danger)">
+          <h4>安全底线</h4>
+          <p>勿提交私钥；测试网私钥与主网隔离；部署前先在 test 网验证。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="diagram-legend" aria-label="图例">
+    <span class="leg-core">Hardhat 核心 / HRE</span>
+    <span class="leg-tool">任务与工具链</span>
+    <span class="leg-chain">区块链网络</span>
+    <span class="leg-out">编译产物 / 链上状态</span>
+    <span>配套笔记：notes/hardhat/ · 实践：projects/hardhat-learning/</span>
+  </footer>
+</body>
+</html>
