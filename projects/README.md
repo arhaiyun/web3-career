@@ -7,4 +7,8 @@
 
 命名建议：`01-hello-contract`、`dex-demo` 等，便于排序与检索。
 
+当前项目：
+
+- [`hardhat-learning/`](hardhat-learning/) — Hardhat 入门（配套 [`notes/hardhat/`](../notes/hardhat/)）
+
 不要在仓库根目录堆积多个项目的配置文件；保持「一目录一项目」。
