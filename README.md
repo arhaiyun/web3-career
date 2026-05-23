@@ -7,7 +7,7 @@
 | 路径 | 用途 |
 |------|------|
 | [`notes/`](notes/) | 学习笔记与专题整理（按主题自建子目录） |
-| [`docs/`](docs/) | 模板、术语表、长期索引类文档；外部学习资料见 [`docs/learning-resources.md`](docs/learning-resources.md) |
+| [`docs/`](docs/) | 模板、术语表、长期索引类文档；外部学习资料见 [`docs/learning-resources.md`](docs/learning-resources.md)；Cursor Skills 见 [`docs/cursor-skills.md`](docs/cursor-skills.md) |
 | [`projects/`](projects/) | 独立实践仓库或子项目（每个实验一个子文件夹） |
 | [`notes/hardhat/`](notes/hardhat/) | Hardhat 学习路径（含 [`projects/hardhat-learning`](projects/hardhat-learning) 实践） |
 
