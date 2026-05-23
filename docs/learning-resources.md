@@ -18,6 +18,12 @@
 
 - [smartcontractkit/Web3_tutorial_Chinese](https://github.com/smartcontractkit/Web3_tutorial_Chinese)
 
+## 5. Dify（个人工作流）
+
+- [个人工作空间 — Apps](https://cloud.dify.ai/apps)
+- [Dify 官方文档](https://docs.dify.ai)
+- 本仓库说明：[`docs/dify.md`](dify.md) · 笔记：[`notes/dify/`](../notes/dify/)
+
 ---
 
 在 `notes/` 中跟学时可标注对应章节与日期，便于日后检索。

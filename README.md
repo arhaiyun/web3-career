@@ -7,15 +7,17 @@
 | 路径 | 用途 |
 |------|------|
 | [`notes/`](notes/) | 学习笔记与专题整理（按主题自建子目录） |
-| [`docs/`](docs/) | 模板、术语表、长期索引类文档；外部学习资料见 [`docs/learning-resources.md`](docs/learning-resources.md)；Cursor Skills 见 [`docs/cursor-skills.md`](docs/cursor-skills.md) |
+| [`docs/`](docs/) | 模板、术语表、长期索引类文档；外部学习资料见 [`docs/learning-resources.md`](docs/learning-resources.md)；Cursor Skills 见 [`docs/cursor-skills.md`](docs/cursor-skills.md)；Dify 工作流见 [`docs/dify.md`](docs/dify.md) |
 | [`projects/`](projects/) | 独立实践仓库或子项目（每个实验一个子文件夹） |
 | [`notes/hardhat/`](notes/hardhat/) | Hardhat 学习路径（含 [`projects/hardhat-learning`](projects/hardhat-learning) 实践） |
+| [`notes/dify/`](notes/dify/) | Dify 工作流学习与 Web3 场景配方（工作空间：[cloud.dify.ai/apps](https://cloud.dify.ai/apps)） |
 
 ## 建议使用方式
 
 1. **笔记**：在 `notes/` 下按主题建文件夹（例如 `ethereum/`、`solidity/`、`defi/`），单篇笔记可用 `docs/note-template.md` 复制起步。
 2. **实践**：每个项目在 `projects/` 下设独立目录，自带 README，说明目标、网络、依赖与运行方式。
-3. **版本管理**：敏感信息（私钥、API Key）勿提交；使用 `.env` 本地配置并已列入 `.gitignore`。
+3. **Dify 工作流**：在 [Dify 工作空间](https://cloud.dify.ai/apps) 编排 repeatable 流程（出题、笔记草稿等），审定后写入 `notes/`；说明见 [`docs/dify.md`](docs/dify.md)。
+4. **版本管理**：敏感信息（私钥、API Key、Dify App Key）勿提交；使用 `.env` 本地配置并已列入 `.gitignore`。
 
 ## 本地环境（按需安装）
 

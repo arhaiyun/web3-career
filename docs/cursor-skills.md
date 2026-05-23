@@ -67,10 +67,19 @@ web3-career/
 │   └── architecture-diagram-html/   # 纳入 git，安装脚本会同步到本机
 ├── docs/
 │   ├── cursor-skills.md             # 本文件
+│   ├── dify.md                      # Dify 工作流
 │   └── diagrams/                    # HTML 架构图产出
 └── scripts/
     └── install-cursor-skills.sh
 ```
+
+---
+
+## 相关文档
+
+- [`docs/dify.md`](dify.md) — Dify 工作流与 Cursor 分工
+- [`docs/learning-resources.md`](learning-resources.md) — 外部课程链接
+- [`notes/hardhat/`](../notes/hardhat/) — Hardhat 学习路径
 
 ---
 
