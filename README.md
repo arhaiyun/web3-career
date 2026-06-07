@@ -11,6 +11,7 @@
 | [`projects/`](projects/) | 独立实践仓库或子项目（每个实验一个子文件夹） |
 | [`notes/hardhat/`](notes/hardhat/) | Hardhat 学习路径（含 [`projects/hardhat-learning`](projects/hardhat-learning) 实践） |
 | [`notes/dify/`](notes/dify/) | Dify 工作流学习与 Web3 场景配方（工作空间：[cloud.dify.ai/apps](https://cloud.dify.ai/apps)） |
+| [`notes/career/`](notes/career/) | Web3 行业岗位划分与职业路径 |
 
 ## 建议使用方式
 

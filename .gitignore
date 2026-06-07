@@ -36,3 +36,4 @@ broadcast/
 dist/
 build/
 *.local
+.superpowers/
