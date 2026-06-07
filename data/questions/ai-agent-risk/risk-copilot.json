@@ -1,0 +1,1140 @@
+{
+  "trackId": "ai-agent-risk",
+  "moduleId": "risk-copilot",
+  "moduleTitle": "Risk Copilot 产品形态",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：输入 Schema（1）",
+      "prompt": "案件上下文 JSON 字段设计。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：工具清单（2）",
+      "prompt": "链上查询、规则解释、历史案件。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：输出 Schema（3）",
+      "prompt": "摘要、建议、缺失证据结构。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：人工确认闸（4）",
+      "prompt": "写操作必须 HITL。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：权限（5）",
+      "prompt": "工具 RBAC 设计。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：编排（6）",
+      "prompt": "Dify/LangGraph 选型。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：多轮对话（7）",
+      "prompt": "调查员追问上下文保持。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：Citation（8）",
+      "prompt": "强制引用 tx/rule。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：延迟（9）",
+      "prompt": "SLA 与超时降级。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：成本（10）",
+      "prompt": "Token 成本与案件类型关系。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：输入 Schema（11）",
+      "prompt": "案件上下文 JSON 字段设计。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "Risk Copilot：工具清单（12）",
+      "prompt": "链上查询、规则解释、历史案件。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：输出 Schema（13）",
+      "prompt": "摘要、建议、缺失证据结构。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：人工确认闸（14）",
+      "prompt": "写操作必须 HITL。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：权限（15）",
+      "prompt": "工具 RBAC 设计。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：编排（16）",
+      "prompt": "Dify/LangGraph 选型。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：多轮对话（17）",
+      "prompt": "调查员追问上下文保持。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：Citation（18）",
+      "prompt": "强制引用 tx/rule。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：延迟（19）",
+      "prompt": "SLA 与超时降级。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "产品",
+      "title": "Risk Copilot：成本（20）",
+      "prompt": "Token 成本与案件类型关系。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：输入 Schema（21）",
+      "prompt": "案件上下文 JSON 字段设计。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：工具清单（22）",
+      "prompt": "链上查询、规则解释、历史案件。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：输出 Schema（23）",
+      "prompt": "摘要、建议、缺失证据结构。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：人工确认闸（24）",
+      "prompt": "写操作必须 HITL。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：权限（25）",
+      "prompt": "工具 RBAC 设计。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：编排（26）",
+      "prompt": "Dify/LangGraph 选型。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：多轮对话（27）",
+      "prompt": "调查员追问上下文保持。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：Citation（28）",
+      "prompt": "强制引用 tx/rule。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：延迟（29）",
+      "prompt": "SLA 与超时降级。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：成本（30）",
+      "prompt": "Token 成本与案件类型关系。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：输入 Schema（31）",
+      "prompt": "案件上下文 JSON 字段设计。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：工具清单（32）",
+      "prompt": "链上查询、规则解释、历史案件。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：输出 Schema（33）",
+      "prompt": "摘要、建议、缺失证据结构。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：人工确认闸（34）",
+      "prompt": "写操作必须 HITL。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：权限（35）",
+      "prompt": "工具 RBAC 设计。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：编排（36）",
+      "prompt": "Dify/LangGraph 选型。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：多轮对话（37）",
+      "prompt": "调查员追问上下文保持。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：Citation（38）",
+      "prompt": "强制引用 tx/rule。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：延迟（39）",
+      "prompt": "SLA 与超时降级。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：成本（40）",
+      "prompt": "Token 成本与案件类型关系。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：输入 Schema（41）",
+      "prompt": "案件上下文 JSON 字段设计。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：工具清单（42）",
+      "prompt": "链上查询、规则解释、历史案件。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：输出 Schema（43）",
+      "prompt": "摘要、建议、缺失证据结构。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：人工确认闸（44）",
+      "prompt": "写操作必须 HITL。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "产品",
+      "title": "Risk Copilot：权限（45）",
+      "prompt": "工具 RBAC 设计。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：编排（46）",
+      "prompt": "Dify/LangGraph 选型。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：多轮对话（47）",
+      "prompt": "调查员追问上下文保持。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：Citation（48）",
+      "prompt": "强制引用 tx/rule。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：延迟（49）",
+      "prompt": "SLA 与超时降级。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：成本（50）",
+      "prompt": "Token 成本与案件类型关系。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：输入 Schema（51）",
+      "prompt": "案件上下文 JSON 字段设计。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：工具清单（52）",
+      "prompt": "链上查询、规则解释、历史案件。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：输出 Schema（53）",
+      "prompt": "摘要、建议、缺失证据结构。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：人工确认闸（54）",
+      "prompt": "写操作必须 HITL。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：权限（55）",
+      "prompt": "工具 RBAC 设计。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：编排（56）",
+      "prompt": "Dify/LangGraph 选型。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：多轮对话（57）",
+      "prompt": "调查员追问上下文保持。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：Citation（58）",
+      "prompt": "强制引用 tx/rule。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：延迟（59）",
+      "prompt": "SLA 与超时降级。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "产品",
+      "title": "Risk Copilot：成本（60）",
+      "prompt": "Token 成本与案件类型关系。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：输入 Schema · 训练 61",
+      "prompt": "案件上下文 JSON 字段设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：工具清单 · 训练 62",
+      "prompt": "链上查询、规则解释、历史案件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：输出 Schema · 训练 63",
+      "prompt": "摘要、建议、缺失证据结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：人工确认闸 · 训练 64",
+      "prompt": "写操作必须 HITL。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：权限 · 训练 65",
+      "prompt": "工具 RBAC 设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：编排 · 训练 66",
+      "prompt": "Dify/LangGraph 选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：多轮对话 · 训练 67",
+      "prompt": "调查员追问上下文保持。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：Citation · 训练 68",
+      "prompt": "强制引用 tx/rule。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：延迟 · 训练 69",
+      "prompt": "SLA 与超时降级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：成本 · 训练 70",
+      "prompt": "Token 成本与案件类型关系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：输入 Schema · 训练 71",
+      "prompt": "案件上下文 JSON 字段设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：工具清单 · 训练 72",
+      "prompt": "链上查询、规则解释、历史案件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：输出 Schema · 训练 73",
+      "prompt": "摘要、建议、缺失证据结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：人工确认闸 · 训练 74",
+      "prompt": "写操作必须 HITL。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Risk Copilot：权限 · 训练 75",
+      "prompt": "工具 RBAC 设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：编排 · 训练 76",
+      "prompt": "Dify/LangGraph 选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：多轮对话 · 训练 77",
+      "prompt": "调查员追问上下文保持。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：Citation · 训练 78",
+      "prompt": "强制引用 tx/rule。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：延迟 · 训练 79",
+      "prompt": "SLA 与超时降级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：成本 · 训练 80",
+      "prompt": "Token 成本与案件类型关系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：输入 Schema · 训练 81",
+      "prompt": "案件上下文 JSON 字段设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：工具清单 · 训练 82",
+      "prompt": "链上查询、规则解释、历史案件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：输出 Schema · 训练 83",
+      "prompt": "摘要、建议、缺失证据结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：人工确认闸 · 训练 84",
+      "prompt": "写操作必须 HITL。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：权限 · 训练 85",
+      "prompt": "工具 RBAC 设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：编排 · 训练 86",
+      "prompt": "Dify/LangGraph 选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：多轮对话 · 训练 87",
+      "prompt": "调查员追问上下文保持。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：Citation · 训练 88",
+      "prompt": "强制引用 tx/rule。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：延迟 · 训练 89",
+      "prompt": "SLA 与超时降级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：成本 · 训练 90",
+      "prompt": "Token 成本与案件类型关系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "成本"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：输入 Schema · 训练 91",
+      "prompt": "案件上下文 JSON 字段设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输入",
+        "Agent"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：工具清单 · 训练 92",
+      "prompt": "链上查询、规则解释、历史案件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "工具"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：输出 Schema · 训练 93",
+      "prompt": "摘要、建议、缺失证据结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "输出"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：人工确认闸 · 训练 94",
+      "prompt": "写操作必须 HITL。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "人工确认"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：权限 · 训练 95",
+      "prompt": "工具 RBAC 设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：编排 · 训练 96",
+      "prompt": "Dify/LangGraph 选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "编排"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：多轮对话 · 训练 97",
+      "prompt": "调查员追问上下文保持。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "对话"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：Citation · 训练 98",
+      "prompt": "强制引用 tx/rule。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引用"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：延迟 · 训练 99",
+      "prompt": "SLA 与超时降级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "延迟"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "Risk Copilot：成本 · 训练 100",
+      "prompt": "Token 成本与案件类型关系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "成本"
+      ]
+    }
+  ]
+}

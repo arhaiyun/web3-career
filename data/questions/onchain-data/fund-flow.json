@@ -1,0 +1,1130 @@
+{
+  "trackId": "onchain-data",
+  "moduleId": "fund-flow",
+  "moduleTitle": "资金流追踪与可视化",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：资金流追踪（1）",
+      "prompt": "BFS/DFS 多跳查询策略。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：Peel Chain（2）",
+      "prompt": "剥离链识别与图特征。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：Mixer 进出（3）",
+      "prompt": "存款提款时间窗口关联。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：跨链桥追踪（4）",
+      "prompt": "桥合约锁定与释放映射。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：CEX 入金（5）",
+      "prompt": "终端节点识别与报送。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：可视化（6）",
+      "prompt": "调查员视图的节点边设计。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：性能（7）",
+      "prompt": "大图遍历的分页与缓存。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：证据导出（8）",
+      "prompt": "PDF 报告包含哪些字段。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：受害者溯源（9）",
+      "prompt": "从受害 tx 向后追踪步骤。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：误报（10）",
+      "prompt": "正常聚合器被误判为 hub。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：资金流追踪（11）",
+      "prompt": "BFS/DFS 多跳查询策略。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "资金流：Peel Chain（12）",
+      "prompt": "剥离链识别与图特征。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：Mixer 进出（13）",
+      "prompt": "存款提款时间窗口关联。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：跨链桥追踪（14）",
+      "prompt": "桥合约锁定与释放映射。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：CEX 入金（15）",
+      "prompt": "终端节点识别与报送。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：可视化（16）",
+      "prompt": "调查员视图的节点边设计。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：性能（17）",
+      "prompt": "大图遍历的分页与缓存。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：证据导出（18）",
+      "prompt": "PDF 报告包含哪些字段。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：受害者溯源（19）",
+      "prompt": "从受害 tx 向后追踪步骤。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "追踪",
+      "title": "资金流：误报（20）",
+      "prompt": "正常聚合器被误判为 hub。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：资金流追踪（21）",
+      "prompt": "BFS/DFS 多跳查询策略。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：Peel Chain（22）",
+      "prompt": "剥离链识别与图特征。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：Mixer 进出（23）",
+      "prompt": "存款提款时间窗口关联。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：跨链桥追踪（24）",
+      "prompt": "桥合约锁定与释放映射。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：CEX 入金（25）",
+      "prompt": "终端节点识别与报送。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：可视化（26）",
+      "prompt": "调查员视图的节点边设计。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：性能（27）",
+      "prompt": "大图遍历的分页与缓存。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：证据导出（28）",
+      "prompt": "PDF 报告包含哪些字段。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：受害者溯源（29）",
+      "prompt": "从受害 tx 向后追踪步骤。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：误报（30）",
+      "prompt": "正常聚合器被误判为 hub。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：资金流追踪（31）",
+      "prompt": "BFS/DFS 多跳查询策略。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：Peel Chain（32）",
+      "prompt": "剥离链识别与图特征。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：Mixer 进出（33）",
+      "prompt": "存款提款时间窗口关联。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：跨链桥追踪（34）",
+      "prompt": "桥合约锁定与释放映射。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：CEX 入金（35）",
+      "prompt": "终端节点识别与报送。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：可视化（36）",
+      "prompt": "调查员视图的节点边设计。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：性能（37）",
+      "prompt": "大图遍历的分页与缓存。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：证据导出（38）",
+      "prompt": "PDF 报告包含哪些字段。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：受害者溯源（39）",
+      "prompt": "从受害 tx 向后追踪步骤。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：误报（40）",
+      "prompt": "正常聚合器被误判为 hub。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：资金流追踪（41）",
+      "prompt": "BFS/DFS 多跳查询策略。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：Peel Chain（42）",
+      "prompt": "剥离链识别与图特征。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：Mixer 进出（43）",
+      "prompt": "存款提款时间窗口关联。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：跨链桥追踪（44）",
+      "prompt": "桥合约锁定与释放映射。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "追踪",
+      "title": "资金流：CEX 入金（45）",
+      "prompt": "终端节点识别与报送。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：可视化（46）",
+      "prompt": "调查员视图的节点边设计。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：性能（47）",
+      "prompt": "大图遍历的分页与缓存。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：证据导出（48）",
+      "prompt": "PDF 报告包含哪些字段。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：受害者溯源（49）",
+      "prompt": "从受害 tx 向后追踪步骤。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：误报（50）",
+      "prompt": "正常聚合器被误判为 hub。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：资金流追踪（51）",
+      "prompt": "BFS/DFS 多跳查询策略。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：Peel Chain（52）",
+      "prompt": "剥离链识别与图特征。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：Mixer 进出（53）",
+      "prompt": "存款提款时间窗口关联。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：跨链桥追踪（54）",
+      "prompt": "桥合约锁定与释放映射。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：CEX 入金（55）",
+      "prompt": "终端节点识别与报送。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：可视化（56）",
+      "prompt": "调查员视图的节点边设计。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：性能（57）",
+      "prompt": "大图遍历的分页与缓存。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：证据导出（58）",
+      "prompt": "PDF 报告包含哪些字段。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：受害者溯源（59）",
+      "prompt": "从受害 tx 向后追踪步骤。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "追踪",
+      "title": "资金流：误报（60）",
+      "prompt": "正常聚合器被误判为 hub。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：资金流追踪 · 训练 61",
+      "prompt": "BFS/DFS 多跳查询策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：Peel Chain · 训练 62",
+      "prompt": "剥离链识别与图特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：Mixer 进出 · 训练 63",
+      "prompt": "存款提款时间窗口关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：跨链桥追踪 · 训练 64",
+      "prompt": "桥合约锁定与释放映射。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：CEX 入金 · 训练 65",
+      "prompt": "终端节点识别与报送。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：可视化 · 训练 66",
+      "prompt": "调查员视图的节点边设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：性能 · 训练 67",
+      "prompt": "大图遍历的分页与缓存。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：证据导出 · 训练 68",
+      "prompt": "PDF 报告包含哪些字段。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：受害者溯源 · 训练 69",
+      "prompt": "从受害 tx 向后追踪步骤。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：误报 · 训练 70",
+      "prompt": "正常聚合器被误判为 hub。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：资金流追踪 · 训练 71",
+      "prompt": "BFS/DFS 多跳查询策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：Peel Chain · 训练 72",
+      "prompt": "剥离链识别与图特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：Mixer 进出 · 训练 73",
+      "prompt": "存款提款时间窗口关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：跨链桥追踪 · 训练 74",
+      "prompt": "桥合约锁定与释放映射。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "资金流：CEX 入金 · 训练 75",
+      "prompt": "终端节点识别与报送。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：可视化 · 训练 76",
+      "prompt": "调查员视图的节点边设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：性能 · 训练 77",
+      "prompt": "大图遍历的分页与缓存。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：证据导出 · 训练 78",
+      "prompt": "PDF 报告包含哪些字段。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：受害者溯源 · 训练 79",
+      "prompt": "从受害 tx 向后追踪步骤。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：误报 · 训练 80",
+      "prompt": "正常聚合器被误判为 hub。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：资金流追踪 · 训练 81",
+      "prompt": "BFS/DFS 多跳查询策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：Peel Chain · 训练 82",
+      "prompt": "剥离链识别与图特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：Mixer 进出 · 训练 83",
+      "prompt": "存款提款时间窗口关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：跨链桥追踪 · 训练 84",
+      "prompt": "桥合约锁定与释放映射。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：CEX 入金 · 训练 85",
+      "prompt": "终端节点识别与报送。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：可视化 · 训练 86",
+      "prompt": "调查员视图的节点边设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：性能 · 训练 87",
+      "prompt": "大图遍历的分页与缓存。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：证据导出 · 训练 88",
+      "prompt": "PDF 报告包含哪些字段。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：受害者溯源 · 训练 89",
+      "prompt": "从受害 tx 向后追踪步骤。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：误报 · 训练 90",
+      "prompt": "正常聚合器被误判为 hub。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误报"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：资金流追踪 · 训练 91",
+      "prompt": "BFS/DFS 多跳查询策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "资金流"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：Peel Chain · 训练 92",
+      "prompt": "剥离链识别与图特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "peel"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：Mixer 进出 · 训练 93",
+      "prompt": "存款提款时间窗口关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：跨链桥追踪 · 训练 94",
+      "prompt": "桥合约锁定与释放映射。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：CEX 入金 · 训练 95",
+      "prompt": "终端节点识别与报送。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "入金"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：可视化 · 训练 96",
+      "prompt": "调查员视图的节点边设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "可视化"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：性能 · 训练 97",
+      "prompt": "大图遍历的分页与缓存。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "性能"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：证据导出 · 训练 98",
+      "prompt": "PDF 报告包含哪些字段。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：受害者溯源 · 训练 99",
+      "prompt": "从受害 tx 向后追踪步骤。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "溯源"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "资金流：误报 · 训练 100",
+      "prompt": "正常聚合器被误判为 hub。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误报"
+      ]
+    }
+  ]
+}

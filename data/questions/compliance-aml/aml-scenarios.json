@@ -1,0 +1,1140 @@
+{
+  "trackId": "compliance-aml",
+  "moduleId": "aml-scenarios",
+  "moduleTitle": "AML 可疑场景建模",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：分层转账（1）",
+      "prompt": "Layering 模式与 hop 特征。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：快进快出（2）",
+      "prompt": "停留时间与金额匹配。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：结构化（3）",
+      "prompt": "略低于阈值的拆分。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：Mixer 使用（4）",
+      "prompt": "混币前后特征。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：黑名单（5）",
+      "prompt": "暗网市场关联地址。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：SAR 报送（6）",
+      "prompt": "可疑活动报告触发条件。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：场景库（7）",
+      "prompt": "维护 6+ 类可疑场景模板。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：评分卡（8）",
+      "prompt": "AML 分数与人工升级阈值。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：跨境（9）",
+      "prompt": "多司法辖区规则差异。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：DeFi 合规（10）",
+      "prompt": "链上匿名性对 KYC 的挑战。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：分层转账（11）",
+      "prompt": "Layering 模式与 hop 特征。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "AML 场景：快进快出（12）",
+      "prompt": "停留时间与金额匹配。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：结构化（13）",
+      "prompt": "略低于阈值的拆分。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：Mixer 使用（14）",
+      "prompt": "混币前后特征。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：黑名单（15）",
+      "prompt": "暗网市场关联地址。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：SAR 报送（16）",
+      "prompt": "可疑活动报告触发条件。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：场景库（17）",
+      "prompt": "维护 6+ 类可疑场景模板。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：评分卡（18）",
+      "prompt": "AML 分数与人工升级阈值。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：跨境（19）",
+      "prompt": "多司法辖区规则差异。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "AML",
+      "title": "AML 场景：DeFi 合规（20）",
+      "prompt": "链上匿名性对 KYC 的挑战。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：分层转账（21）",
+      "prompt": "Layering 模式与 hop 特征。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：快进快出（22）",
+      "prompt": "停留时间与金额匹配。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：结构化（23）",
+      "prompt": "略低于阈值的拆分。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：Mixer 使用（24）",
+      "prompt": "混币前后特征。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：黑名单（25）",
+      "prompt": "暗网市场关联地址。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：SAR 报送（26）",
+      "prompt": "可疑活动报告触发条件。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：场景库（27）",
+      "prompt": "维护 6+ 类可疑场景模板。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：评分卡（28）",
+      "prompt": "AML 分数与人工升级阈值。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：跨境（29）",
+      "prompt": "多司法辖区规则差异。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：DeFi 合规（30）",
+      "prompt": "链上匿名性对 KYC 的挑战。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：分层转账（31）",
+      "prompt": "Layering 模式与 hop 特征。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：快进快出（32）",
+      "prompt": "停留时间与金额匹配。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：结构化（33）",
+      "prompt": "略低于阈值的拆分。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：Mixer 使用（34）",
+      "prompt": "混币前后特征。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：黑名单（35）",
+      "prompt": "暗网市场关联地址。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：SAR 报送（36）",
+      "prompt": "可疑活动报告触发条件。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：场景库（37）",
+      "prompt": "维护 6+ 类可疑场景模板。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：评分卡（38）",
+      "prompt": "AML 分数与人工升级阈值。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：跨境（39）",
+      "prompt": "多司法辖区规则差异。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：DeFi 合规（40）",
+      "prompt": "链上匿名性对 KYC 的挑战。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：分层转账（41）",
+      "prompt": "Layering 模式与 hop 特征。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：快进快出（42）",
+      "prompt": "停留时间与金额匹配。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：结构化（43）",
+      "prompt": "略低于阈值的拆分。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：Mixer 使用（44）",
+      "prompt": "混币前后特征。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "AML",
+      "title": "AML 场景：黑名单（45）",
+      "prompt": "暗网市场关联地址。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：SAR 报送（46）",
+      "prompt": "可疑活动报告触发条件。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：场景库（47）",
+      "prompt": "维护 6+ 类可疑场景模板。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：评分卡（48）",
+      "prompt": "AML 分数与人工升级阈值。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：跨境（49）",
+      "prompt": "多司法辖区规则差异。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：DeFi 合规（50）",
+      "prompt": "链上匿名性对 KYC 的挑战。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：分层转账（51）",
+      "prompt": "Layering 模式与 hop 特征。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：快进快出（52）",
+      "prompt": "停留时间与金额匹配。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：结构化（53）",
+      "prompt": "略低于阈值的拆分。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：Mixer 使用（54）",
+      "prompt": "混币前后特征。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：黑名单（55）",
+      "prompt": "暗网市场关联地址。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：SAR 报送（56）",
+      "prompt": "可疑活动报告触发条件。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：场景库（57）",
+      "prompt": "维护 6+ 类可疑场景模板。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：评分卡（58）",
+      "prompt": "AML 分数与人工升级阈值。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：跨境（59）",
+      "prompt": "多司法辖区规则差异。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "AML",
+      "title": "AML 场景：DeFi 合规（60）",
+      "prompt": "链上匿名性对 KYC 的挑战。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：分层转账 · 训练 61",
+      "prompt": "Layering 模式与 hop 特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：快进快出 · 训练 62",
+      "prompt": "停留时间与金额匹配。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：结构化 · 训练 63",
+      "prompt": "略低于阈值的拆分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：Mixer 使用 · 训练 64",
+      "prompt": "混币前后特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：黑名单 · 训练 65",
+      "prompt": "暗网市场关联地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：SAR 报送 · 训练 66",
+      "prompt": "可疑活动报告触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：场景库 · 训练 67",
+      "prompt": "维护 6+ 类可疑场景模板。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：评分卡 · 训练 68",
+      "prompt": "AML 分数与人工升级阈值。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：跨境 · 训练 69",
+      "prompt": "多司法辖区规则差异。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：DeFi 合规 · 训练 70",
+      "prompt": "链上匿名性对 KYC 的挑战。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：分层转账 · 训练 71",
+      "prompt": "Layering 模式与 hop 特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：快进快出 · 训练 72",
+      "prompt": "停留时间与金额匹配。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：结构化 · 训练 73",
+      "prompt": "略低于阈值的拆分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：Mixer 使用 · 训练 74",
+      "prompt": "混币前后特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "AML 场景：黑名单 · 训练 75",
+      "prompt": "暗网市场关联地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：SAR 报送 · 训练 76",
+      "prompt": "可疑活动报告触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：场景库 · 训练 77",
+      "prompt": "维护 6+ 类可疑场景模板。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：评分卡 · 训练 78",
+      "prompt": "AML 分数与人工升级阈值。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：跨境 · 训练 79",
+      "prompt": "多司法辖区规则差异。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：DeFi 合规 · 训练 80",
+      "prompt": "链上匿名性对 KYC 的挑战。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：分层转账 · 训练 81",
+      "prompt": "Layering 模式与 hop 特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：快进快出 · 训练 82",
+      "prompt": "停留时间与金额匹配。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：结构化 · 训练 83",
+      "prompt": "略低于阈值的拆分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：Mixer 使用 · 训练 84",
+      "prompt": "混币前后特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：黑名单 · 训练 85",
+      "prompt": "暗网市场关联地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：SAR 报送 · 训练 86",
+      "prompt": "可疑活动报告触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：场景库 · 训练 87",
+      "prompt": "维护 6+ 类可疑场景模板。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：评分卡 · 训练 88",
+      "prompt": "AML 分数与人工升级阈值。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：跨境 · 训练 89",
+      "prompt": "多司法辖区规则差异。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：DeFi 合规 · 训练 90",
+      "prompt": "链上匿名性对 KYC 的挑战。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：分层转账 · 训练 91",
+      "prompt": "Layering 模式与 hop 特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "分层",
+        "AML"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：快进快出 · 训练 92",
+      "prompt": "停留时间与金额匹配。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "快进快出"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：结构化 · 训练 93",
+      "prompt": "略低于阈值的拆分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结构化"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：Mixer 使用 · 训练 94",
+      "prompt": "混币前后特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：黑名单 · 训练 95",
+      "prompt": "暗网市场关联地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "黑名单"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：SAR 报送 · 训练 96",
+      "prompt": "可疑活动报告触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SAR"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：场景库 · 训练 97",
+      "prompt": "维护 6+ 类可疑场景模板。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "场景"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：评分卡 · 训练 98",
+      "prompt": "AML 分数与人工升级阈值。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "评分"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：跨境 · 训练 99",
+      "prompt": "多司法辖区规则差异。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨境"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "AML 场景：DeFi 合规 · 训练 100",
+      "prompt": "链上匿名性对 KYC 的挑战。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    }
+  ]
+}

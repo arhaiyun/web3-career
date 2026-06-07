@@ -1,0 +1,1140 @@
+{
+  "trackId": "compliance-aml",
+  "moduleId": "kyc-kyb-kyc",
+  "moduleTitle": "KYC / KYB / KYT 基础",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：KYC 分级（1）",
+      "prompt": "L1/L2/L3 差异化限额。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：KYB UBO（2）",
+      "prompt": "受益人穿透核实。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：KYT 交易监控（3）",
+      "prompt": "链上链下交易关联。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：制裁筛查（4）",
+      "prompt": "OFAC 等名单更新频率。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：PEP 识别（5）",
+      "prompt": "政治公众人物额外尽职。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：开户点（6）",
+      "prompt": "注册、充值、提现检查点列表。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：持续尽调（7）",
+      "prompt": "定期复核触发条件。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：高风险国家（8）",
+      "prompt": "地理风险加权。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：假证件（9）",
+      "prompt": "OCR+活体+人工抽检。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：企业客户（10）",
+      "prompt": "机构账户特殊合规流。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：KYC 分级（11）",
+      "prompt": "L1/L2/L3 差异化限额。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "合规基础：KYB UBO（12）",
+      "prompt": "受益人穿透核实。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：KYT 交易监控（13）",
+      "prompt": "链上链下交易关联。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：制裁筛查（14）",
+      "prompt": "OFAC 等名单更新频率。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：PEP 识别（15）",
+      "prompt": "政治公众人物额外尽职。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：开户点（16）",
+      "prompt": "注册、充值、提现检查点列表。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：持续尽调（17）",
+      "prompt": "定期复核触发条件。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：高风险国家（18）",
+      "prompt": "地理风险加权。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：假证件（19）",
+      "prompt": "OCR+活体+人工抽检。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "合规",
+      "title": "合规基础：企业客户（20）",
+      "prompt": "机构账户特殊合规流。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYC 分级（21）",
+      "prompt": "L1/L2/L3 差异化限额。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYB UBO（22）",
+      "prompt": "受益人穿透核实。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYT 交易监控（23）",
+      "prompt": "链上链下交易关联。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：制裁筛查（24）",
+      "prompt": "OFAC 等名单更新频率。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：PEP 识别（25）",
+      "prompt": "政治公众人物额外尽职。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：开户点（26）",
+      "prompt": "注册、充值、提现检查点列表。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：持续尽调（27）",
+      "prompt": "定期复核触发条件。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：高风险国家（28）",
+      "prompt": "地理风险加权。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：假证件（29）",
+      "prompt": "OCR+活体+人工抽检。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：企业客户（30）",
+      "prompt": "机构账户特殊合规流。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYC 分级（31）",
+      "prompt": "L1/L2/L3 差异化限额。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYB UBO（32）",
+      "prompt": "受益人穿透核实。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYT 交易监控（33）",
+      "prompt": "链上链下交易关联。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：制裁筛查（34）",
+      "prompt": "OFAC 等名单更新频率。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：PEP 识别（35）",
+      "prompt": "政治公众人物额外尽职。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：开户点（36）",
+      "prompt": "注册、充值、提现检查点列表。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：持续尽调（37）",
+      "prompt": "定期复核触发条件。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：高风险国家（38）",
+      "prompt": "地理风险加权。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：假证件（39）",
+      "prompt": "OCR+活体+人工抽检。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：企业客户（40）",
+      "prompt": "机构账户特殊合规流。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYC 分级（41）",
+      "prompt": "L1/L2/L3 差异化限额。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYB UBO（42）",
+      "prompt": "受益人穿透核实。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：KYT 交易监控（43）",
+      "prompt": "链上链下交易关联。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：制裁筛查（44）",
+      "prompt": "OFAC 等名单更新频率。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "合规",
+      "title": "合规基础：PEP 识别（45）",
+      "prompt": "政治公众人物额外尽职。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：开户点（46）",
+      "prompt": "注册、充值、提现检查点列表。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：持续尽调（47）",
+      "prompt": "定期复核触发条件。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：高风险国家（48）",
+      "prompt": "地理风险加权。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：假证件（49）",
+      "prompt": "OCR+活体+人工抽检。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：企业客户（50）",
+      "prompt": "机构账户特殊合规流。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：KYC 分级（51）",
+      "prompt": "L1/L2/L3 差异化限额。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：KYB UBO（52）",
+      "prompt": "受益人穿透核实。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：KYT 交易监控（53）",
+      "prompt": "链上链下交易关联。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：制裁筛查（54）",
+      "prompt": "OFAC 等名单更新频率。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：PEP 识别（55）",
+      "prompt": "政治公众人物额外尽职。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：开户点（56）",
+      "prompt": "注册、充值、提现检查点列表。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：持续尽调（57）",
+      "prompt": "定期复核触发条件。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：高风险国家（58）",
+      "prompt": "地理风险加权。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：假证件（59）",
+      "prompt": "OCR+活体+人工抽检。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "合规",
+      "title": "合规基础：企业客户（60）",
+      "prompt": "机构账户特殊合规流。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：KYC 分级 · 训练 61",
+      "prompt": "L1/L2/L3 差异化限额。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：KYB UBO · 训练 62",
+      "prompt": "受益人穿透核实。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：KYT 交易监控 · 训练 63",
+      "prompt": "链上链下交易关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：制裁筛查 · 训练 64",
+      "prompt": "OFAC 等名单更新频率。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：PEP 识别 · 训练 65",
+      "prompt": "政治公众人物额外尽职。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：开户点 · 训练 66",
+      "prompt": "注册、充值、提现检查点列表。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：持续尽调 · 训练 67",
+      "prompt": "定期复核触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：高风险国家 · 训练 68",
+      "prompt": "地理风险加权。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：假证件 · 训练 69",
+      "prompt": "OCR+活体+人工抽检。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：企业客户 · 训练 70",
+      "prompt": "机构账户特殊合规流。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：KYC 分级 · 训练 71",
+      "prompt": "L1/L2/L3 差异化限额。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：KYB UBO · 训练 72",
+      "prompt": "受益人穿透核实。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：KYT 交易监控 · 训练 73",
+      "prompt": "链上链下交易关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：制裁筛查 · 训练 74",
+      "prompt": "OFAC 等名单更新频率。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "合规基础：PEP 识别 · 训练 75",
+      "prompt": "政治公众人物额外尽职。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：开户点 · 训练 76",
+      "prompt": "注册、充值、提现检查点列表。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：持续尽调 · 训练 77",
+      "prompt": "定期复核触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：高风险国家 · 训练 78",
+      "prompt": "地理风险加权。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：假证件 · 训练 79",
+      "prompt": "OCR+活体+人工抽检。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：企业客户 · 训练 80",
+      "prompt": "机构账户特殊合规流。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：KYC 分级 · 训练 81",
+      "prompt": "L1/L2/L3 差异化限额。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：KYB UBO · 训练 82",
+      "prompt": "受益人穿透核实。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：KYT 交易监控 · 训练 83",
+      "prompt": "链上链下交易关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：制裁筛查 · 训练 84",
+      "prompt": "OFAC 等名单更新频率。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：PEP 识别 · 训练 85",
+      "prompt": "政治公众人物额外尽职。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：开户点 · 训练 86",
+      "prompt": "注册、充值、提现检查点列表。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：持续尽调 · 训练 87",
+      "prompt": "定期复核触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：高风险国家 · 训练 88",
+      "prompt": "地理风险加权。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：假证件 · 训练 89",
+      "prompt": "OCR+活体+人工抽检。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：企业客户 · 训练 90",
+      "prompt": "机构账户特殊合规流。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "机构"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：KYC 分级 · 训练 91",
+      "prompt": "L1/L2/L3 差异化限额。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYC"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：KYB UBO · 训练 92",
+      "prompt": "受益人穿透核实。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYB",
+        "UBO"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：KYT 交易监控 · 训练 93",
+      "prompt": "链上链下交易关联。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "KYT"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：制裁筛查 · 训练 94",
+      "prompt": "OFAC 等名单更新频率。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "制裁"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：PEP 识别 · 训练 95",
+      "prompt": "政治公众人物额外尽职。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "PEP"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：开户点 · 训练 96",
+      "prompt": "注册、充值、提现检查点列表。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开户"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：持续尽调 · 训练 97",
+      "prompt": "定期复核触发条件。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "尽调"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：高风险国家 · 训练 98",
+      "prompt": "地理风险加权。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：假证件 · 训练 99",
+      "prompt": "OCR+活体+人工抽检。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证件"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合规基础：企业客户 · 训练 100",
+      "prompt": "机构账户特殊合规流。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "机构"
+      ]
+    }
+  ]
+}

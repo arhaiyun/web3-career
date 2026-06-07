@@ -1,0 +1,1130 @@
+{
+  "trackId": "onchain-data",
+  "moduleId": "graph-risk",
+  "moduleTitle": "图谱风控与关联发现",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：图建模（1）",
+      "prompt": "节点类型与边类型设计。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：权重（2）",
+      "prompt": "金额、次数、时间衰减组合。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：连通分量（3）",
+      "prompt": "快速找团伙。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：Louvain（4）",
+      "prompt": "社区发现算法适用场景。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：中心性（5）",
+      "prompt": "betweenness 找枢纽地址。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：设备图迁移（6）",
+      "prompt": "把设备关联方法论搬到链上。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：实时 vs 离线（7）",
+      "prompt": "T+0 告警与 T+1 聚类分工。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：图数据库（8）",
+      "prompt": "Neo4j vs 自研选型考量。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：查询 API（9）",
+      "prompt": "调查员 3-hop 查询接口设计。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：隐私（10）",
+      "prompt": "图数据访问权限分级。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：图建模（11）",
+      "prompt": "节点类型与边类型设计。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "图风控：权重（12）",
+      "prompt": "金额、次数、时间衰减组合。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：连通分量（13）",
+      "prompt": "快速找团伙。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：Louvain（14）",
+      "prompt": "社区发现算法适用场景。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：中心性（15）",
+      "prompt": "betweenness 找枢纽地址。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：设备图迁移（16）",
+      "prompt": "把设备关联方法论搬到链上。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：实时 vs 离线（17）",
+      "prompt": "T+0 告警与 T+1 聚类分工。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：图数据库（18）",
+      "prompt": "Neo4j vs 自研选型考量。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：查询 API（19）",
+      "prompt": "调查员 3-hop 查询接口设计。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "图谱",
+      "title": "图风控：隐私（20）",
+      "prompt": "图数据访问权限分级。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：图建模（21）",
+      "prompt": "节点类型与边类型设计。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：权重（22）",
+      "prompt": "金额、次数、时间衰减组合。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：连通分量（23）",
+      "prompt": "快速找团伙。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：Louvain（24）",
+      "prompt": "社区发现算法适用场景。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：中心性（25）",
+      "prompt": "betweenness 找枢纽地址。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：设备图迁移（26）",
+      "prompt": "把设备关联方法论搬到链上。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：实时 vs 离线（27）",
+      "prompt": "T+0 告警与 T+1 聚类分工。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：图数据库（28）",
+      "prompt": "Neo4j vs 自研选型考量。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：查询 API（29）",
+      "prompt": "调查员 3-hop 查询接口设计。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：隐私（30）",
+      "prompt": "图数据访问权限分级。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：图建模（31）",
+      "prompt": "节点类型与边类型设计。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：权重（32）",
+      "prompt": "金额、次数、时间衰减组合。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：连通分量（33）",
+      "prompt": "快速找团伙。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：Louvain（34）",
+      "prompt": "社区发现算法适用场景。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：中心性（35）",
+      "prompt": "betweenness 找枢纽地址。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：设备图迁移（36）",
+      "prompt": "把设备关联方法论搬到链上。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：实时 vs 离线（37）",
+      "prompt": "T+0 告警与 T+1 聚类分工。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：图数据库（38）",
+      "prompt": "Neo4j vs 自研选型考量。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：查询 API（39）",
+      "prompt": "调查员 3-hop 查询接口设计。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：隐私（40）",
+      "prompt": "图数据访问权限分级。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：图建模（41）",
+      "prompt": "节点类型与边类型设计。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：权重（42）",
+      "prompt": "金额、次数、时间衰减组合。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：连通分量（43）",
+      "prompt": "快速找团伙。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：Louvain（44）",
+      "prompt": "社区发现算法适用场景。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "图谱",
+      "title": "图风控：中心性（45）",
+      "prompt": "betweenness 找枢纽地址。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：设备图迁移（46）",
+      "prompt": "把设备关联方法论搬到链上。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：实时 vs 离线（47）",
+      "prompt": "T+0 告警与 T+1 聚类分工。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：图数据库（48）",
+      "prompt": "Neo4j vs 自研选型考量。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：查询 API（49）",
+      "prompt": "调查员 3-hop 查询接口设计。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：隐私（50）",
+      "prompt": "图数据访问权限分级。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：图建模（51）",
+      "prompt": "节点类型与边类型设计。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：权重（52）",
+      "prompt": "金额、次数、时间衰减组合。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：连通分量（53）",
+      "prompt": "快速找团伙。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：Louvain（54）",
+      "prompt": "社区发现算法适用场景。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：中心性（55）",
+      "prompt": "betweenness 找枢纽地址。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：设备图迁移（56）",
+      "prompt": "把设备关联方法论搬到链上。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：实时 vs 离线（57）",
+      "prompt": "T+0 告警与 T+1 聚类分工。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：图数据库（58）",
+      "prompt": "Neo4j vs 自研选型考量。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：查询 API（59）",
+      "prompt": "调查员 3-hop 查询接口设计。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "图谱",
+      "title": "图风控：隐私（60）",
+      "prompt": "图数据访问权限分级。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：图建模 · 训练 61",
+      "prompt": "节点类型与边类型设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：权重 · 训练 62",
+      "prompt": "金额、次数、时间衰减组合。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：连通分量 · 训练 63",
+      "prompt": "快速找团伙。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：Louvain · 训练 64",
+      "prompt": "社区发现算法适用场景。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：中心性 · 训练 65",
+      "prompt": "betweenness 找枢纽地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：设备图迁移 · 训练 66",
+      "prompt": "把设备关联方法论搬到链上。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：实时 vs 离线 · 训练 67",
+      "prompt": "T+0 告警与 T+1 聚类分工。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：图数据库 · 训练 68",
+      "prompt": "Neo4j vs 自研选型考量。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：查询 API · 训练 69",
+      "prompt": "调查员 3-hop 查询接口设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：隐私 · 训练 70",
+      "prompt": "图数据访问权限分级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：图建模 · 训练 71",
+      "prompt": "节点类型与边类型设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：权重 · 训练 72",
+      "prompt": "金额、次数、时间衰减组合。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：连通分量 · 训练 73",
+      "prompt": "快速找团伙。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：Louvain · 训练 74",
+      "prompt": "社区发现算法适用场景。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "图风控：中心性 · 训练 75",
+      "prompt": "betweenness 找枢纽地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：设备图迁移 · 训练 76",
+      "prompt": "把设备关联方法论搬到链上。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：实时 vs 离线 · 训练 77",
+      "prompt": "T+0 告警与 T+1 聚类分工。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：图数据库 · 训练 78",
+      "prompt": "Neo4j vs 自研选型考量。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：查询 API · 训练 79",
+      "prompt": "调查员 3-hop 查询接口设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：隐私 · 训练 80",
+      "prompt": "图数据访问权限分级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：图建模 · 训练 81",
+      "prompt": "节点类型与边类型设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：权重 · 训练 82",
+      "prompt": "金额、次数、时间衰减组合。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：连通分量 · 训练 83",
+      "prompt": "快速找团伙。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：Louvain · 训练 84",
+      "prompt": "社区发现算法适用场景。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：中心性 · 训练 85",
+      "prompt": "betweenness 找枢纽地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：设备图迁移 · 训练 86",
+      "prompt": "把设备关联方法论搬到链上。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：实时 vs 离线 · 训练 87",
+      "prompt": "T+0 告警与 T+1 聚类分工。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：图数据库 · 训练 88",
+      "prompt": "Neo4j vs 自研选型考量。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：查询 API · 训练 89",
+      "prompt": "调查员 3-hop 查询接口设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：隐私 · 训练 90",
+      "prompt": "图数据访问权限分级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：图建模 · 训练 91",
+      "prompt": "节点类型与边类型设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图谱"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：权重 · 训练 92",
+      "prompt": "金额、次数、时间衰减组合。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权重"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：连通分量 · 训练 93",
+      "prompt": "快速找团伙。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：Louvain · 训练 94",
+      "prompt": "社区发现算法适用场景。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Louvain"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：中心性 · 训练 95",
+      "prompt": "betweenness 找枢纽地址。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "中心性"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：设备图迁移 · 训练 96",
+      "prompt": "把设备关联方法论搬到链上。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "迁移"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：实时 vs 离线 · 训练 97",
+      "prompt": "T+0 告警与 T+1 聚类分工。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "实时"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：图数据库 · 训练 98",
+      "prompt": "Neo4j vs 自研选型考量。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "图数据库"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：查询 API · 训练 99",
+      "prompt": "调查员 3-hop 查询接口设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "API"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "图风控：隐私 · 训练 100",
+      "prompt": "图数据访问权限分级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "权限"
+      ]
+    }
+  ]
+}

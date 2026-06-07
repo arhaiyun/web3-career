@@ -4,7 +4,10 @@
   "private": true,
   "description": "Personal Web3 Risk AI career transition dashboard and learning system.",
   "scripts": {
-    "serve": "python3 -m http.server 4174",
+    "serve": "node scripts/serve.mjs",
+    "serve:only": "python3 -m http.server 4174",
+    "generate:questions": "node scripts/generate-question-banks.mjs",
+    "generate:content": "node scripts/generate-question-banks.mjs && node scripts/generate-study-guides.mjs",
     "test": "node tests/site-contract.test.mjs"
   }
 }

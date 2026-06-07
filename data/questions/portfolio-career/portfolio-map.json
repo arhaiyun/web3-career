@@ -1,0 +1,1130 @@
+{
+  "trackId": "portfolio-career",
+  "moduleId": "portfolio-map",
+  "moduleTitle": "作品集选题矩阵",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：选题矩阵（1）",
+      "prompt": "项目×岗位×业务价值三维选型。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：链上看板（2）",
+      "prompt": "On-chain Intelligence 方向 Demo。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：规则引擎（3）",
+      "prompt": "CEX 提现风控 Demo。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：AI Copilot（4）",
+      "prompt": "Compliance Agent Demo。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：README 标准（5）",
+      "prompt": "项目文档必含模块清单。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：Demo 视频（6）",
+      "prompt": "3 分钟演示脚本结构。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：里程碑（7）",
+      "prompt": "6 个月 roadmap 拆解。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：技术债（8）",
+      "prompt": "MVP 与生产差距说明。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：开源策略（9）",
+      "prompt": "哪些可公开哪些需脱敏。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：评估反馈（10）",
+      "prompt": "面试官视角 critique。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：选题矩阵（11）",
+      "prompt": "项目×岗位×业务价值三维选型。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "作品集：链上看板（12）",
+      "prompt": "On-chain Intelligence 方向 Demo。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：规则引擎（13）",
+      "prompt": "CEX 提现风控 Demo。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：AI Copilot（14）",
+      "prompt": "Compliance Agent Demo。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：README 标准（15）",
+      "prompt": "项目文档必含模块清单。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：Demo 视频（16）",
+      "prompt": "3 分钟演示脚本结构。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：里程碑（17）",
+      "prompt": "6 个月 roadmap 拆解。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：技术债（18）",
+      "prompt": "MVP 与生产差距说明。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：开源策略（19）",
+      "prompt": "哪些可公开哪些需脱敏。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "作品集",
+      "title": "作品集：评估反馈（20）",
+      "prompt": "面试官视角 critique。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：选题矩阵（21）",
+      "prompt": "项目×岗位×业务价值三维选型。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：链上看板（22）",
+      "prompt": "On-chain Intelligence 方向 Demo。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：规则引擎（23）",
+      "prompt": "CEX 提现风控 Demo。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：AI Copilot（24）",
+      "prompt": "Compliance Agent Demo。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：README 标准（25）",
+      "prompt": "项目文档必含模块清单。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：Demo 视频（26）",
+      "prompt": "3 分钟演示脚本结构。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：里程碑（27）",
+      "prompt": "6 个月 roadmap 拆解。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：技术债（28）",
+      "prompt": "MVP 与生产差距说明。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：开源策略（29）",
+      "prompt": "哪些可公开哪些需脱敏。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：评估反馈（30）",
+      "prompt": "面试官视角 critique。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：选题矩阵（31）",
+      "prompt": "项目×岗位×业务价值三维选型。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：链上看板（32）",
+      "prompt": "On-chain Intelligence 方向 Demo。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：规则引擎（33）",
+      "prompt": "CEX 提现风控 Demo。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：AI Copilot（34）",
+      "prompt": "Compliance Agent Demo。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：README 标准（35）",
+      "prompt": "项目文档必含模块清单。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：Demo 视频（36）",
+      "prompt": "3 分钟演示脚本结构。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：里程碑（37）",
+      "prompt": "6 个月 roadmap 拆解。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：技术债（38）",
+      "prompt": "MVP 与生产差距说明。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：开源策略（39）",
+      "prompt": "哪些可公开哪些需脱敏。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：评估反馈（40）",
+      "prompt": "面试官视角 critique。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：选题矩阵（41）",
+      "prompt": "项目×岗位×业务价值三维选型。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：链上看板（42）",
+      "prompt": "On-chain Intelligence 方向 Demo。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：规则引擎（43）",
+      "prompt": "CEX 提现风控 Demo。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：AI Copilot（44）",
+      "prompt": "Compliance Agent Demo。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "作品集",
+      "title": "作品集：README 标准（45）",
+      "prompt": "项目文档必含模块清单。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：Demo 视频（46）",
+      "prompt": "3 分钟演示脚本结构。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：里程碑（47）",
+      "prompt": "6 个月 roadmap 拆解。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：技术债（48）",
+      "prompt": "MVP 与生产差距说明。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：开源策略（49）",
+      "prompt": "哪些可公开哪些需脱敏。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：评估反馈（50）",
+      "prompt": "面试官视角 critique。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：选题矩阵（51）",
+      "prompt": "项目×岗位×业务价值三维选型。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：链上看板（52）",
+      "prompt": "On-chain Intelligence 方向 Demo。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：规则引擎（53）",
+      "prompt": "CEX 提现风控 Demo。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：AI Copilot（54）",
+      "prompt": "Compliance Agent Demo。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：README 标准（55）",
+      "prompt": "项目文档必含模块清单。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：Demo 视频（56）",
+      "prompt": "3 分钟演示脚本结构。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：里程碑（57）",
+      "prompt": "6 个月 roadmap 拆解。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：技术债（58）",
+      "prompt": "MVP 与生产差距说明。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：开源策略（59）",
+      "prompt": "哪些可公开哪些需脱敏。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "作品集",
+      "title": "作品集：评估反馈（60）",
+      "prompt": "面试官视角 critique。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：选题矩阵 · 训练 61",
+      "prompt": "项目×岗位×业务价值三维选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：链上看板 · 训练 62",
+      "prompt": "On-chain Intelligence 方向 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：规则引擎 · 训练 63",
+      "prompt": "CEX 提现风控 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：AI Copilot · 训练 64",
+      "prompt": "Compliance Agent Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：README 标准 · 训练 65",
+      "prompt": "项目文档必含模块清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：Demo 视频 · 训练 66",
+      "prompt": "3 分钟演示脚本结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：里程碑 · 训练 67",
+      "prompt": "6 个月 roadmap 拆解。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：技术债 · 训练 68",
+      "prompt": "MVP 与生产差距说明。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：开源策略 · 训练 69",
+      "prompt": "哪些可公开哪些需脱敏。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：评估反馈 · 训练 70",
+      "prompt": "面试官视角 critique。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：选题矩阵 · 训练 71",
+      "prompt": "项目×岗位×业务价值三维选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：链上看板 · 训练 72",
+      "prompt": "On-chain Intelligence 方向 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：规则引擎 · 训练 73",
+      "prompt": "CEX 提现风控 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：AI Copilot · 训练 74",
+      "prompt": "Compliance Agent Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "作品集：README 标准 · 训练 75",
+      "prompt": "项目文档必含模块清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：Demo 视频 · 训练 76",
+      "prompt": "3 分钟演示脚本结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：里程碑 · 训练 77",
+      "prompt": "6 个月 roadmap 拆解。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：技术债 · 训练 78",
+      "prompt": "MVP 与生产差距说明。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：开源策略 · 训练 79",
+      "prompt": "哪些可公开哪些需脱敏。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：评估反馈 · 训练 80",
+      "prompt": "面试官视角 critique。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：选题矩阵 · 训练 81",
+      "prompt": "项目×岗位×业务价值三维选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：链上看板 · 训练 82",
+      "prompt": "On-chain Intelligence 方向 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：规则引擎 · 训练 83",
+      "prompt": "CEX 提现风控 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：AI Copilot · 训练 84",
+      "prompt": "Compliance Agent Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：README 标准 · 训练 85",
+      "prompt": "项目文档必含模块清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：Demo 视频 · 训练 86",
+      "prompt": "3 分钟演示脚本结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：里程碑 · 训练 87",
+      "prompt": "6 个月 roadmap 拆解。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：技术债 · 训练 88",
+      "prompt": "MVP 与生产差距说明。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：开源策略 · 训练 89",
+      "prompt": "哪些可公开哪些需脱敏。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：评估反馈 · 训练 90",
+      "prompt": "面试官视角 critique。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "反馈"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：选题矩阵 · 训练 91",
+      "prompt": "项目×岗位×业务价值三维选型。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "作品集"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：链上看板 · 训练 92",
+      "prompt": "On-chain Intelligence 方向 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "看板"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：规则引擎 · 训练 93",
+      "prompt": "CEX 提现风控 Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "规则引擎"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：AI Copilot · 训练 94",
+      "prompt": "Compliance Agent Demo。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：README 标准 · 训练 95",
+      "prompt": "项目文档必含模块清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "README"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：Demo 视频 · 训练 96",
+      "prompt": "3 分钟演示脚本结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Demo"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：里程碑 · 训练 97",
+      "prompt": "6 个月 roadmap 拆解。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "roadmap"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：技术债 · 训练 98",
+      "prompt": "MVP 与生产差距说明。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "技术债"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：开源策略 · 训练 99",
+      "prompt": "哪些可公开哪些需脱敏。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "开源"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "作品集：评估反馈 · 训练 100",
+      "prompt": "面试官视角 critique。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "反馈"
+      ]
+    }
+  ]
+}

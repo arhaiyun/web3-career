@@ -1,0 +1,1130 @@
+{
+  "trackId": "onchain-data",
+  "moduleId": "address-labeling",
+  "moduleTitle": "地址标签与风险画像",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：标签分层（1）",
+      "prompt": "实体/行为/风险/关系四层标签体系。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：置信度（2）",
+      "prompt": "L1-L4 置信度如何影响自动动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：情报源（3）",
+      "prompt": "制裁名单、情报商、启发式、众包。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：误伤处理（4）",
+      "prompt": "用户申诉与标签降级流程。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：标签衰减（5）",
+      "prompt": "长期无风险行为降低权重。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：交易所热钱包（6）",
+      "prompt": "官方公布地址的维护机制。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：Mixer 标签（7）",
+      "prompt": "Tornado 等交互如何打分。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：DeFi 协议标签（8）",
+      "prompt": "Router、Pool 的实体归类。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：钓鱼合约库（9）",
+      "prompt": "恶意 spender 黑名单运营。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：标签版本（10）",
+      "prompt": "审计需记录标签版本号。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：标签分层（11）",
+      "prompt": "实体/行为/风险/关系四层标签体系。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "地址标签：置信度（12）",
+      "prompt": "L1-L4 置信度如何影响自动动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：情报源（13）",
+      "prompt": "制裁名单、情报商、启发式、众包。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：误伤处理（14）",
+      "prompt": "用户申诉与标签降级流程。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：标签衰减（15）",
+      "prompt": "长期无风险行为降低权重。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：交易所热钱包（16）",
+      "prompt": "官方公布地址的维护机制。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：Mixer 标签（17）",
+      "prompt": "Tornado 等交互如何打分。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：DeFi 协议标签（18）",
+      "prompt": "Router、Pool 的实体归类。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：钓鱼合约库（19）",
+      "prompt": "恶意 spender 黑名单运营。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "体系",
+      "title": "地址标签：标签版本（20）",
+      "prompt": "审计需记录标签版本号。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签分层（21）",
+      "prompt": "实体/行为/风险/关系四层标签体系。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：置信度（22）",
+      "prompt": "L1-L4 置信度如何影响自动动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：情报源（23）",
+      "prompt": "制裁名单、情报商、启发式、众包。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：误伤处理（24）",
+      "prompt": "用户申诉与标签降级流程。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签衰减（25）",
+      "prompt": "长期无风险行为降低权重。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：交易所热钱包（26）",
+      "prompt": "官方公布地址的维护机制。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：Mixer 标签（27）",
+      "prompt": "Tornado 等交互如何打分。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：DeFi 协议标签（28）",
+      "prompt": "Router、Pool 的实体归类。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：钓鱼合约库（29）",
+      "prompt": "恶意 spender 黑名单运营。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签版本（30）",
+      "prompt": "审计需记录标签版本号。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签分层（31）",
+      "prompt": "实体/行为/风险/关系四层标签体系。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：置信度（32）",
+      "prompt": "L1-L4 置信度如何影响自动动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：情报源（33）",
+      "prompt": "制裁名单、情报商、启发式、众包。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：误伤处理（34）",
+      "prompt": "用户申诉与标签降级流程。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签衰减（35）",
+      "prompt": "长期无风险行为降低权重。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：交易所热钱包（36）",
+      "prompt": "官方公布地址的维护机制。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：Mixer 标签（37）",
+      "prompt": "Tornado 等交互如何打分。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：DeFi 协议标签（38）",
+      "prompt": "Router、Pool 的实体归类。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：钓鱼合约库（39）",
+      "prompt": "恶意 spender 黑名单运营。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签版本（40）",
+      "prompt": "审计需记录标签版本号。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签分层（41）",
+      "prompt": "实体/行为/风险/关系四层标签体系。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：置信度（42）",
+      "prompt": "L1-L4 置信度如何影响自动动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：情报源（43）",
+      "prompt": "制裁名单、情报商、启发式、众包。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：误伤处理（44）",
+      "prompt": "用户申诉与标签降级流程。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "体系",
+      "title": "地址标签：标签衰减（45）",
+      "prompt": "长期无风险行为降低权重。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：交易所热钱包（46）",
+      "prompt": "官方公布地址的维护机制。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：Mixer 标签（47）",
+      "prompt": "Tornado 等交互如何打分。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：DeFi 协议标签（48）",
+      "prompt": "Router、Pool 的实体归类。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：钓鱼合约库（49）",
+      "prompt": "恶意 spender 黑名单运营。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：标签版本（50）",
+      "prompt": "审计需记录标签版本号。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：标签分层（51）",
+      "prompt": "实体/行为/风险/关系四层标签体系。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：置信度（52）",
+      "prompt": "L1-L4 置信度如何影响自动动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：情报源（53）",
+      "prompt": "制裁名单、情报商、启发式、众包。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：误伤处理（54）",
+      "prompt": "用户申诉与标签降级流程。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：标签衰减（55）",
+      "prompt": "长期无风险行为降低权重。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：交易所热钱包（56）",
+      "prompt": "官方公布地址的维护机制。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：Mixer 标签（57）",
+      "prompt": "Tornado 等交互如何打分。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：DeFi 协议标签（58）",
+      "prompt": "Router、Pool 的实体归类。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：钓鱼合约库（59）",
+      "prompt": "恶意 spender 黑名单运营。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "体系",
+      "title": "地址标签：标签版本（60）",
+      "prompt": "审计需记录标签版本号。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：标签分层 · 训练 61",
+      "prompt": "实体/行为/风险/关系四层标签体系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：置信度 · 训练 62",
+      "prompt": "L1-L4 置信度如何影响自动动作。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：情报源 · 训练 63",
+      "prompt": "制裁名单、情报商、启发式、众包。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：误伤处理 · 训练 64",
+      "prompt": "用户申诉与标签降级流程。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：标签衰减 · 训练 65",
+      "prompt": "长期无风险行为降低权重。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：交易所热钱包 · 训练 66",
+      "prompt": "官方公布地址的维护机制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：Mixer 标签 · 训练 67",
+      "prompt": "Tornado 等交互如何打分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：DeFi 协议标签 · 训练 68",
+      "prompt": "Router、Pool 的实体归类。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：钓鱼合约库 · 训练 69",
+      "prompt": "恶意 spender 黑名单运营。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：标签版本 · 训练 70",
+      "prompt": "审计需记录标签版本号。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：标签分层 · 训练 71",
+      "prompt": "实体/行为/风险/关系四层标签体系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：置信度 · 训练 72",
+      "prompt": "L1-L4 置信度如何影响自动动作。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：情报源 · 训练 73",
+      "prompt": "制裁名单、情报商、启发式、众包。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：误伤处理 · 训练 74",
+      "prompt": "用户申诉与标签降级流程。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "地址标签：标签衰减 · 训练 75",
+      "prompt": "长期无风险行为降低权重。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：交易所热钱包 · 训练 76",
+      "prompt": "官方公布地址的维护机制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：Mixer 标签 · 训练 77",
+      "prompt": "Tornado 等交互如何打分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：DeFi 协议标签 · 训练 78",
+      "prompt": "Router、Pool 的实体归类。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：钓鱼合约库 · 训练 79",
+      "prompt": "恶意 spender 黑名单运营。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签版本 · 训练 80",
+      "prompt": "审计需记录标签版本号。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签分层 · 训练 81",
+      "prompt": "实体/行为/风险/关系四层标签体系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：置信度 · 训练 82",
+      "prompt": "L1-L4 置信度如何影响自动动作。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：情报源 · 训练 83",
+      "prompt": "制裁名单、情报商、启发式、众包。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：误伤处理 · 训练 84",
+      "prompt": "用户申诉与标签降级流程。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签衰减 · 训练 85",
+      "prompt": "长期无风险行为降低权重。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：交易所热钱包 · 训练 86",
+      "prompt": "官方公布地址的维护机制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：Mixer 标签 · 训练 87",
+      "prompt": "Tornado 等交互如何打分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：DeFi 协议标签 · 训练 88",
+      "prompt": "Router、Pool 的实体归类。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：钓鱼合约库 · 训练 89",
+      "prompt": "恶意 spender 黑名单运营。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签版本 · 训练 90",
+      "prompt": "审计需记录标签版本号。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签分层 · 训练 91",
+      "prompt": "实体/行为/风险/关系四层标签体系。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：置信度 · 训练 92",
+      "prompt": "L1-L4 置信度如何影响自动动作。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "置信度"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：情报源 · 训练 93",
+      "prompt": "制裁名单、情报商、启发式、众包。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "情报"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：误伤处理 · 训练 94",
+      "prompt": "用户申诉与标签降级流程。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签衰减 · 训练 95",
+      "prompt": "长期无风险行为降低权重。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衰减"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：交易所热钱包 · 训练 96",
+      "prompt": "官方公布地址的维护机制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "热钱包"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：Mixer 标签 · 训练 97",
+      "prompt": "Tornado 等交互如何打分。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Mixer"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：DeFi 协议标签 · 训练 98",
+      "prompt": "Router、Pool 的实体归类。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "DeFi"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：钓鱼合约库 · 训练 99",
+      "prompt": "恶意 spender 黑名单运营。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "钓鱼"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "地址标签：标签版本 · 训练 100",
+      "prompt": "审计需记录标签版本号。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    }
+  ]
+}

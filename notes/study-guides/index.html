@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>系统学习讲义索引 · Web3 Career OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --surface: #fff;
+        --ink: #1a2332;
+        --muted: #5c6678;
+        --line: #dde1e8;
+        --green: #2d6a4f;
+        --blue: #3d5a80;
+        --radius: 8px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 12px 20px;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+      }
+      .bar a { color: var(--blue); text-decoration: none; font-size: 0.88rem; }
+      .bar a:hover { text-decoration: underline; }
+      .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 64px; }
+      h1 { font-size: 1.5rem; margin: 0 0 8px; }
+      .lead { color: var(--muted); margin: 0 0 24px; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+        font-size: 0.9rem;
+      }
+      th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; }
+      th { background: var(--bg); }
+      a { color: var(--blue); }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <strong>系统学习讲义</strong>
+      <nav>
+        <a href="../../index.html">工作台</a>
+        <a href="../answers/view.html">参考答案预览</a>
+      </nav>
+    </header>
+    <div class="wrap">
+      <h1>系统学习讲义（含答案）</h1>
+      <p class="lead">
+        学习顺序：先读本目录讲义（含答案与架构图）→ 再在工作台做「学后验证题库」100 题。
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>轨道</th>
+            <th>模块</th>
+            <th>系统讲义</th>
+            <th>验证</th>
+          </tr>
+        </thead>
+        <tbody id="guide-rows"></tbody>
+      </table>
+    </div>
+    <script>
+      fetch("manifest.json")
+        .then((r) => r.json())
+        .then((data) => {
+          const titles = {
+            "web3-foundation": "Web3 基础与交易所语境",
+            "exchange-risk": "交易所风控与反欺诈",
+            "onchain-data": "链上数据与风险智能",
+            "compliance-aml": "合规 AML / KYC / KYT",
+            "ai-agent-risk": "AI Agent 风控与调查助手",
+            "portfolio-career": "作品集与求职转化",
+          };
+          const moduleTitles = {
+            "ethereum-basics": "Ethereum 账户、交易与 Gas",
+            "wallets-transactions": "钱包、私钥、授权与钓鱼入口",
+            "cex-dex-map": "CEX / DEX / DeFi 业务地图",
+            "withdrawal-risk": "提现风控决策链路",
+            "sybil-bonus-abuse": "羊毛党、Sybil 与活动套利",
+            "market-manipulation": "Wash Trading 与市场操纵",
+            "address-labeling": "地址标签与风险画像",
+            "fund-flow": "资金流追踪与可视化",
+            "graph-risk": "图谱风控与关联发现",
+            "kyc-kyb-kyc": "KYC / KYB / KYT 基础",
+            "aml-scenarios": "AML 可疑场景建模",
+            "case-review": "案件审核与处置工作流",
+            "risk-copilot": "Risk Copilot 产品形态",
+            "guardrails": "AI 风险护栏与红队",
+            "evaluation": "AI 反馈质量评估",
+            "portfolio-map": "作品集选题矩阵",
+            "resume-rewrite": "简历 Web3 化",
+            "interview-stories": "面试故事库",
+          };
+          document.getElementById("guide-rows").innerHTML = data.guides
+            .map((g) => {
+              const rel = g.path.replace(/^notes\/study-guides\//, "");
+              return `<tr>
+                <td>${titles[g.trackId] || g.trackId}</td>
+                <td>${moduleTitles[g.moduleId] || g.moduleId}</td>
+                <td><a href="view.html?f=${encodeURIComponent(rel)}">系统讲义</a></td>
+                <td>${g.questionCount} 题验证</td>
+              </tr>`;
+            })
+            .join("");
+        });
+    </script>
+  </body>
+</html>

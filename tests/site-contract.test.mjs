@@ -11,6 +11,7 @@ const siteFiles = [
   "data/web3-transition-plan.json",
   "data/resources.json",
   "data/portfolio.json",
+  "data/questions/manifest.json",
 ];
 
 for (const file of siteFiles) {
@@ -62,17 +63,28 @@ for (const track of plan.tracks) {
     assert.ok(module.feedbackPrompt, `${module.id} should have feedback prompt`);
     assert.ok(module.outputs?.length, `${module.id} should have outputs`);
     assert.ok(module.answerPath, `${module.id} should have answerPath`);
+    assert.ok(module.studyGuidePath, `${module.id} should have studyGuidePath`);
     assert.ok(
       existsSync(resolve(root, module.answerPath)),
       `${module.answerPath} should exist`,
     );
+    assert.ok(
+      existsSync(resolve(root, module.studyGuidePath)),
+      `${module.studyGuidePath} should exist`,
+    );
     const answerMd = readFileSync(resolve(root, module.answerPath), "utf8");
     assert.match(answerMd, /##.*架构图|```mermaid/);
+    const guideMd = readFileSync(resolve(root, module.studyGuidePath), "utf8");
+    assert.match(guideMd, /系统学习讲义|学后验证/);
+    assert.match(guideMd, /```mermaid/);
   }
 }
 
 assert.ok(existsSync(resolve(root, "notes/answers/README.md")));
 assert.ok(existsSync(resolve(root, "notes/answers/view.html")));
+assert.ok(existsSync(resolve(root, "notes/study-guides/README.md")));
+assert.ok(existsSync(resolve(root, "notes/study-guides/view.html")));
+assert.ok(existsSync(resolve(root, "notes/study-guides/manifest.json")));
 
 assert.ok(resources.resources.length >= 10);
 for (const resource of resources.resources) {
@@ -131,3 +143,29 @@ assert.match(
   app.answerViewerUrl(sample.answerPath),
   /notes\/answers\/view\.html\?f=/,
 );
+assert.match(
+  app.studyGuideViewerUrl(sample.studyGuidePath),
+  /notes\/study-guides\/view\.html\?f=/,
+);
+
+const manifest = JSON.parse(
+  readFileSync(resolve(root, "data/questions/manifest.json"), "utf8"),
+);
+assert.equal(manifest.banks.length, 18);
+for (const bank of manifest.banks) {
+  assert.ok(bank.questionCount >= 100, `${bank.moduleId} should have 100 questions`);
+  assert.ok(existsSync(resolve(root, bank.path.replace(/^data\//, "data/"))));
+}
+
+const bankSample = JSON.parse(
+  readFileSync(resolve(root, "data/questions/web3-foundation/ethereum-basics.json"), "utf8"),
+);
+assert.equal(bankSample.questions.length, 100);
+assert.equal(bankSample.questions[0].rank, 1);
+assert.equal(bankSample.questions.at(-1).rank, 100);
+
+const filtered = app.filterQuestions(bankSample.questions, { tier: "P0" });
+assert.equal(filtered.length, 20);
+assert.ok(filtered.every((q) => q.tier === "P0"));
+
+assert.match(app.questionBankPath("web3-foundation", "ethereum-basics"), /data\/questions\//);

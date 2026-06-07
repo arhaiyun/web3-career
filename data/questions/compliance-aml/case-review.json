@@ -1,0 +1,1130 @@
+{
+  "trackId": "compliance-aml",
+  "moduleId": "case-review",
+  "moduleTitle": "案件审核与处置工作流",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：案件字段（1）",
+      "prompt": "Review 台必备字段清单。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：证据链（2）",
+      "prompt": "链上证据与链下证据拼接。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：结论类型（3）",
+      "prompt": "误报、可疑、确认三级。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：升级路径（4）",
+      "prompt": "L1→L2→MLRO。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：审计日志（5）",
+      "prompt": "不可篡改操作记录。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：SLA（6）",
+      "prompt": "不同优先级处理时限。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：协作（7）",
+      "prompt": "风控与合规分工界面。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：批量结案（8）",
+      "prompt": "误报批量关闭的风险控制。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：质检（9）",
+      "prompt": "二次抽检比例设计。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：报表（10）",
+      "prompt": "监管报表从案件系统导出。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：案件字段（11）",
+      "prompt": "Review 台必备字段清单。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "案件审核：证据链（12）",
+      "prompt": "链上证据与链下证据拼接。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：结论类型（13）",
+      "prompt": "误报、可疑、确认三级。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：升级路径（14）",
+      "prompt": "L1→L2→MLRO。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：审计日志（15）",
+      "prompt": "不可篡改操作记录。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：SLA（16）",
+      "prompt": "不同优先级处理时限。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：协作（17）",
+      "prompt": "风控与合规分工界面。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：批量结案（18）",
+      "prompt": "误报批量关闭的风险控制。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：质检（19）",
+      "prompt": "二次抽检比例设计。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "流程",
+      "title": "案件审核：报表（20）",
+      "prompt": "监管报表从案件系统导出。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：案件字段（21）",
+      "prompt": "Review 台必备字段清单。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：证据链（22）",
+      "prompt": "链上证据与链下证据拼接。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：结论类型（23）",
+      "prompt": "误报、可疑、确认三级。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：升级路径（24）",
+      "prompt": "L1→L2→MLRO。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：审计日志（25）",
+      "prompt": "不可篡改操作记录。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：SLA（26）",
+      "prompt": "不同优先级处理时限。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：协作（27）",
+      "prompt": "风控与合规分工界面。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：批量结案（28）",
+      "prompt": "误报批量关闭的风险控制。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：质检（29）",
+      "prompt": "二次抽检比例设计。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：报表（30）",
+      "prompt": "监管报表从案件系统导出。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：案件字段（31）",
+      "prompt": "Review 台必备字段清单。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：证据链（32）",
+      "prompt": "链上证据与链下证据拼接。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：结论类型（33）",
+      "prompt": "误报、可疑、确认三级。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：升级路径（34）",
+      "prompt": "L1→L2→MLRO。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：审计日志（35）",
+      "prompt": "不可篡改操作记录。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：SLA（36）",
+      "prompt": "不同优先级处理时限。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：协作（37）",
+      "prompt": "风控与合规分工界面。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：批量结案（38）",
+      "prompt": "误报批量关闭的风险控制。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：质检（39）",
+      "prompt": "二次抽检比例设计。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：报表（40）",
+      "prompt": "监管报表从案件系统导出。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：案件字段（41）",
+      "prompt": "Review 台必备字段清单。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：证据链（42）",
+      "prompt": "链上证据与链下证据拼接。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：结论类型（43）",
+      "prompt": "误报、可疑、确认三级。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：升级路径（44）",
+      "prompt": "L1→L2→MLRO。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "流程",
+      "title": "案件审核：审计日志（45）",
+      "prompt": "不可篡改操作记录。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：SLA（46）",
+      "prompt": "不同优先级处理时限。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：协作（47）",
+      "prompt": "风控与合规分工界面。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：批量结案（48）",
+      "prompt": "误报批量关闭的风险控制。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：质检（49）",
+      "prompt": "二次抽检比例设计。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：报表（50）",
+      "prompt": "监管报表从案件系统导出。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：案件字段（51）",
+      "prompt": "Review 台必备字段清单。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：证据链（52）",
+      "prompt": "链上证据与链下证据拼接。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：结论类型（53）",
+      "prompt": "误报、可疑、确认三级。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：升级路径（54）",
+      "prompt": "L1→L2→MLRO。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：审计日志（55）",
+      "prompt": "不可篡改操作记录。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：SLA（56）",
+      "prompt": "不同优先级处理时限。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：协作（57）",
+      "prompt": "风控与合规分工界面。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：批量结案（58）",
+      "prompt": "误报批量关闭的风险控制。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：质检（59）",
+      "prompt": "二次抽检比例设计。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "流程",
+      "title": "案件审核：报表（60）",
+      "prompt": "监管报表从案件系统导出。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：案件字段 · 训练 61",
+      "prompt": "Review 台必备字段清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：证据链 · 训练 62",
+      "prompt": "链上证据与链下证据拼接。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：结论类型 · 训练 63",
+      "prompt": "误报、可疑、确认三级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：升级路径 · 训练 64",
+      "prompt": "L1→L2→MLRO。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：审计日志 · 训练 65",
+      "prompt": "不可篡改操作记录。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：SLA · 训练 66",
+      "prompt": "不同优先级处理时限。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：协作 · 训练 67",
+      "prompt": "风控与合规分工界面。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：批量结案 · 训练 68",
+      "prompt": "误报批量关闭的风险控制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：质检 · 训练 69",
+      "prompt": "二次抽检比例设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：报表 · 训练 70",
+      "prompt": "监管报表从案件系统导出。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：案件字段 · 训练 71",
+      "prompt": "Review 台必备字段清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：证据链 · 训练 72",
+      "prompt": "链上证据与链下证据拼接。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：结论类型 · 训练 73",
+      "prompt": "误报、可疑、确认三级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：升级路径 · 训练 74",
+      "prompt": "L1→L2→MLRO。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "案件审核：审计日志 · 训练 75",
+      "prompt": "不可篡改操作记录。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：SLA · 训练 76",
+      "prompt": "不同优先级处理时限。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：协作 · 训练 77",
+      "prompt": "风控与合规分工界面。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：批量结案 · 训练 78",
+      "prompt": "误报批量关闭的风险控制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：质检 · 训练 79",
+      "prompt": "二次抽检比例设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：报表 · 训练 80",
+      "prompt": "监管报表从案件系统导出。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：案件字段 · 训练 81",
+      "prompt": "Review 台必备字段清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：证据链 · 训练 82",
+      "prompt": "链上证据与链下证据拼接。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：结论类型 · 训练 83",
+      "prompt": "误报、可疑、确认三级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：升级路径 · 训练 84",
+      "prompt": "L1→L2→MLRO。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：审计日志 · 训练 85",
+      "prompt": "不可篡改操作记录。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：SLA · 训练 86",
+      "prompt": "不同优先级处理时限。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：协作 · 训练 87",
+      "prompt": "风控与合规分工界面。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：批量结案 · 训练 88",
+      "prompt": "误报批量关闭的风险控制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：质检 · 训练 89",
+      "prompt": "二次抽检比例设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：报表 · 训练 90",
+      "prompt": "监管报表从案件系统导出。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "报表"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：案件字段 · 训练 91",
+      "prompt": "Review 台必备字段清单。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "案件"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：证据链 · 训练 92",
+      "prompt": "链上证据与链下证据拼接。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：结论类型 · 训练 93",
+      "prompt": "误报、可疑、确认三级。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "结论"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：升级路径 · 训练 94",
+      "prompt": "L1→L2→MLRO。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "升级"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：审计日志 · 训练 95",
+      "prompt": "不可篡改操作记录。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审计"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：SLA · 训练 96",
+      "prompt": "不同优先级处理时限。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "SLA"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：协作 · 训练 97",
+      "prompt": "风控与合规分工界面。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：批量结案 · 训练 98",
+      "prompt": "误报批量关闭的风险控制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "批量"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：质检 · 训练 99",
+      "prompt": "二次抽检比例设计。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "质检"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "案件审核：报表 · 训练 100",
+      "prompt": "监管报表从案件系统导出。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "报表"
+      ]
+    }
+  ]
+}

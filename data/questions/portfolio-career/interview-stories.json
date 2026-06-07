@@ -1,0 +1,1140 @@
+{
+  "trackId": "portfolio-career",
+  "moduleId": "interview-stories",
+  "moduleTitle": "面试故事库",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：提现峰值（1）",
+      "prompt": "大促提现风控 STAR。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：活动 Sybil（2）",
+      "prompt": "多账号团伙识别 STAR。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：内容审核（3）",
+      "prompt": "机审+人审 STAR。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：AI 试点（4）",
+      "prompt": "Agent 辅助调查 STAR。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：规则引擎（5）",
+      "prompt": "DSL 升级 STAR。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：误伤治理（6）",
+      "prompt": "申诉闭环 STAR。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：跨团队协作（7）",
+      "prompt": "风控+产品+法务 STAR。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：转型项目（8）",
+      "prompt": "Web3 学习作品集 STAR。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：2 分钟版（9）",
+      "prompt": "每个故事压缩口播稿。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：技术取舍（10）",
+      "prompt": "每个故事一条取舍亮点。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：提现峰值（11）",
+      "prompt": "大促提现风控 STAR。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "P0",
+      "title": "面试故事：活动 Sybil（12）",
+      "prompt": "多账号团伙识别 STAR。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：内容审核（13）",
+      "prompt": "机审+人审 STAR。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：AI 试点（14）",
+      "prompt": "Agent 辅助调查 STAR。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：规则引擎（15）",
+      "prompt": "DSL 升级 STAR。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：误伤治理（16）",
+      "prompt": "申诉闭环 STAR。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：跨团队协作（17）",
+      "prompt": "风控+产品+法务 STAR。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：转型项目（18）",
+      "prompt": "Web3 学习作品集 STAR。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：2 分钟版（19）",
+      "prompt": "每个故事压缩口播稿。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "STAR",
+      "title": "面试故事：技术取舍（20）",
+      "prompt": "每个故事一条取舍亮点。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：提现峰值（21）",
+      "prompt": "大促提现风控 STAR。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：活动 Sybil（22）",
+      "prompt": "多账号团伙识别 STAR。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：内容审核（23）",
+      "prompt": "机审+人审 STAR。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：AI 试点（24）",
+      "prompt": "Agent 辅助调查 STAR。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：规则引擎（25）",
+      "prompt": "DSL 升级 STAR。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：误伤治理（26）",
+      "prompt": "申诉闭环 STAR。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：跨团队协作（27）",
+      "prompt": "风控+产品+法务 STAR。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：转型项目（28）",
+      "prompt": "Web3 学习作品集 STAR。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：2 分钟版（29）",
+      "prompt": "每个故事压缩口播稿。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：技术取舍（30）",
+      "prompt": "每个故事一条取舍亮点。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：提现峰值（31）",
+      "prompt": "大促提现风控 STAR。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：活动 Sybil（32）",
+      "prompt": "多账号团伙识别 STAR。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：内容审核（33）",
+      "prompt": "机审+人审 STAR。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：AI 试点（34）",
+      "prompt": "Agent 辅助调查 STAR。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：规则引擎（35）",
+      "prompt": "DSL 升级 STAR。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：误伤治理（36）",
+      "prompt": "申诉闭环 STAR。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：跨团队协作（37）",
+      "prompt": "风控+产品+法务 STAR。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：转型项目（38）",
+      "prompt": "Web3 学习作品集 STAR。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：2 分钟版（39）",
+      "prompt": "每个故事压缩口播稿。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：技术取舍（40）",
+      "prompt": "每个故事一条取舍亮点。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：提现峰值（41）",
+      "prompt": "大促提现风控 STAR。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：活动 Sybil（42）",
+      "prompt": "多账号团伙识别 STAR。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：内容审核（43）",
+      "prompt": "机审+人审 STAR。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：AI 试点（44）",
+      "prompt": "Agent 辅助调查 STAR。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "STAR",
+      "title": "面试故事：规则引擎（45）",
+      "prompt": "DSL 升级 STAR。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：误伤治理（46）",
+      "prompt": "申诉闭环 STAR。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：跨团队协作（47）",
+      "prompt": "风控+产品+法务 STAR。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：转型项目（48）",
+      "prompt": "Web3 学习作品集 STAR。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：2 分钟版（49）",
+      "prompt": "每个故事压缩口播稿。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：技术取舍（50）",
+      "prompt": "每个故事一条取舍亮点。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：提现峰值（51）",
+      "prompt": "大促提现风控 STAR。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：活动 Sybil（52）",
+      "prompt": "多账号团伙识别 STAR。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：内容审核（53）",
+      "prompt": "机审+人审 STAR。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：AI 试点（54）",
+      "prompt": "Agent 辅助调查 STAR。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：规则引擎（55）",
+      "prompt": "DSL 升级 STAR。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：误伤治理（56）",
+      "prompt": "申诉闭环 STAR。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：跨团队协作（57）",
+      "prompt": "风控+产品+法务 STAR。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：转型项目（58）",
+      "prompt": "Web3 学习作品集 STAR。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：2 分钟版（59）",
+      "prompt": "每个故事压缩口播稿。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "STAR",
+      "title": "面试故事：技术取舍（60）",
+      "prompt": "每个故事一条取舍亮点。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：提现峰值 · 训练 61",
+      "prompt": "大促提现风控 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：活动 Sybil · 训练 62",
+      "prompt": "多账号团伙识别 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：内容审核 · 训练 63",
+      "prompt": "机审+人审 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：AI 试点 · 训练 64",
+      "prompt": "Agent 辅助调查 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：规则引擎 · 训练 65",
+      "prompt": "DSL 升级 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：误伤治理 · 训练 66",
+      "prompt": "申诉闭环 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：跨团队协作 · 训练 67",
+      "prompt": "风控+产品+法务 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：转型项目 · 训练 68",
+      "prompt": "Web3 学习作品集 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：2 分钟版 · 训练 69",
+      "prompt": "每个故事压缩口播稿。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：技术取舍 · 训练 70",
+      "prompt": "每个故事一条取舍亮点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：提现峰值 · 训练 71",
+      "prompt": "大促提现风控 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：活动 Sybil · 训练 72",
+      "prompt": "多账号团伙识别 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：内容审核 · 训练 73",
+      "prompt": "机审+人审 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：AI 试点 · 训练 74",
+      "prompt": "Agent 辅助调查 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "面试故事：规则引擎 · 训练 75",
+      "prompt": "DSL 升级 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：误伤治理 · 训练 76",
+      "prompt": "申诉闭环 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：跨团队协作 · 训练 77",
+      "prompt": "风控+产品+法务 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：转型项目 · 训练 78",
+      "prompt": "Web3 学习作品集 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：2 分钟版 · 训练 79",
+      "prompt": "每个故事压缩口播稿。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：技术取舍 · 训练 80",
+      "prompt": "每个故事一条取舍亮点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：提现峰值 · 训练 81",
+      "prompt": "大促提现风控 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：活动 Sybil · 训练 82",
+      "prompt": "多账号团伙识别 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：内容审核 · 训练 83",
+      "prompt": "机审+人审 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：AI 试点 · 训练 84",
+      "prompt": "Agent 辅助调查 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：规则引擎 · 训练 85",
+      "prompt": "DSL 升级 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：误伤治理 · 训练 86",
+      "prompt": "申诉闭环 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：跨团队协作 · 训练 87",
+      "prompt": "风控+产品+法务 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：转型项目 · 训练 88",
+      "prompt": "Web3 学习作品集 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：2 分钟版 · 训练 89",
+      "prompt": "每个故事压缩口播稿。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：技术取舍 · 训练 90",
+      "prompt": "每个故事一条取舍亮点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "取舍"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：提现峰值 · 训练 91",
+      "prompt": "大促提现风控 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "STAR",
+        "提现"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：活动 Sybil · 训练 92",
+      "prompt": "多账号团伙识别 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Sybil"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：内容审核 · 训练 93",
+      "prompt": "机审+人审 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "审核"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：AI 试点 · 训练 94",
+      "prompt": "Agent 辅助调查 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：规则引擎 · 训练 95",
+      "prompt": "DSL 升级 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "引擎"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：误伤治理 · 训练 96",
+      "prompt": "申诉闭环 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "误伤"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：跨团队协作 · 训练 97",
+      "prompt": "风控+产品+法务 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "协作"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：转型项目 · 训练 98",
+      "prompt": "Web3 学习作品集 STAR。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "转型"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：2 分钟版 · 训练 99",
+      "prompt": "每个故事压缩口播稿。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "口播"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "面试故事：技术取舍 · 训练 100",
+      "prompt": "每个故事一条取舍亮点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "取舍"
+      ]
+    }
+  ]
+}

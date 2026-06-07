@@ -30,9 +30,14 @@ let state = {
   plan: null,
   resources: null,
   portfolio: null,
+  questionManifest: null,
+  questionBanks: {},
   view: "dashboard",
   activeTrackId: null,
   selectedModule: null,
+  selectedQuestion: null,
+  questionTierFilter: "all",
+  questionSearch: "",
   storage: null,
   reflectionDraft: "",
   reflectionMode: "module",
@@ -49,6 +54,29 @@ export function answerViewerUrl(answerPath) {
   if (!answerPath) return "";
   const relative = answerPath.replace(/^notes\/answers\//, "");
   return `notes/answers/view.html?f=${encodeURIComponent(relative)}`;
+}
+
+export function studyGuideViewerUrl(studyGuidePath) {
+  if (!studyGuidePath) return "";
+  const relative = studyGuidePath.replace(/^notes\/study-guides\//, "");
+  return `notes/study-guides/view.html?f=${encodeURIComponent(relative)}`;
+}
+
+export function filterQuestions(questions, { tier = "all", search = "" } = {}) {
+  const needle = search.trim().toLowerCase();
+  return questions.filter((item) => {
+    if (tier !== "all" && item.tier !== tier) return false;
+    if (!needle) return true;
+    return (
+      item.title.toLowerCase().includes(needle) ||
+      item.prompt.toLowerCase().includes(needle) ||
+      item.category.toLowerCase().includes(needle)
+    );
+  });
+}
+
+export function questionBankPath(trackId, moduleId) {
+  return `data/questions/${trackId}/${moduleId}.json`;
 }
 
 export function calculateTrackProgress(track, progress) {
@@ -304,6 +332,36 @@ function selectModule(trackId, moduleId) {
   state.selectedModule = { trackId, moduleId };
   state.activeTrackId = trackId;
   if (state.view !== "path") state.view = "path";
+  ensureQuestionBank(trackId, moduleId).then(() => render());
+}
+
+async function ensureQuestionBank(trackId, moduleId) {
+  const key = moduleKey(trackId, moduleId);
+  if (state.questionBanks[key]) return state.questionBanks[key];
+  const response = await fetch(questionBankPath(trackId, moduleId));
+  if (!response.ok) return null;
+  const bank = await response.json();
+  state.questionBanks[key] = bank;
+  return bank;
+}
+
+function getQuestionBank(trackId, moduleId) {
+  return state.questionBanks[moduleKey(trackId, moduleId)] ?? null;
+}
+
+function selectQuestion(trackId, moduleId, questionId) {
+  const bank = getQuestionBank(trackId, moduleId);
+  const question = bank?.questions.find((item) => item.id === questionId);
+  if (!question) return;
+  state.selectedQuestion = { trackId, moduleId, questionId };
+  state.reflectionDraft = "";
+  state.feedback = null;
+  render();
+}
+
+function practiceQuestion(trackId, moduleId, questionId) {
+  selectQuestion(trackId, moduleId, questionId);
+  state.view = "reflection";
   render();
 }
 
@@ -345,12 +403,17 @@ function cycleResourceStatus(resourceId) {
 
 function generateFeedback() {
   const ctx = selectedModuleContext();
-  const keywords = ctx?.module.keywords ?? [];
+  const question = activeReflectionQuestion();
+  const keywords = question?.keywords?.length
+    ? question.keywords
+    : (ctx?.module.keywords ?? []);
   state.feedback = analyzeReflection(state.reflectionDraft, keywords);
   state.storage.lastFeedback = {
     ...state.feedback,
     at: new Date().toISOString(),
-    moduleTitle: ctx?.module.title ?? "通用反思",
+    moduleTitle: question
+      ? `#${question.rank} ${question.title}`
+      : (ctx?.module.title ?? "通用反思"),
   };
   saveStorage(state.storage);
   render();
@@ -548,6 +611,92 @@ function renderDashboard(plan) {
   `;
 }
 
+function renderQuestionBank(track, module) {
+  const bank = getQuestionBank(track.id, module.id);
+  if (!bank) {
+    return `
+      <section class="card question-bank-card">
+        <p class="panel-muted">正在加载题库…</p>
+      </section>
+    `;
+  }
+
+  const filtered = filterQuestions(bank.questions, {
+    tier: state.questionTierFilter,
+    search: state.questionSearch,
+  });
+  const tierCounts = bank.questions.reduce((acc, item) => {
+    acc[item.tier] = (acc[item.tier] ?? 0) + 1;
+    return acc;
+  }, {});
+
+  return `
+    <section class="card question-bank-card" id="question-bank">
+      <div class="qb-header">
+        <div>
+          <h3 class="section-title">学后验证题库</h3>
+          <p class="panel-muted">${bank.questionCount} 题 · 学完讲义后再自测 · 按 rank 排序（P0 必考 1–20 → P3 扩展 76–100）</p>
+        </div>
+        <div class="qb-filters">
+          <select id="question-tier-filter" aria-label="优先级筛选">
+            <option value="all" ${state.questionTierFilter === "all" ? "selected" : ""}>全部优先级</option>
+            <option value="P0" ${state.questionTierFilter === "P0" ? "selected" : ""}>P0 必考 (${tierCounts.P0 ?? 0})</option>
+            <option value="P1" ${state.questionTierFilter === "P1" ? "selected" : ""}>P1 常用 (${tierCounts.P1 ?? 0})</option>
+            <option value="P2" ${state.questionTierFilter === "P2" ? "selected" : ""}>P2 深化 (${tierCounts.P2 ?? 0})</option>
+            <option value="P3" ${state.questionTierFilter === "P3" ? "selected" : ""}>P3 扩展 (${tierCounts.P3 ?? 0})</option>
+          </select>
+          <input
+            id="question-search"
+            type="search"
+            placeholder="搜索题目…"
+            value="${escapeHtml(state.questionSearch)}"
+          />
+        </div>
+      </div>
+      <p class="qb-result-hint">显示 ${filtered.length} / ${bank.questionCount} 题</p>
+      <ol class="qb-list">
+        ${filtered
+          .map((item) => {
+            const selected =
+              state.selectedQuestion?.trackId === track.id &&
+              state.selectedQuestion?.moduleId === module.id &&
+              state.selectedQuestion?.questionId === item.id;
+            return `
+              <li class="qb-item tier-${item.tier} ${selected ? "is-selected" : ""}">
+                <div class="qb-rank" aria-label="重要性排序">${item.rank}</div>
+                <div class="qb-body">
+                  <div class="qb-title-line">
+                    <span class="qb-tier">${item.tier}</span>
+                    <span class="qb-cat">${escapeHtml(item.category)}</span>
+                    <strong>${escapeHtml(item.title)}</strong>
+                  </div>
+                  <p>${escapeHtml(item.prompt)}</p>
+                </div>
+                <div class="qb-actions">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-ghost"
+                    data-select-question="${item.id}"
+                    data-q-track="${track.id}"
+                    data-q-module="${module.id}"
+                  >选中</button>
+                  <button
+                    type="button"
+                    class="btn btn-sm"
+                    data-practice-question="${item.id}"
+                    data-q-track="${track.id}"
+                    data-q-module="${module.id}"
+                  >练习</button>
+                </div>
+              </li>
+            `;
+          })
+          .join("")}
+      </ol>
+    </section>
+  `;
+}
+
 function renderModuleDetail(ctx) {
   if (!ctx) {
     return `<div class="detail-empty"><p>点击左侧模块查看学习任务、输出物与复盘要求。</p></div>`;
@@ -606,10 +755,29 @@ function renderModuleDetail(ctx) {
         <input type="checkbox" data-interview-key="${key}" ${ready ? "checked" : ""} />
         已沉淀为面试素材
       </label>
+      <section class="learning-flow">
+        <h3 class="section-title">学习流程</h3>
+        <div class="learning-steps">
+          <div class="learning-step is-primary">
+            <span class="step-badge">① 先学</span>
+            <p>阅读系统学习讲义：精讲、架构图、分 tier 参考答案速查（含答案，用于建立体系）</p>
+            ${
+              module.studyGuidePath
+                ? `<a class="btn btn-sm" href="${escapeHtml(studyGuideViewerUrl(module.studyGuidePath))}">打开系统讲义</a>`
+                : `<span class="panel-muted">讲义生成中…</span>`
+            }
+          </div>
+          <div class="learning-step">
+            <span class="step-badge">② 后测</span>
+            <p>关闭讲义，在下方「学后验证题库」自测 100 题；P0 建议正确率 ≥ 80% 再进入 P1</p>
+            <a class="btn btn-sm btn-ghost" href="#question-bank">进入验证题库</a>
+          </div>
+        </div>
+      </section>
       <div class="card-actions">
         ${
           module.answerPath
-            ? `<a class="btn btn-sm" href="${escapeHtml(answerViewerUrl(module.answerPath))}">完整参考答案（含架构图）</a>`
+            ? `<a class="btn btn-sm btn-ghost" href="${escapeHtml(answerViewerUrl(module.answerPath))}">简版参考答案</a>`
             : ""
         }
         <button type="button" class="btn btn-sm" data-reflect-module="${track.id}" data-reflect-mod="${module.id}">写反思反馈</button>
@@ -676,6 +844,7 @@ function renderPath(plan) {
           </div>
         </section>
         <section class="card">${renderModuleDetail(ctx)}</section>
+        ${ctx ? renderQuestionBank(ctx.track, ctx.module) : ""}
       </div>
     </div>
   `;
@@ -782,10 +951,20 @@ function renderPractice() {
   `;
 }
 
+function activeReflectionQuestion() {
+  if (!state.selectedQuestion) return null;
+  const { trackId, moduleId, questionId } = state.selectedQuestion;
+  const bank = getQuestionBank(trackId, moduleId);
+  return bank?.questions.find((item) => item.id === questionId) ?? null;
+}
+
 function renderReflectionView() {
   const ctx = selectedModuleContext();
   const module = ctx?.module;
-  const keywords = module?.keywords ?? [];
+  const question = activeReflectionQuestion();
+  const keywords = question?.keywords?.length
+    ? question.keywords
+    : (module?.keywords ?? []);
 
   return `
     <div class="view-header">
@@ -802,10 +981,15 @@ function renderReflectionView() {
           <option value="strategy" ${state.reflectionMode === "strategy" ? "selected" : ""}>风控策略设计</option>
         </select>
         ${
-          module
-            ? `<p class="panel-muted" style="margin-top:12px">当前模块：${escapeHtml(module.title)}</p>
-               <p class="panel-muted">${escapeHtml(module.feedbackPrompt)}</p>`
-            : `<p class="panel-muted" style="margin-top:12px">请先在「学习路径」选择模块，或直接写下通用反思。</p>`
+          question
+            ? `<p class="panel-muted" style="margin-top:12px">当前题目 #${question.rank} · ${escapeHtml(question.tier)} · ${escapeHtml(module?.title ?? "")}</p>
+               <p><strong>${escapeHtml(question.title)}</strong></p>
+               <p class="panel-muted">${escapeHtml(question.prompt)}</p>`
+            : module
+              ? `<p class="panel-muted" style="margin-top:12px">当前模块：${escapeHtml(module.title)}（默认复盘题）</p>
+                 <p class="panel-muted">${escapeHtml(module.feedbackPrompt)}</p>
+                 <p class="panel-muted">提示：在「学习路径 → 题库」选择具体题目练习。</p>`
+              : `<p class="panel-muted" style="margin-top:12px">请先在「学习路径」选择模块或题目。</p>`
         }
         <label class="field-label" for="reflection-input">你的回答</label>
         <textarea id="reflection-input" rows="10" placeholder="业务场景 → 风险信号 → 策略动作 → 复盘闭环">${escapeHtml(state.reflectionDraft)}</textarea>
@@ -1049,6 +1233,28 @@ function bindEvents() {
   });
 
   document.getElementById("generate-feedback")?.addEventListener("click", generateFeedback);
+
+  document.getElementById("question-tier-filter")?.addEventListener("change", (e) => {
+    state.questionTierFilter = e.target.value;
+    render();
+  });
+
+  document.getElementById("question-search")?.addEventListener("input", (e) => {
+    state.questionSearch = e.target.value;
+    render();
+  });
+
+  document.querySelectorAll("[data-practice-question]").forEach((btn) => {
+    btn.addEventListener("click", () =>
+      practiceQuestion(btn.dataset.qTrack, btn.dataset.qModule, btn.dataset.practiceQuestion),
+    );
+  });
+
+  document.querySelectorAll("[data-select-question]").forEach((btn) => {
+    btn.addEventListener("click", () =>
+      selectQuestion(btn.dataset.qTrack, btn.dataset.qModule, btn.dataset.selectQuestion),
+    );
+  });
 }
 
 function render() {
@@ -1071,18 +1277,21 @@ function render() {
 }
 
 async function init() {
-  const [planRes, resRes, portRes] = await Promise.all([
+  const [planRes, resRes, portRes, manifestRes] = await Promise.all([
     fetch("data/web3-transition-plan.json"),
     fetch("data/resources.json"),
     fetch("data/portfolio.json"),
+    fetch("data/questions/manifest.json"),
   ]);
   if (!planRes.ok) throw new Error("无法加载学习计划");
   if (!resRes.ok) throw new Error("无法加载资料库");
   if (!portRes.ok) throw new Error("无法加载作品集");
+  if (!manifestRes.ok) throw new Error("无法加载题库索引");
 
   state.plan = await planRes.json();
   state.resources = await resRes.json();
   state.portfolio = await portRes.json();
+  state.questionManifest = await manifestRes.json();
   state.storage = loadStorage();
   state.activeTrackId = state.plan.tracks[0].id;
   state.feedback = state.storage.lastFeedback;

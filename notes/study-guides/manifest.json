@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "guides": [
+    {
+      "trackId": "web3-foundation",
+      "moduleId": "ethereum-basics",
+      "path": "notes/study-guides/web3-foundation/ethereum-basics.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "web3-foundation",
+      "moduleId": "wallets-transactions",
+      "path": "notes/study-guides/web3-foundation/wallets-transactions.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "web3-foundation",
+      "moduleId": "cex-dex-map",
+      "path": "notes/study-guides/web3-foundation/cex-dex-map.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "exchange-risk",
+      "moduleId": "withdrawal-risk",
+      "path": "notes/study-guides/exchange-risk/withdrawal-risk.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "exchange-risk",
+      "moduleId": "sybil-bonus-abuse",
+      "path": "notes/study-guides/exchange-risk/sybil-bonus-abuse.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "exchange-risk",
+      "moduleId": "market-manipulation",
+      "path": "notes/study-guides/exchange-risk/market-manipulation.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "onchain-data",
+      "moduleId": "address-labeling",
+      "path": "notes/study-guides/onchain-data/address-labeling.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "onchain-data",
+      "moduleId": "fund-flow",
+      "path": "notes/study-guides/onchain-data/fund-flow.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "onchain-data",
+      "moduleId": "graph-risk",
+      "path": "notes/study-guides/onchain-data/graph-risk.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "compliance-aml",
+      "moduleId": "kyc-kyb-kyc",
+      "path": "notes/study-guides/compliance-aml/kyc-kyb-kyc.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "compliance-aml",
+      "moduleId": "aml-scenarios",
+      "path": "notes/study-guides/compliance-aml/aml-scenarios.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "compliance-aml",
+      "moduleId": "case-review",
+      "path": "notes/study-guides/compliance-aml/case-review.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "ai-agent-risk",
+      "moduleId": "risk-copilot",
+      "path": "notes/study-guides/ai-agent-risk/risk-copilot.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "ai-agent-risk",
+      "moduleId": "guardrails",
+      "path": "notes/study-guides/ai-agent-risk/guardrails.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "ai-agent-risk",
+      "moduleId": "evaluation",
+      "path": "notes/study-guides/ai-agent-risk/evaluation.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "portfolio-career",
+      "moduleId": "portfolio-map",
+      "path": "notes/study-guides/portfolio-career/portfolio-map.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "portfolio-career",
+      "moduleId": "resume-rewrite",
+      "path": "notes/study-guides/portfolio-career/resume-rewrite.md",
+      "questionCount": 100
+    },
+    {
+      "trackId": "portfolio-career",
+      "moduleId": "interview-stories",
+      "path": "notes/study-guides/portfolio-career/interview-stories.md",
+      "questionCount": 100
+    }
+  ]
+}

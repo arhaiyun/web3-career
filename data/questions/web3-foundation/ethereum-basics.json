@@ -1,0 +1,1186 @@
+{
+  "trackId": "web3-foundation",
+  "moduleId": "ethereum-basics",
+  "moduleTitle": "Ethereum 账户、交易与 Gas",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "核心概念",
+      "title": "EOA 与合约账户的本质区别",
+      "prompt": "从资产控制、签名主体、风控调查入口三个角度对比 EOA 与 Contract Account。",
+      "keywords": [
+        "EOA",
+        "合约",
+        "账户"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "核心概念",
+      "title": "私钥、公钥、地址的推导关系",
+      "prompt": "说明三者关系，并解释为何链上风控主要追踪地址而非私钥。",
+      "keywords": [
+        "私钥",
+        "地址"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "核心概念",
+      "title": "Nonce 如何防止重放攻击",
+      "prompt": "解释账户 nonce 递增规则，以及异常 nonce 可能意味什么风险。",
+      "keywords": [
+        "nonce",
+        "重放"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "交易机制",
+      "title": "一笔以太坊交易的完整生命周期",
+      "prompt": "从构造、签名、广播、mempool、打包到确认，画出时序。",
+      "keywords": [
+        "交易",
+        "签名",
+        "确认"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "Gas",
+      "title": "Gas Limit 与 Gas Used 的区别",
+      "prompt": "说明为何失败交易仍消耗 gas，以及对用户资损分析的意义。",
+      "keywords": [
+        "gas",
+        "limit"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "Gas",
+      "title": "EIP-1559 基础费与小费机制",
+      "prompt": "解释 base fee、priority fee 如何影响交易确认速度与成本。",
+      "keywords": [
+        "EIP-1559",
+        "gas"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "风控应用",
+      "title": "CEX 充值为何需要确认数",
+      "prompt": "从链重组概率、双花风险解释不同币种/链的确认数策略。",
+      "keywords": [
+        "充值",
+        "确认数"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "风控应用",
+      "title": "异常高 Gas 竞价的可能风险含义",
+      "prompt": "列举抢跑、紧急转出、被勒索付款等场景及检测思路。",
+      "keywords": [
+        "gas",
+        "异常"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "交易机制",
+      "title": "交易哈希能证明什么、不能证明什么",
+      "prompt": "说明 tx hash 在审计、报案、交易所申诉中的作用与局限。",
+      "keywords": [
+        "交易哈希"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "核心概念",
+      "title": "calldata 在合约调用中的作用",
+      "prompt": "解释 data 字段与函数选择器，为何授权类攻击常出现在 calldata。",
+      "keywords": [
+        "calldata",
+        "合约"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "风控应用",
+      "title": "pending 交易对提现风控的影响",
+      "prompt": "说明未确认交易、内存池可见性带来的抢跑与风控窗口。",
+      "keywords": [
+        "pending",
+        "mempool"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "核心概念",
+      "title": "链重组对入账业务的影响",
+      "prompt": "解释 reorg 如何导致充值回滚，风控应如何处理。",
+      "keywords": [
+        "重组",
+        "充值"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "面试实战",
+      "title": "如何向面试官口述 EOA 转账流程",
+      "prompt": "用 2 分钟口述，包含签名、gas、nonce、确认。",
+      "keywords": [
+        "面试",
+        "EOA"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "交易机制",
+      "title": "Legacy 与 Type-2 交易差异",
+      "prompt": "对比传统 gasPrice 与 EIP-1559 交易结构。",
+      "keywords": [
+        "EIP-1559"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "风控应用",
+      "title": "大额转账与历史基线偏离",
+      "prompt": "设计如何基于地址历史行为识别异常转出。",
+      "keywords": [
+        "异常",
+        "基线"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "核心概念",
+      "title": "状态根与 Merkle Patricia Trie 直觉",
+      "prompt": "不用数学推导，说明状态如何在区块头中承诺。",
+      "keywords": [
+        "状态",
+        "MPT"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "Gas",
+      "title": "合约执行为何比转账更耗 gas",
+      "prompt": "解释 SSTORE、LOG、CALL 的成本直觉。",
+      "keywords": [
+        "gas",
+        "合约"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "风控应用",
+      "title": "内部交易与外部交易的调查差异",
+      "prompt": "说明 trace 在资金追踪中的必要性。",
+      "keywords": [
+        "trace",
+        "内部交易"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "交易机制",
+      "title": "交易失败常见原因分类",
+      "prompt": "列举 revert、out of gas、nonce 错误等及用户侧表现。",
+      "keywords": [
+        "revert",
+        "失败"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "风控应用",
+      "title": "热钱包运营方的链上监控要点",
+      "prompt": "说明交易所热钱包余额、出金频率、异常合约交互监控。",
+      "keywords": [
+        "热钱包",
+        "CEX"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "核心概念",
+      "title": "创世账户与预分配是否影响风控",
+      "prompt": "说明早期地址标签在调查中的参考价值。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "Gas",
+      "title": "L2 上 gas 费与 L1 的差异",
+      "prompt": "解释 Rollup 场景下 gas 组成及对账要点。",
+      "keywords": [
+        "L2",
+        "gas"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "面试实战",
+      "title": "把 nonce 机制类比到传统幂等设计",
+      "prompt": "用你熟悉的风控/支付系统经验做类比。",
+      "keywords": [
+        "nonce",
+        "幂等"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "交易机制",
+      "title": "区块时间戳可信度与风控",
+      "prompt": "说明矿工可操纵范围及对时间敏感策略的影响。",
+      "keywords": [
+        "时间戳"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "风控应用",
+      "title": "如何设计充值延迟入账规则",
+      "prompt": "给出基于确认数+地址风险分的组合策略框架。",
+      "keywords": [
+        "充值",
+        "延迟"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "EIP-7702 对账户抽象的潜在影响",
+      "prompt": "简述未来账户模型变化可能对风控入口的影响。",
+      "keywords": [
+        "账户抽象"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "MEV 与交易排序对用户的风险",
+      "prompt": "说明 sandwich、frontrun 与风控可见性。",
+      "keywords": [
+        "MEV"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "批量交易 batch 在交易所归集场景",
+      "prompt": "说明 batch transfer 在资金链上的识别特征。",
+      "keywords": [
+        "batch"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "JSON-RPC 常用查询在调查中的用法",
+      "prompt": "列举 eth_getTransaction、getReceipt、getBalance 场景。",
+      "keywords": [
+        "RPC"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "事件日志 Logs 在风控中的价值",
+      "prompt": "说明如何通过 Transfer 事件构建资金链。",
+      "keywords": [
+        "事件",
+        "日志"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "深化",
+      "title": "RBF 替换交易的风险含义",
+      "prompt": "解释 replace-by-fee 对充值追踪的干扰。",
+      "keywords": [
+        "RBF"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "深化",
+      "title": "合约创建交易识别",
+      "prompt": "如何通过合约创建定位新恶意合约。",
+      "keywords": [
+        "合约创建"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "深化",
+      "title": "自毁 SELFDESTRUCT 后的资金去向",
+      "prompt": "说明调查时如何处理合约自毁场景。",
+      "keywords": [
+        "自毁"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "深化",
+      "title": "零值转账 spam 的信号意义",
+      "prompt": "解释 dusting attack 原理与标记策略。",
+      "keywords": [
+        "dusting"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "深化",
+      "title": "同一区块多笔关联交易的聚类",
+      "prompt": "说明如何从共现区块提取关联信号。",
+      "keywords": [
+        "聚类"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "岗位应用",
+      "title": "链上索引延迟对实时风控的影响",
+      "prompt": "说明 indexer lag 下的产品降级策略。",
+      "keywords": [
+        "索引",
+        "延迟"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "岗位应用",
+      "title": "多链地址格式差异带来的运营风险",
+      "prompt": "以 EVM 同名地址误区为例说明。",
+      "keywords": [
+        "多链",
+        "地址"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "岗位应用",
+      "title": "测试网交易与主网混淆风险",
+      "prompt": "说明内部环境隔离与链 ID 校验。",
+      "keywords": [
+        "测试网"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "岗位应用",
+      "title": "钱包 SDK 集成中的签名透明化",
+      "prompt": "产品应如何向用户展示将签名的内容。",
+      "keywords": [
+        "钱包",
+        "签名"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "岗位应用",
+      "title": "链上证明在合规案件中的证据力",
+      "prompt": "说明 tx 作为电子证据的保存要点。",
+      "keywords": [
+        "证据"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "扩展场景",
+      "title": "Staking 提款与提现风控异同",
+      "prompt": "对比质押提款与普通转账的风控点。",
+      "keywords": [
+        "staking"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "扩展场景",
+      "title": "LST 再质押产品的资金流复杂性",
+      "prompt": "说明多层凭证对追踪的挑战。",
+      "keywords": [
+        "LST"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "扩展场景",
+      "title": "账户抽象钱包的签名验证变化",
+      "prompt": "说明 ERC-4337 UserOperation 调查入口变化。",
+      "keywords": [
+        "4337"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "扩展场景",
+      "title": "跨链消息与原生资产转账区别",
+      "prompt": "避免在调查中混淆 messaging 与 asset bridge。",
+      "keywords": [
+        "跨链"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "扩展场景",
+      "title": "Flashbots 私有交易对可见性影响",
+      "prompt": "说明私有 mempool 对监控盲区。",
+      "keywords": [
+        "Flashbots"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "复盘",
+      "title": "画出你理解的充值入账时序图",
+      "prompt": "包含链上确认、地址筛查、账本入账。",
+      "keywords": [
+        "复盘",
+        "充值"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "复盘",
+      "title": "解释一次 gas 费诈骗用户案例",
+      "prompt": "用业务语言复盘用户为何被诱导支付高 gas。",
+      "keywords": [
+        "案例"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "复盘",
+      "title": "若 nonce 卡住，客服应如何指引",
+      "prompt": "给出非技术用户可操作 checklist。",
+      "keywords": [
+        "客服"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "复盘",
+      "title": "比较 ETH 与 ERC20 转账调查差异",
+      "prompt": "说明 token contract 介入后的额外字段。",
+      "keywords": [
+        "ERC20"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "复盘",
+      "title": "设计链上交易异常告警 5 条",
+      "prompt": "列出告警名、触发条件、处置动作。",
+      "keywords": [
+        "告警"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "叔块奖励是否影响风控统计",
+      "prompt": "说明 PoW 遗留概念在以太坊历史上的调查注意点。",
+      "keywords": [
+        "叔块"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "硬分叉前后双花历史案例启示",
+      "prompt": "总结对确认策略的产品教训。",
+      "keywords": [
+        "硬分叉"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "离线签名交易广播延迟风险",
+      "prompt": "说明冷签名流程对时效的影响。",
+      "keywords": [
+        "离线签名"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "同一 EOA 多设备钱包并发发送",
+      "prompt": "nonce 冲突如何表现为用户侧失败。",
+      "keywords": [
+        "并发"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "链上随机性对活动风控的干扰",
+      "prompt": "说明 blockhash 误用与博彩类风险。",
+      "keywords": [
+        "随机性"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "矿工可提取价值与用户损失边界",
+      "prompt": "区分用户被夹与用户主动滑点。",
+      "keywords": [
+        "MEV"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "历史交易归档节点查询成本",
+      "prompt": "调查旧案时数据源选择。",
+      "keywords": [
+        "归档"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "RPC 供应商故障时的风控降级",
+      "prompt": "设计只读模式与队列重试。",
+      "keywords": [
+        "RPC",
+        "降级"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "钱包地址 checksum 错误导致的问题",
+      "prompt": "说明 EIP-55 与误转账追回难度。",
+      "keywords": [
+        "checksum"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "边缘",
+      "title": "总结本模块对 CEX 风控的三条最重要启示",
+      "prompt": "用面试语言归纳 rank1-12 的精髓。",
+      "keywords": [
+        "总结"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "EOA 与合约账户的本质区别 · 训练 61",
+      "prompt": "从资产控制、签名主体、风控调查入口三个角度对比 EOA 与 Contract Account。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "EOA",
+        "合约",
+        "账户"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "私钥、公钥、地址的推导关系 · 训练 62",
+      "prompt": "说明三者关系，并解释为何链上风控主要追踪地址而非私钥。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "私钥",
+        "地址"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Nonce 如何防止重放攻击 · 训练 63",
+      "prompt": "解释账户 nonce 递增规则，以及异常 nonce 可能意味什么风险。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "nonce",
+        "重放"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "一笔以太坊交易的完整生命周期 · 训练 64",
+      "prompt": "从构造、签名、广播、mempool、打包到确认，画出时序。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "交易",
+        "签名",
+        "确认"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Gas Limit 与 Gas Used 的区别 · 训练 65",
+      "prompt": "说明为何失败交易仍消耗 gas，以及对用户资损分析的意义。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "gas",
+        "limit"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "EIP-1559 基础费与小费机制 · 训练 66",
+      "prompt": "解释 base fee、priority fee 如何影响交易确认速度与成本。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "EIP-1559",
+        "gas"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "CEX 充值为何需要确认数 · 训练 67",
+      "prompt": "从链重组概率、双花风险解释不同币种/链的确认数策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "充值",
+        "确认数"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "异常高 Gas 竞价的可能风险含义 · 训练 68",
+      "prompt": "列举抢跑、紧急转出、被勒索付款等场景及检测思路。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "gas",
+        "异常"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "交易哈希能证明什么、不能证明什么 · 训练 69",
+      "prompt": "说明 tx hash 在审计、报案、交易所申诉中的作用与局限。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "交易哈希"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "calldata 在合约调用中的作用 · 训练 70",
+      "prompt": "解释 data 字段与函数选择器，为何授权类攻击常出现在 calldata。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "calldata",
+        "合约"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "pending 交易对提现风控的影响 · 训练 71",
+      "prompt": "说明未确认交易、内存池可见性带来的抢跑与风控窗口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "pending",
+        "mempool"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "链重组对入账业务的影响 · 训练 72",
+      "prompt": "解释 reorg 如何导致充值回滚，风控应如何处理。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "重组",
+        "充值"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "如何向面试官口述 EOA 转账流程 · 训练 73",
+      "prompt": "用 2 分钟口述，包含签名、gas、nonce、确认。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "面试",
+        "EOA"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Legacy 与 Type-2 交易差异 · 训练 74",
+      "prompt": "对比传统 gasPrice 与 EIP-1559 交易结构。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "EIP-1559"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "大额转账与历史基线偏离 · 训练 75",
+      "prompt": "设计如何基于地址历史行为识别异常转出。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "异常",
+        "基线"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "状态根与 Merkle Patricia Trie 直觉 · 训练 76",
+      "prompt": "不用数学推导，说明状态如何在区块头中承诺。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "状态",
+        "MPT"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合约执行为何比转账更耗 gas · 训练 77",
+      "prompt": "解释 SSTORE、LOG、CALL 的成本直觉。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "gas",
+        "合约"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "内部交易与外部交易的调查差异 · 训练 78",
+      "prompt": "说明 trace 在资金追踪中的必要性。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "trace",
+        "内部交易"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "交易失败常见原因分类 · 训练 79",
+      "prompt": "列举 revert、out of gas、nonce 错误等及用户侧表现。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "revert",
+        "失败"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "热钱包运营方的链上监控要点 · 训练 80",
+      "prompt": "说明交易所热钱包余额、出金频率、异常合约交互监控。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "热钱包",
+        "CEX"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "创世账户与预分配是否影响风控 · 训练 81",
+      "prompt": "说明早期地址标签在调查中的参考价值。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "标签"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "L2 上 gas 费与 L1 的差异 · 训练 82",
+      "prompt": "解释 Rollup 场景下 gas 组成及对账要点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "L2",
+        "gas"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "把 nonce 机制类比到传统幂等设计 · 训练 83",
+      "prompt": "用你熟悉的风控/支付系统经验做类比。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "nonce",
+        "幂等"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "区块时间戳可信度与风控 · 训练 84",
+      "prompt": "说明矿工可操纵范围及对时间敏感策略的影响。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "时间戳"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "如何设计充值延迟入账规则 · 训练 85",
+      "prompt": "给出基于确认数+地址风险分的组合策略框架。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "充值",
+        "延迟"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "EIP-7702 对账户抽象的潜在影响 · 训练 86",
+      "prompt": "简述未来账户模型变化可能对风控入口的影响。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "账户抽象"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "MEV 与交易排序对用户的风险 · 训练 87",
+      "prompt": "说明 sandwich、frontrun 与风控可见性。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "MEV"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "批量交易 batch 在交易所归集场景 · 训练 88",
+      "prompt": "说明 batch transfer 在资金链上的识别特征。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "batch"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "JSON-RPC 常用查询在调查中的用法 · 训练 89",
+      "prompt": "列举 eth_getTransaction、getReceipt、getBalance 场景。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "RPC"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "事件日志 Logs 在风控中的价值 · 训练 90",
+      "prompt": "说明如何通过 Transfer 事件构建资金链。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "事件",
+        "日志"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "RBF 替换交易的风险含义 · 训练 91",
+      "prompt": "解释 replace-by-fee 对充值追踪的干扰。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "RBF"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "合约创建交易识别 · 训练 92",
+      "prompt": "如何通过合约创建定位新恶意合约。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "合约创建"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "自毁 SELFDESTRUCT 后的资金去向 · 训练 93",
+      "prompt": "说明调查时如何处理合约自毁场景。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "自毁"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "零值转账 spam 的信号意义 · 训练 94",
+      "prompt": "解释 dusting attack 原理与标记策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "dusting"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "同一区块多笔关联交易的聚类 · 训练 95",
+      "prompt": "说明如何从共现区块提取关联信号。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "聚类"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "链上索引延迟对实时风控的影响 · 训练 96",
+      "prompt": "说明 indexer lag 下的产品降级策略。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "索引",
+        "延迟"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "多链地址格式差异带来的运营风险 · 训练 97",
+      "prompt": "以 EVM 同名地址误区为例说明。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "多链",
+        "地址"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "测试网交易与主网混淆风险 · 训练 98",
+      "prompt": "说明内部环境隔离与链 ID 校验。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "测试网"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "钱包 SDK 集成中的签名透明化 · 训练 99",
+      "prompt": "产品应如何向用户展示将签名的内容。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "钱包",
+        "签名"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "链上证明在合规案件中的证据力 · 训练 100",
+      "prompt": "说明 tx 作为电子证据的保存要点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "证据"
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@
 npm run serve
 ```
 
-打开 <http://localhost:4174> 查看网站。
+会自动在浏览器打开 <http://localhost:4174>。若只需启动服务不打开浏览器，用 `npm run serve:only`。
 
 界面改版方案（5 套 demo，选定后再正式重构）：
 
@@ -33,7 +33,10 @@ npm test
 | [`data/web3-transition-plan.json`](data/web3-transition-plan.json) | 个人职业画像、六条学习轨道、模块任务与输出物 |
 | [`data/resources.json`](data/resources.json) | 结构化资料库（类型、Track、难度、阅读状态） |
 | [`data/portfolio.json`](data/portfolio.json) | 三个核心作品集项目与下一步任务 |
-| [`notes/`](notes/) | 学习笔记与专题整理；**18 模块完整参考答案**见 [`notes/answers/`](notes/answers/) |
+| [`data/questions/`](data/questions/) | 每模块 100 道学后验证题（P0–P3 按重要性排序，共 1800 题） |
+| [`notes/study-guides/`](notes/study-guides/) | **18 模块系统学习讲义（含答案）** — 先学后测 |
+| [`notes/answers/`](notes/answers/) | 18 模块简版参考答案（含架构图） |
+| [`notes/`](notes/) | 学习笔记与专题整理 |
 | [`docs/`](docs/) | 模板、术语表、长期索引类文档；外部学习资料见 [`docs/learning-resources.md`](docs/learning-resources.md)；Cursor Skills 见 [`docs/cursor-skills.md`](docs/cursor-skills.md)；Dify 工作流见 [`docs/dify.md`](docs/dify.md) |
 | [`projects/`](projects/) | 独立实践仓库或子项目（每个实验一个子文件夹） |
 | [`notes/hardhat/`](notes/hardhat/) | Hardhat 学习路径（含 [`projects/hardhat-learning`](projects/hardhat-learning) 实践） |
@@ -43,7 +46,7 @@ npm test
 ## 建议使用方式
 
 1. **Dashboard**：打开即见今日推荐模块、本周目标、能力缺口与面试素材积累。
-2. **学习路径**：点击模块在页内打开详情，切换「未开始 / 学习中 / 已完成 / 需要复盘」，写笔记并标记面试素材。
+2. **学习路径**：每个模块按 **① 系统讲义（含答案）→ ② 学后验证 100 题** 顺序学习；讲义见模块详情「打开系统讲义」，验证题在下方题库。学完写笔记并标记面试素材。
 3. **资料库**：按 Track、类型、阅读状态筛选资源卡片。
 4. **反思反馈**：五维度学习教练式反馈（预留 AI Agent 按钮接口）。
 5. **笔记**：在 `notes/` 下按主题建文件夹，单篇笔记可用 `docs/note-template.md` 复制起步。

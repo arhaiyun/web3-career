@@ -66,7 +66,8 @@
             "res-feishu-wiki",
             "res-sgg-blockchain"
           ],
-          "answerPath": "notes/answers/web3-foundation/ethereum-basics.md"
+          "answerPath": "notes/answers/web3-foundation/ethereum-basics.md",
+          "studyGuidePath": "notes/study-guides/web3-foundation/ethereum-basics.md"
         },
         {
           "id": "wallets-transactions",
@@ -88,7 +89,8 @@
             "res-feishu-wiki",
             "res-chainlink-tutorial"
           ],
-          "answerPath": "notes/answers/web3-foundation/wallets-transactions.md"
+          "answerPath": "notes/answers/web3-foundation/wallets-transactions.md",
+          "studyGuidePath": "notes/study-guides/web3-foundation/wallets-transactions.md"
         },
         {
           "id": "cex-dex-map",
@@ -110,7 +112,8 @@
             "res-tuling-search",
             "res-hardhat-notes"
           ],
-          "answerPath": "notes/answers/web3-foundation/cex-dex-map.md"
+          "answerPath": "notes/answers/web3-foundation/cex-dex-map.md",
+          "studyGuidePath": "notes/study-guides/web3-foundation/cex-dex-map.md"
         }
       ]
     },
@@ -148,7 +151,8 @@
           "resourceIds": [
             "res-cex-risk-framework"
           ],
-          "answerPath": "notes/answers/exchange-risk/withdrawal-risk.md"
+          "answerPath": "notes/answers/exchange-risk/withdrawal-risk.md",
+          "studyGuidePath": "notes/study-guides/exchange-risk/withdrawal-risk.md"
         },
         {
           "id": "sybil-bonus-abuse",
@@ -169,7 +173,8 @@
           "resourceIds": [
             "res-cex-risk-framework"
           ],
-          "answerPath": "notes/answers/exchange-risk/sybil-bonus-abuse.md"
+          "answerPath": "notes/answers/exchange-risk/sybil-bonus-abuse.md",
+          "studyGuidePath": "notes/study-guides/exchange-risk/sybil-bonus-abuse.md"
         },
         {
           "id": "market-manipulation",
@@ -190,7 +195,8 @@
           "resourceIds": [
             "res-career-map"
           ],
-          "answerPath": "notes/answers/exchange-risk/market-manipulation.md"
+          "answerPath": "notes/answers/exchange-risk/market-manipulation.md",
+          "studyGuidePath": "notes/study-guides/exchange-risk/market-manipulation.md"
         }
       ]
     },
@@ -228,7 +234,8 @@
           "resourceIds": [
             "res-onchain-labeling"
           ],
-          "answerPath": "notes/answers/onchain-data/address-labeling.md"
+          "answerPath": "notes/answers/onchain-data/address-labeling.md",
+          "studyGuidePath": "notes/study-guides/onchain-data/address-labeling.md"
         },
         {
           "id": "fund-flow",
@@ -250,7 +257,8 @@
             "res-onchain-labeling",
             "res-chainlink-tutorial"
           ],
-          "answerPath": "notes/answers/onchain-data/fund-flow.md"
+          "answerPath": "notes/answers/onchain-data/fund-flow.md",
+          "studyGuidePath": "notes/study-guides/onchain-data/fund-flow.md"
         },
         {
           "id": "graph-risk",
@@ -271,7 +279,8 @@
           "resourceIds": [
             "res-onchain-labeling"
           ],
-          "answerPath": "notes/answers/onchain-data/graph-risk.md"
+          "answerPath": "notes/answers/onchain-data/graph-risk.md",
+          "studyGuidePath": "notes/study-guides/onchain-data/graph-risk.md"
         }
       ]
     },
@@ -309,7 +318,8 @@
           "resourceIds": [
             "res-aml-checklist"
           ],
-          "answerPath": "notes/answers/compliance-aml/kyc-kyb-kyt.md"
+          "answerPath": "notes/answers/compliance-aml/kyc-kyb-kyt.md",
+          "studyGuidePath": "notes/study-guides/compliance-aml/kyc-kyb-kyc.md"
         },
         {
           "id": "aml-scenarios",
@@ -330,7 +340,8 @@
           "resourceIds": [
             "res-aml-checklist"
           ],
-          "answerPath": "notes/answers/compliance-aml/aml-scenarios.md"
+          "answerPath": "notes/answers/compliance-aml/aml-scenarios.md",
+          "studyGuidePath": "notes/study-guides/compliance-aml/aml-scenarios.md"
         },
         {
           "id": "case-review",
@@ -352,7 +363,8 @@
             "res-aml-checklist",
             "res-dify-workflows"
           ],
-          "answerPath": "notes/answers/compliance-aml/case-review.md"
+          "answerPath": "notes/answers/compliance-aml/case-review.md",
+          "studyGuidePath": "notes/study-guides/compliance-aml/case-review.md"
         }
       ]
     },
@@ -391,7 +403,8 @@
             "res-dify-workflows",
             "res-dify-notes"
           ],
-          "answerPath": "notes/answers/ai-agent-risk/risk-copilot.md"
+          "answerPath": "notes/answers/ai-agent-risk/risk-copilot.md",
+          "studyGuidePath": "notes/study-guides/ai-agent-risk/risk-copilot.md"
         },
         {
           "id": "guardrails",
@@ -412,7 +425,8 @@
           "resourceIds": [
             "res-dify-notes"
           ],
-          "answerPath": "notes/answers/ai-agent-risk/guardrails.md"
+          "answerPath": "notes/answers/ai-agent-risk/guardrails.md",
+          "studyGuidePath": "notes/study-guides/ai-agent-risk/guardrails.md"
         },
         {
           "id": "evaluation",
@@ -433,7 +447,8 @@
           "resourceIds": [
             "res-dify-workflows"
           ],
-          "answerPath": "notes/answers/ai-agent-risk/evaluation.md"
+          "answerPath": "notes/answers/ai-agent-risk/evaluation.md",
+          "studyGuidePath": "notes/study-guides/ai-agent-risk/evaluation.md"
         }
       ]
     },
@@ -472,7 +487,8 @@
           "resourceIds": [
             "res-career-map"
           ],
-          "answerPath": "notes/answers/portfolio-career/portfolio-map.md"
+          "answerPath": "notes/answers/portfolio-career/portfolio-map.md",
+          "studyGuidePath": "notes/study-guides/portfolio-career/portfolio-map.md"
         },
         {
           "id": "resume-rewrite",
@@ -494,7 +510,8 @@
             "res-career-map",
             "res-star-stories"
           ],
-          "answerPath": "notes/answers/portfolio-career/resume-rewrite.md"
+          "answerPath": "notes/answers/portfolio-career/resume-rewrite.md",
+          "studyGuidePath": "notes/study-guides/portfolio-career/resume-rewrite.md"
         },
         {
           "id": "interview-stories",
@@ -516,7 +533,8 @@
             "res-star-stories",
             "res-career-map"
           ],
-          "answerPath": "notes/answers/portfolio-career/interview-stories.md"
+          "answerPath": "notes/answers/portfolio-career/interview-stories.md",
+          "studyGuidePath": "notes/study-guides/portfolio-career/interview-stories.md"
         }
       ]
     }

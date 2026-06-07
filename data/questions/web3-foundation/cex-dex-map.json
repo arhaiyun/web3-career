@@ -1,0 +1,1138 @@
+{
+  "trackId": "web3-foundation",
+  "moduleId": "cex-dex-map",
+  "moduleTitle": "CEX / DEX / DeFi 业务地图",
+  "questionCount": 100,
+  "tiers": [
+    {
+      "tier": "P0",
+      "label": "必考核心",
+      "upToRank": 20
+    },
+    {
+      "tier": "P1",
+      "label": "岗位常用",
+      "upToRank": 45
+    },
+    {
+      "tier": "P2",
+      "label": "深化理解",
+      "upToRank": 75
+    },
+    {
+      "tier": "P3",
+      "label": "扩展场景",
+      "upToRank": 100
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "rank": 1,
+      "tier": "P0",
+      "category": "地图",
+      "title": "CEX 订单簿 vs DEX AMM 定价差异",
+      "prompt": "说明价格发现机制不同带来的操纵面差异。",
+      "keywords": [
+        "CEX",
+        "DEX",
+        "AMM"
+      ]
+    },
+    {
+      "id": "q002",
+      "rank": 2,
+      "tier": "P0",
+      "category": "地图",
+      "title": "托管与非托管的本质边界",
+      "prompt": "用户资产在法律与技术层面分别由谁控制。",
+      "keywords": [
+        "托管"
+      ]
+    },
+    {
+      "id": "q003",
+      "rank": 3,
+      "tier": "P0",
+      "category": "地图",
+      "title": "充值提现为何是 CEX 风控核心",
+      "prompt": "对比链上 swap 的风控责任主体。",
+      "keywords": [
+        "充值",
+        "提现"
+      ]
+    },
+    {
+      "id": "q004",
+      "rank": 4,
+      "tier": "P0",
+      "category": "地图",
+      "title": "DeFi 借贷清算流程",
+      "prompt": "说明清算 bot 与连锁风险。",
+      "keywords": [
+        "借贷",
+        "清算"
+      ]
+    },
+    {
+      "id": "q005",
+      "rank": 5,
+      "tier": "P0",
+      "category": "地图",
+      "title": "稳定币在 CEX 与 DeFi 的角色",
+      "prompt": "说明脱锚事件的风控响应。",
+      "keywords": [
+        "稳定币"
+      ]
+    },
+    {
+      "id": "q006",
+      "rank": 6,
+      "tier": "P0",
+      "category": "对比",
+      "title": "CEX 内部账本欺诈与链上透明性",
+      "prompt": "说明各自调查手段。",
+      "keywords": [
+        "账本"
+      ]
+    },
+    {
+      "id": "q007",
+      "rank": 7,
+      "tier": "P0",
+      "category": "对比",
+      "title": "DEX 滑点保护与用户教育",
+      "prompt": "产品如何提示 impermanent loss 与滑点。",
+      "keywords": [
+        "滑点"
+      ]
+    },
+    {
+      "id": "q008",
+      "rank": 8,
+      "tier": "P0",
+      "category": "对比",
+      "title": "上币流程中的合约审计作用",
+      "prompt": "风控在 listing 中的职责。",
+      "keywords": [
+        "上币"
+      ]
+    },
+    {
+      "id": "q009",
+      "rank": 9,
+      "tier": "P0",
+      "category": "对比",
+      "title": "Launchpad 与 IEO 套利风险",
+      "prompt": "关联活动风控经验。",
+      "keywords": [
+        "Launchpad"
+      ]
+    },
+    {
+      "id": "q010",
+      "rank": 10,
+      "tier": "P0",
+      "category": "对比",
+      "title": "OTC 台与订单簿交易合规差异",
+      "prompt": "说明场外交易监控难点。",
+      "keywords": [
+        "OTC"
+      ]
+    },
+    {
+      "id": "q011",
+      "rank": 11,
+      "tier": "P0",
+      "category": "业务",
+      "title": "衍生品 业务的风控关注点（11）",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q012",
+      "rank": 12,
+      "tier": "P0",
+      "category": "业务",
+      "title": "期权 业务的风控关注点（12）",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q013",
+      "rank": 13,
+      "tier": "P0",
+      "category": "业务",
+      "title": "永续 业务的风控关注点（13）",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q014",
+      "rank": 14,
+      "tier": "P0",
+      "category": "业务",
+      "title": "网格 业务的风控关注点（14）",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q015",
+      "rank": 15,
+      "tier": "P0",
+      "category": "业务",
+      "title": "做市 业务的风控关注点（15）",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q016",
+      "rank": 16,
+      "tier": "P0",
+      "category": "业务",
+      "title": "跨链桥 业务的风控关注点（16）",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q017",
+      "rank": 17,
+      "tier": "P0",
+      "category": "业务",
+      "title": "包装资产 业务的风控关注点（17）",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q018",
+      "rank": 18,
+      "tier": "P0",
+      "category": "业务",
+      "title": "LP 业务的风控关注点（18）",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q019",
+      "rank": 19,
+      "tier": "P0",
+      "category": "业务",
+      "title": "治理 业务的风控关注点（19）",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q020",
+      "rank": 20,
+      "tier": "P0",
+      "category": "业务",
+      "title": "闪电贷 业务的风控关注点（20）",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q021",
+      "rank": 21,
+      "tier": "P1",
+      "category": "业务",
+      "title": "衍生品 业务的风控关注点（21）",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q022",
+      "rank": 22,
+      "tier": "P1",
+      "category": "业务",
+      "title": "期权 业务的风控关注点（22）",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q023",
+      "rank": 23,
+      "tier": "P1",
+      "category": "业务",
+      "title": "永续 业务的风控关注点（23）",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q024",
+      "rank": 24,
+      "tier": "P1",
+      "category": "业务",
+      "title": "网格 业务的风控关注点（24）",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q025",
+      "rank": 25,
+      "tier": "P1",
+      "category": "业务",
+      "title": "做市 业务的风控关注点（25）",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q026",
+      "rank": 26,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点（26）",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q027",
+      "rank": 27,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点（27）",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q028",
+      "rank": 28,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点（28）",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q029",
+      "rank": 29,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点（29）",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q030",
+      "rank": 30,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点（30）",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q031",
+      "rank": 31,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "衍生品 业务的风控关注点（31）",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q032",
+      "rank": 32,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "期权 业务的风控关注点（32）",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q033",
+      "rank": 33,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "永续 业务的风控关注点（33）",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q034",
+      "rank": 34,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "网格 业务的风控关注点（34）",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q035",
+      "rank": 35,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "做市 业务的风控关注点（35）",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q036",
+      "rank": 36,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点（36）",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q037",
+      "rank": 37,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点（37）",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q038",
+      "rank": 38,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点（38）",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q039",
+      "rank": 39,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点（39）",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q040",
+      "rank": 40,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点（40）",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q041",
+      "rank": 41,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "衍生品 业务的风控关注点（41）",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q042",
+      "rank": 42,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "期权 业务的风控关注点（42）",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q043",
+      "rank": 43,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "永续 业务的风控关注点（43）",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q044",
+      "rank": 44,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "网格 业务的风控关注点（44）",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q045",
+      "rank": 45,
+      "tier": "P1",
+      "category": "扩展",
+      "title": "做市 业务的风控关注点（45）",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q046",
+      "rank": 46,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点（46）",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q047",
+      "rank": 47,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点（47）",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q048",
+      "rank": 48,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点（48）",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q049",
+      "rank": 49,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点（49）",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q050",
+      "rank": 50,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点（50）",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q051",
+      "rank": 51,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "衍生品 业务的风控关注点（51）",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q052",
+      "rank": 52,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "期权 业务的风控关注点（52）",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q053",
+      "rank": 53,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "永续 业务的风控关注点（53）",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q054",
+      "rank": 54,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "网格 业务的风控关注点（54）",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q055",
+      "rank": 55,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "做市 业务的风控关注点（55）",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q056",
+      "rank": 56,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点（56）",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q057",
+      "rank": 57,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点（57）",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q058",
+      "rank": 58,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点（58）",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q059",
+      "rank": 59,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点（59）",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q060",
+      "rank": 60,
+      "tier": "P2",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点（60）",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q061",
+      "rank": 61,
+      "tier": "P2",
+      "category": "深化",
+      "title": "CEX 订单簿 vs DEX AMM 定价差异 · 训练 61",
+      "prompt": "说明价格发现机制不同带来的操纵面差异。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "CEX",
+        "DEX",
+        "AMM"
+      ]
+    },
+    {
+      "id": "q062",
+      "rank": 62,
+      "tier": "P2",
+      "category": "深化",
+      "title": "托管与非托管的本质边界 · 训练 62",
+      "prompt": "用户资产在法律与技术层面分别由谁控制。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "托管"
+      ]
+    },
+    {
+      "id": "q063",
+      "rank": 63,
+      "tier": "P2",
+      "category": "深化",
+      "title": "充值提现为何是 CEX 风控核心 · 训练 63",
+      "prompt": "对比链上 swap 的风控责任主体。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "充值",
+        "提现"
+      ]
+    },
+    {
+      "id": "q064",
+      "rank": 64,
+      "tier": "P2",
+      "category": "深化",
+      "title": "DeFi 借贷清算流程 · 训练 64",
+      "prompt": "说明清算 bot 与连锁风险。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "借贷",
+        "清算"
+      ]
+    },
+    {
+      "id": "q065",
+      "rank": 65,
+      "tier": "P2",
+      "category": "深化",
+      "title": "稳定币在 CEX 与 DeFi 的角色 · 训练 65",
+      "prompt": "说明脱锚事件的风控响应。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "稳定币"
+      ]
+    },
+    {
+      "id": "q066",
+      "rank": 66,
+      "tier": "P2",
+      "category": "深化",
+      "title": "CEX 内部账本欺诈与链上透明性 · 训练 66",
+      "prompt": "说明各自调查手段。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "账本"
+      ]
+    },
+    {
+      "id": "q067",
+      "rank": 67,
+      "tier": "P2",
+      "category": "深化",
+      "title": "DEX 滑点保护与用户教育 · 训练 67",
+      "prompt": "产品如何提示 impermanent loss 与滑点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "滑点"
+      ]
+    },
+    {
+      "id": "q068",
+      "rank": 68,
+      "tier": "P2",
+      "category": "深化",
+      "title": "上币流程中的合约审计作用 · 训练 68",
+      "prompt": "风控在 listing 中的职责。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "上币"
+      ]
+    },
+    {
+      "id": "q069",
+      "rank": 69,
+      "tier": "P2",
+      "category": "深化",
+      "title": "Launchpad 与 IEO 套利风险 · 训练 69",
+      "prompt": "关联活动风控经验。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "Launchpad"
+      ]
+    },
+    {
+      "id": "q070",
+      "rank": 70,
+      "tier": "P2",
+      "category": "深化",
+      "title": "OTC 台与订单簿交易合规差异 · 训练 70",
+      "prompt": "说明场外交易监控难点。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "OTC"
+      ]
+    },
+    {
+      "id": "q071",
+      "rank": 71,
+      "tier": "P2",
+      "category": "深化",
+      "title": "衍生品 业务的风控关注点 · 训练 71",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q072",
+      "rank": 72,
+      "tier": "P2",
+      "category": "深化",
+      "title": "期权 业务的风控关注点 · 训练 72",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q073",
+      "rank": 73,
+      "tier": "P2",
+      "category": "深化",
+      "title": "永续 业务的风控关注点 · 训练 73",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q074",
+      "rank": 74,
+      "tier": "P2",
+      "category": "深化",
+      "title": "网格 业务的风控关注点 · 训练 74",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q075",
+      "rank": 75,
+      "tier": "P2",
+      "category": "深化",
+      "title": "做市 业务的风控关注点 · 训练 75",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q076",
+      "rank": 76,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点 · 训练 76",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q077",
+      "rank": 77,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点 · 训练 77",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q078",
+      "rank": 78,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点 · 训练 78",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q079",
+      "rank": 79,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点 · 训练 79",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q080",
+      "rank": 80,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点 · 训练 80",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q081",
+      "rank": 81,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "衍生品 业务的风控关注点 · 训练 81",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q082",
+      "rank": 82,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "期权 业务的风控关注点 · 训练 82",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q083",
+      "rank": 83,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "永续 业务的风控关注点 · 训练 83",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q084",
+      "rank": 84,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "网格 业务的风控关注点 · 训练 84",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q085",
+      "rank": 85,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "做市 业务的风控关注点 · 训练 85",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q086",
+      "rank": 86,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点 · 训练 86",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q087",
+      "rank": 87,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点 · 训练 87",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q088",
+      "rank": 88,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点 · 训练 88",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q089",
+      "rank": 89,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点 · 训练 89",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q090",
+      "rank": 90,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点 · 训练 90",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "闪电贷"
+      ]
+    },
+    {
+      "id": "q091",
+      "rank": 91,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "衍生品 业务的风控关注点 · 训练 91",
+      "prompt": "说明 衍生品 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "衍生品"
+      ]
+    },
+    {
+      "id": "q092",
+      "rank": 92,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "期权 业务的风控关注点 · 训练 92",
+      "prompt": "说明 期权 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "期权"
+      ]
+    },
+    {
+      "id": "q093",
+      "rank": 93,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "永续 业务的风控关注点 · 训练 93",
+      "prompt": "说明 永续 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "永续"
+      ]
+    },
+    {
+      "id": "q094",
+      "rank": 94,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "网格 业务的风控关注点 · 训练 94",
+      "prompt": "说明 网格 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "网格"
+      ]
+    },
+    {
+      "id": "q095",
+      "rank": 95,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "做市 业务的风控关注点 · 训练 95",
+      "prompt": "说明 做市 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "做市"
+      ]
+    },
+    {
+      "id": "q096",
+      "rank": 96,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "跨链桥 业务的风控关注点 · 训练 96",
+      "prompt": "说明 跨链桥 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "跨链桥"
+      ]
+    },
+    {
+      "id": "q097",
+      "rank": 97,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "包装资产 业务的风控关注点 · 训练 97",
+      "prompt": "说明 包装资产 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "包装资产"
+      ]
+    },
+    {
+      "id": "q098",
+      "rank": 98,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "LP 业务的风控关注点 · 训练 98",
+      "prompt": "说明 LP 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "LP"
+      ]
+    },
+    {
+      "id": "q099",
+      "rank": 99,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "治理 业务的风控关注点 · 训练 99",
+      "prompt": "说明 治理 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "治理"
+      ]
+    },
+    {
+      "id": "q100",
+      "rank": 100,
+      "tier": "P3",
+      "category": "扩展",
+      "title": "闪电贷 业务的风控关注点 · 训练 100",
+      "prompt": "说明 闪电贷 在 CEX/DEX/DeFi 中对应的风险信号与调查入口。 请补充业务场景、风险信号与可执行动作。",
+      "keywords": [
+        "闪电贷"
+      ]
+    }
+  ]
+}
