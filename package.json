@@ -1,0 +1,10 @@
+{
+  "name": "web3-career-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal Web3 Risk AI career transition dashboard and learning system.",
+  "scripts": {
+    "serve": "python3 -m http.server 4174",
+    "test": "node tests/site-contract.test.mjs"
+  }
+}
