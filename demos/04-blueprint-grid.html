@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo 04 · Blueprint Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0a1628;
+        --grid: rgba(77, 232, 255, 0.08);
+        --line: rgba(77, 232, 255, 0.35);
+        --ink: #e8f4ff;
+        --muted: #7aa3c4;
+        --cyan: #4de8ff;
+        --blue: #1a5a8a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background-color: var(--bg);
+        background-image:
+          linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+        background-size: 24px 24px;
+        color: var(--ink);
+        font-family: "Barlow", system-ui, sans-serif;
+        min-height: 100vh;
+      }
+      .frame {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 28px 20px 64px;
+        border-left: 1px solid var(--line);
+        border-right: 1px solid var(--line);
+        min-height: 100vh;
+        position: relative;
+      }
+      .frame::before, .frame::after {
+        content: "BLUEPRINT v04";
+        position: absolute;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.65rem;
+        color: var(--cyan);
+        letter-spacing: 0.2em;
+        opacity: 0.6;
+      }
+      .frame::before { top: 8px; left: 12px; }
+      .frame::after { bottom: 8px; right: 12px; }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid var(--line);
+        padding: 18px 20px;
+        margin-bottom: 20px;
+        background: rgba(10, 22, 40, 0.85);
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .header h1 {
+        font-family: "Share Tech Mono", monospace;
+        font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+        margin: 6px 0;
+        color: var(--cyan);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .dim { font-size: 0.78rem; color: var(--muted); font-family: "Share Tech Mono", monospace; }
+      .header a { color: var(--cyan); font-size: 0.78rem; font-family: "Share Tech Mono", monospace; }
+      .layout {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 16px;
+      }
+      @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
+      .side, .main-block {
+        border: 1px solid var(--line);
+        background: rgba(10, 22, 40, 0.75);
+        padding: 16px;
+      }
+      .side button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.72rem;
+        background: transparent;
+        border: 1px solid transparent;
+        color: var(--muted);
+        padding: 10px 8px;
+        cursor: pointer;
+        margin-bottom: 4px;
+      }
+      .side button:hover { border-color: var(--line); color: var(--ink); }
+      .side button.is-active {
+        border-color: var(--cyan);
+        color: var(--cyan);
+        background: rgba(77, 232, 255, 0.06);
+      }
+      .gauge {
+        border: 1px solid var(--line);
+        padding: 14px;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .gauge strong {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 2.2rem;
+        color: var(--cyan);
+        display: block;
+      }
+      .spec {
+        border: 1px dashed var(--line);
+        padding: 14px;
+        margin-bottom: 12px;
+        position: relative;
+      }
+      .spec::before {
+        content: attr(data-id);
+        position: absolute;
+        top: -8px;
+        left: 10px;
+        background: var(--bg);
+        padding: 0 6px;
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.65rem;
+        color: var(--cyan);
+      }
+      .spec h3 { margin: 0 0 6px; font-size: 0.95rem; }
+      .spec p { margin: 0; color: var(--muted); font-size: 0.85rem; }
+      .spec-foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .toggle {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.68rem;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--muted);
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      .toggle.done { color: var(--cyan); border-color: var(--cyan); }
+      .toggle.doing { color: #ffd166; border-color: #ffd166; }
+      .input-block {
+        border: 1px solid var(--line);
+        padding: 16px;
+        margin-top: 16px;
+        background: rgba(26, 90, 138, 0.15);
+      }
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--line);
+        color: var(--ink);
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.78rem;
+        padding: 12px;
+        resize: vertical;
+      }
+      .actions { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+      .btn {
+        font-family: "Share Tech Mono", monospace;
+        font-size: 0.72rem;
+        border: 1px solid var(--cyan);
+        background: rgba(77, 232, 255, 0.1);
+        color: var(--cyan);
+        padding: 8px 14px;
+        cursor: pointer;
+      }
+      .btn.ghost { border-color: var(--line); color: var(--muted); background: transparent; }
+      .output {
+        margin-top: 12px;
+        font-size: 0.85rem;
+        color: var(--muted);
+        border-left: 2px solid var(--cyan);
+        padding-left: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame" id="app"></div>
+    <script type="module">
+      import {
+        loadPlan, loadProgress, saveProgress, escapeHtml,
+        calculateOverallProgress, calculateTrackProgress, getNextModule,
+        moduleKey, statusLabels, scoreReflection, activeModule,
+      } from "./demo-core.mjs";
+
+      let plan, activeTrackId, progress = loadProgress(), reflection = "", feedback = null;
+
+      function cycleStatus(trackId, moduleId) {
+        const key = moduleKey(trackId, moduleId);
+        const cycle = ["todo", "doing", "done"];
+        progress = { ...progress, [key]: cycle[(cycle.indexOf(progress[key] || "todo") + 1) % 3] };
+        saveProgress(progress);
+        render();
+      }
+
+      function render() {
+        const track = plan.tracks.find((t) => t.id === activeTrackId);
+        const overall = calculateOverallProgress(plan.tracks, progress);
+        const next = getNextModule(plan.tracks, progress);
+        const mod = activeModule(track, progress);
+
+        document.getElementById("app").innerHTML = `
+          <header class="header">
+            <div>
+              <div class="dim">SYS::WEB3_CAREER_OS</div>
+              <h1>${escapeHtml(plan.persona.headline)}</h1>
+              <p class="dim" style="max-width:52ch;margin:0">${escapeHtml(plan.persona.positioning)}</p>
+            </div>
+            <div class="dim" style="text-align:right">
+              <div><a href="index.html">选型</a> · <a href="../index.html">正式版</a></div>
+              <div style="margin-top:8px">NEXT::${next ? escapeHtml(next.id || next.title) : "PORTFOLIO"}</div>
+            </div>
+          </header>
+
+          <div class="layout">
+            <aside class="side">
+              <div class="gauge">
+                <span class="dim">OVERALL</span>
+                <strong>${overall}%</strong>
+              </div>
+              <div class="dim" style="margin-bottom:10px">TRACK_SELECT</div>
+              ${plan.tracks.map((t) => `
+                <button class="${t.id === activeTrackId ? "is-active" : ""}" data-track="${t.id}">
+                  ${escapeHtml(t.title)} [${calculateTrackProgress(t, progress)}%]
+                </button>
+              `).join("")}
+            </aside>
+
+            <div class="main-block">
+              <div class="dim" style="margin-bottom:12px">
+                MODULE_SPEC · ${escapeHtml(track.title)} · ${calculateTrackProgress(track, progress)}%
+              </div>
+              ${track.modules.map((m, i) => {
+                const st = progress[moduleKey(track.id, m.id)] || "todo";
+                return `
+                  <article class="spec" data-id="M${String(i + 1).padStart(2, "0")}">
+                    <h3>${escapeHtml(m.title)}</h3>
+                    <p>${escapeHtml(m.task)}</p>
+                    <div class="spec-foot">
+                      <span class="dim">${escapeHtml(m.feedbackPrompt)}</span>
+                      <button class="toggle ${st}" data-track="${track.id}" data-module="${m.id}">${statusLabels[st]}</button>
+                    </div>
+                  </article>
+                `;
+              }).join("")}
+
+              <div class="input-block">
+                <div class="dim">REFLECTION_INPUT · ${escapeHtml(mod.title)}</div>
+                <textarea id="reflection">${escapeHtml(reflection)}</textarea>
+                <div class="actions">
+                  <button class="btn" id="score">EXEC score()</button>
+                  <button class="btn ghost" id="reset">RESET</button>
+                </div>
+                ${feedback ? `<div class="output"><strong style="color:var(--cyan)">${feedback.score}</strong> — ${escapeHtml(feedback.message)}</div>` : ""}
+              </div>
+            </div>
+          </div>
+        `;
+        bind();
+      }
+
+      function bind() {
+        const root = document.getElementById("app");
+        root.querySelectorAll("[data-track]").forEach((btn) => {
+          if (btn.classList.contains("toggle")) return;
+          btn.onclick = () => { activeTrackId = btn.dataset.track; reflection = ""; feedback = null; render(); };
+        });
+        root.querySelectorAll(".toggle").forEach((btn) => {
+          btn.onclick = () => cycleStatus(btn.dataset.track, btn.dataset.module);
+        });
+        root.querySelector("#reflection").oninput = (e) => { reflection = e.target.value; };
+        root.querySelector("#score").onclick = () => {
+          const track = plan.tracks.find((t) => t.id === activeTrackId);
+          feedback = scoreReflection(reflection, activeModule(track, progress).keywords);
+          render();
+        };
+        root.querySelector("#reset").onclick = () => {
+          progress = {}; reflection = ""; feedback = null; saveProgress(progress); render();
+        };
+      }
+
+      loadPlan().then((data) => { plan = data; activeTrackId = plan.tracks[0].id; render(); });
+    </script>
+  </body>
+</html>

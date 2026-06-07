@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": "onchain-risk-dashboard",
+      "title": "链上地址风险画像看板",
+      "targetRoles": [
+        "On-chain Risk Intelligence Engineer",
+        "Crypto Fraud Risk Engineer"
+      ],
+      "value": "把地址标签、资金流、风险评分和人工复核记录可视化，证明你能把链上数据变成调查与决策输入。",
+      "stack": ["Python", "图数据库/图谱", "链上 API", "React 或 Streamlit"],
+      "progress": 15,
+      "gaps": ["地址标签体系定义", "资金流路径可视化", "风险评分口径与误伤处理"],
+      "readmeStatus": "未开始",
+      "demoStatus": "未开始",
+      "interviewAngle": "强调从「审核台字段设计」到「链上实体画像」的迁移，突出调查效率与可解释性。",
+      "nextTasks": [
+        "完成地址标签 v0.1 数据模型",
+        "做一个 3-hop 资金流 Demo",
+        "写 README：业务价值 + 架构图 + 局限"
+      ],
+      "relatedTrackId": "onchain-data",
+      "link": "projects/"
+    },
+    {
+      "id": "withdrawal-rule-engine",
+      "title": "Crypto 提现风控规则引擎",
+      "targetRoles": [
+        "Crypto Fraud Risk Engineer",
+        "Web3 Risk AI Architect"
+      ],
+      "value": "把账户、设备、行为、链上地址四类信号组合成可解释的提现拦截与人工复核链路，直接对应 CEX 风控岗。",
+      "stack": ["Java / Python", "规则引擎", "实时特征", "审计日志"],
+      "progress": 10,
+      "gaps": ["规则 DSL 设计", "信号组合与优先级", "人工复核闭环与指标"],
+      "readmeStatus": "未开始",
+      "demoStatus": "未开始",
+      "interviewAngle": "用阿里/小红书提现与活动风控规模讲「策略—指标—误伤—复盘」闭环，再映射到 Crypto 场景。",
+      "nextTasks": [
+        "列出 12 条提现拦截规则及触发条件",
+        "设计 review 台字段与升级路径",
+        "模拟 3 个案件走完整决策链"
+      ],
+      "relatedTrackId": "exchange-risk",
+      "link": "projects/"
+    },
+    {
+      "id": "compliance-ai-copilot",
+      "title": "AI 合规调查助手",
+      "targetRoles": [
+        "Compliance AI Agent Engineer",
+        "Web3 Risk AI Architect"
+      ],
+      "value": "输入案件上下文，输出摘要、风险解释、缺失证据与下一步人工动作，展示 Agent + 风控护栏能力。",
+      "stack": ["Python", "Dify / Agent", "链上查询工具", "审计与权限"],
+      "progress": 20,
+      "gaps": ["工具调用边界", "幻觉与权限护栏", "案件摘要评估指标"],
+      "readmeStatus": "规划中",
+      "demoStatus": "未开始",
+      "interviewAngle": "强调「AI 辅助调查而非自动判罚」，突出人工兜底、审计留痕与红队意识。",
+      "nextTasks": [
+        "定义 Risk Copilot 输入/输出 JSON Schema",
+        "在 Dify 搭一个最小案件摘要流",
+        "写 5 条 AI 不可自动决策的红线"
+      ],
+      "relatedTrackId": "ai-agent-risk",
+      "link": "notes/dify/"
+    }
+  ]
+}

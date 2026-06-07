@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo 05 · Ops Console</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --sidebar: #2c3440;
+        --sidebar-text: #c8d0da;
+        --bg: #eceae6;
+        --surface: #ffffff;
+        --ink: #1e2430;
+        --muted: #6b7280;
+        --accent: #3d7a5c;
+        --accent-soft: #e8f2ec;
+        --warn: #b45309;
+        --line: #d8d4cc;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        font-size: 14px;
+        color: var(--ink);
+        background: var(--bg);
+        min-height: 100vh;
+      }
+      .console {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        min-height: 100vh;
+      }
+      @media (max-width: 900px) {
+        .console { grid-template-columns: 1fr; }
+        .sidebar { border-bottom: 1px solid rgba(255,255,255,0.08); }
+      }
+      .sidebar {
+        background: var(--sidebar);
+        color: var(--sidebar-text);
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .sidebar-brand {
+        padding: 0 18px 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        margin-bottom: 12px;
+      }
+      .sidebar-brand strong {
+        display: block;
+        color: white;
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+      }
+      .sidebar-brand span { font-size: 0.75rem; opacity: 0.7; }
+      .nav-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        border: none;
+        color: var(--sidebar-text);
+        padding: 11px 18px;
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.82rem;
+        border-left: 3px solid transparent;
+      }
+      .nav-item:hover { background: rgba(255, 255, 255, 0.05); }
+      .nav-item.is-active {
+        background: rgba(61, 122, 92, 0.25);
+        border-left-color: var(--accent);
+        color: white;
+      }
+      .nav-item em {
+        font-style: normal;
+        font-size: 0.72rem;
+        opacity: 0.65;
+      }
+      .sidebar-footer {
+        margin-top: auto;
+        padding: 16px 18px;
+        font-size: 0.75rem;
+        opacity: 0.6;
+      }
+      .sidebar-footer a { color: #9fd4b8; }
+      .main { padding: 24px 28px 48px; overflow: auto; }
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .toolbar h1 { margin: 0; font-size: 1.25rem; font-weight: 600; }
+      .stats {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .stat {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+      .stat strong { color: var(--accent); margin-left: 6px; }
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        margin-bottom: 16px;
+        overflow: hidden;
+      }
+      .panel-head {
+        padding: 12px 16px;
+        background: var(--accent-soft);
+        border-bottom: 1px solid var(--line);
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--accent);
+      }
+      .ticket {
+        display: grid;
+        grid-template-columns: 72px 1fr auto;
+        gap: 14px;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--line);
+        align-items: start;
+      }
+      .ticket:last-child { border-bottom: none; }
+      .ticket-id {
+        font-size: 0.72rem;
+        color: var(--muted);
+        font-weight: 600;
+        padding-top: 2px;
+      }
+      .ticket h3 { margin: 0 0 4px; font-size: 0.92rem; }
+      .ticket p { margin: 0; color: var(--muted); font-size: 0.82rem; }
+      .ticket span.hint { display: block; margin-top: 6px; font-size: 0.75rem; color: #9ca3af; }
+      .state {
+        font-size: 0.72rem;
+        font-weight: 600;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: 1px solid var(--line);
+        background: var(--bg);
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .state.doing { border-color: var(--warn); color: var(--warn); background: #fff7ed; }
+      .state.done { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+      .reflect-body { padding: 16px; }
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px;
+        font: inherit;
+        font-size: 0.88rem;
+        resize: vertical;
+      }
+      .actions { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+      .btn {
+        font: inherit;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        background: var(--accent);
+        color: white;
+      }
+      .btn.ghost { background: var(--surface); color: var(--muted); border: 1px solid var(--line); }
+      .feedback {
+        margin-top: 14px;
+        padding: 12px 14px;
+        background: var(--accent-soft);
+        border-radius: 8px;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .feedback strong { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="console" id="app"></div>
+    <script type="module">
+      import {
+        loadPlan, loadProgress, saveProgress, escapeHtml,
+        calculateOverallProgress, calculateTrackProgress, getNextModule,
+        moduleKey, statusLabels, scoreReflection, activeModule,
+      } from "./demo-core.mjs";
+
+      let plan, activeTrackId, progress = loadProgress(), reflection = "", feedback = null;
+
+      function cycleStatus(trackId, moduleId) {
+        const key = moduleKey(trackId, moduleId);
+        const cycle = ["todo", "doing", "done"];
+        progress = { ...progress, [key]: cycle[(cycle.indexOf(progress[key] || "todo") + 1) % 3] };
+        saveProgress(progress);
+        render();
+      }
+
+      function render() {
+        const track = plan.tracks.find((t) => t.id === activeTrackId);
+        const overall = calculateOverallProgress(plan.tracks, progress);
+        const next = getNextModule(plan.tracks, progress);
+        const mod = activeModule(track, progress);
+
+        document.getElementById("app").innerHTML = `
+          <aside class="sidebar">
+            <div class="sidebar-brand">
+              <strong>Web3 Career OS</strong>
+              <span>Ops Console · Demo 05</span>
+            </div>
+            ${plan.tracks.map((t) => `
+              <button class="nav-item ${t.id === activeTrackId ? "is-active" : ""}" data-track="${t.id}">
+                <span>${escapeHtml(t.title)}</span>
+                <em>${calculateTrackProgress(t, progress)}%</em>
+              </button>
+            `).join("")}
+            <div class="sidebar-footer">
+              <div>总进度 ${overall}%</div>
+              <div style="margin-top:8px"><a href="index.html">选型</a> · <a href="../index.html">正式版</a></div>
+            </div>
+          </aside>
+
+          <main class="main">
+            <div class="toolbar">
+              <h1>${escapeHtml(track.title)}</h1>
+              <div class="stats">
+                <div class="stat">轨道<strong>${calculateTrackProgress(track, progress)}%</strong></div>
+                <div class="stat">下一步<strong>${next ? escapeHtml(next.title) : "作品集"}</strong></div>
+              </div>
+            </div>
+
+            <p style="color:var(--muted);margin:-8px 0 18px;font-size:0.88rem">${escapeHtml(track.focus)}</p>
+
+            <div class="panel">
+              <div class="panel-head">模块工单 · ${track.modules.length} items</div>
+              ${track.modules.map((m, i) => {
+                const st = progress[moduleKey(track.id, m.id)] || "todo";
+                return `
+                  <article class="ticket">
+                    <div class="ticket-id">#${String(i + 1).padStart(3, "0")}</div>
+                    <div>
+                      <h3>${escapeHtml(m.title)}</h3>
+                      <p>${escapeHtml(m.task)}</p>
+                      <span class="hint">${escapeHtml(m.feedbackPrompt)}</span>
+                    </div>
+                    <button class="state ${st}" data-track="${track.id}" data-module="${m.id}">${statusLabels[st]}</button>
+                  </article>
+                `;
+              }).join("")}
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">反思审核 · ${escapeHtml(mod.title)}</div>
+              <div class="reflect-body">
+                <textarea id="reflection" placeholder="业务场景 → 风险信号 → 策略动作 → 复盘闭环">${escapeHtml(reflection)}</textarea>
+                <div class="actions">
+                  <button class="btn" id="score">提交并评分</button>
+                  <button class="btn ghost" id="reset">重置全部进度</button>
+                </div>
+                ${feedback ? `<div class="feedback"><strong>${feedback.score} 分</strong> — ${escapeHtml(feedback.message)}</div>` : ""}
+              </div>
+            </div>
+          </main>
+        `;
+        bind();
+      }
+
+      function bind() {
+        const root = document.getElementById("app");
+        root.querySelectorAll(".nav-item").forEach((btn) => {
+          btn.onclick = () => { activeTrackId = btn.dataset.track; reflection = ""; feedback = null; render(); };
+        });
+        root.querySelectorAll(".state").forEach((btn) => {
+          btn.onclick = () => cycleStatus(btn.dataset.track, btn.dataset.module);
+        });
+        root.querySelector("#reflection").oninput = (e) => { reflection = e.target.value; };
+        root.querySelector("#score").onclick = () => {
+          const track = plan.tracks.find((t) => t.id === activeTrackId);
+          feedback = scoreReflection(reflection, activeModule(track, progress).keywords);
+          render();
+        };
+        root.querySelector("#reset").onclick = () => {
+          progress = {}; reflection = ""; feedback = null; saveProgress(progress); render();
+        };
+      }
+
+      loadPlan().then((data) => { plan = data; activeTrackId = plan.tracks[0].id; render(); });
+    </script>
+  </body>
+</html>

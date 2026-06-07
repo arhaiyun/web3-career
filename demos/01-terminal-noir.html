@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo 01 · Terminal Noir</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #050807;
+        --panel: #0c100e;
+        --line: #1e2e24;
+        --ink: #d8f5e4;
+        --muted: #6b8f78;
+        --green: #39ff14;
+        --amber: #ffb000;
+        --red: #ff4d4d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(0, 0, 0, 0.15) 2px,
+          rgba(0, 0, 0, 0.15) 4px
+        );
+        opacity: 0.35;
+      }
+      .shell { max-width: 1180px; margin: 0 auto; padding: 24px 20px 60px; position: relative; z-index: 1; }
+      .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        color: var(--muted);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 14px;
+        margin-bottom: 28px;
+      }
+      .bar a { color: var(--green); text-decoration: none; }
+      .bar a:hover { text-decoration: underline; }
+      .prompt { color: var(--green); }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 20px;
+        margin-bottom: 24px;
+      }
+      @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        padding: 20px;
+        box-shadow: inset 0 0 0 1px rgba(57, 255, 20, 0.04);
+      }
+      h1 {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        margin: 8px 0 12px;
+        color: var(--green);
+        text-shadow: 0 0 24px rgba(57, 255, 20, 0.25);
+      }
+      .sub { color: var(--muted); margin: 0; }
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .stat {
+        border: 1px dashed var(--line);
+        padding: 12px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.8rem;
+      }
+      .stat strong { display: block; font-size: 1.4rem; color: var(--amber); margin-top: 4px; }
+      .tracks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      .track-btn {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        background: transparent;
+        color: var(--muted);
+        border: 1px solid var(--line);
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+      .track-btn.is-active {
+        color: var(--bg);
+        background: var(--green);
+        border-color: var(--green);
+      }
+      .module {
+        display: grid;
+        grid-template-columns: 48px 1fr auto;
+        gap: 14px;
+        align-items: start;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .idx {
+        font-family: "IBM Plex Mono", monospace;
+        color: var(--amber);
+        font-size: 0.85rem;
+        padding-top: 2px;
+      }
+      .module h3 { margin: 0 0 6px; font-size: 1rem; }
+      .module p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+      .status {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--ink);
+        padding: 6px 10px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .status.done { border-color: var(--green); color: var(--green); }
+      .status.doing { border-color: var(--amber); color: var(--amber); }
+      .feedback-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 24px;
+      }
+      @media (max-width: 760px) { .feedback-grid { grid-template-columns: 1fr; } }
+      textarea {
+        width: 100%;
+        min-height: 160px;
+        background: #080b09;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.82rem;
+        padding: 14px;
+        resize: vertical;
+      }
+      .actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+      .btn {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        padding: 10px 14px;
+        border: 1px solid var(--green);
+        background: rgba(57, 255, 20, 0.08);
+        color: var(--green);
+        cursor: pointer;
+      }
+      .btn.ghost { border-color: var(--line); color: var(--muted); background: transparent; }
+      .result {
+        margin-top: 14px;
+        padding: 12px;
+        border-left: 3px solid var(--amber);
+        background: rgba(255, 176, 0, 0.06);
+        font-size: 0.88rem;
+      }
+      .result strong { color: var(--amber); font-family: "IBM Plex Mono", monospace; }
+      .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+      .tags span {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.68rem;
+        border: 1px solid var(--line);
+        padding: 3px 8px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell" id="app">$ loading career_os...</div>
+    <script type="module">
+      import {
+        loadPlan, loadProgress, saveProgress, escapeHtml,
+        calculateOverallProgress, calculateTrackProgress, getNextModule,
+        moduleKey, statusLabels, scoreReflection, activeModule,
+      } from "./demo-core.mjs";
+
+      let plan, activeTrackId, progress = loadProgress(), reflection = "", feedback = null;
+
+      function cycleStatus(trackId, moduleId) {
+        const key = moduleKey(trackId, moduleId);
+        const cycle = ["todo", "doing", "done"];
+        const next = cycle[(cycle.indexOf(progress[key] || "todo") + 1) % 3];
+        progress = { ...progress, [key]: next };
+        saveProgress(progress);
+        render();
+      }
+
+      function render() {
+        const track = plan.tracks.find((t) => t.id === activeTrackId);
+        const overall = calculateOverallProgress(plan.tracks, progress);
+        const next = getNextModule(plan.tracks, progress);
+        const mod = activeModule(track, progress);
+        const app = document.getElementById("app");
+
+        app.innerHTML = `
+          <header class="bar">
+            <span><span class="prompt">arhaiyun@risk-ai</span>:~/web3-career $ career_os --demo=01</span>
+            <span>
+              <a href="index.html">[选型页]</a>
+              <a href="../index.html">[正式版]</a>
+            </span>
+          </header>
+
+          <section class="hero">
+            <div class="panel">
+              <span class="prompt">// persona.log</span>
+              <h1>${escapeHtml(plan.persona.headline)}</h1>
+              <p class="sub">${escapeHtml(plan.persona.positioning)}</p>
+              <div class="stat-row">
+                <div class="stat">OVERALL<strong>${overall}%</strong></div>
+                <div class="stat">TRACK<strong>${calculateTrackProgress(track, progress)}%</strong></div>
+                <div class="stat">NEXT<strong style="font-size:0.9rem;color:var(--green)">${next ? escapeHtml(next.title) : "DONE"}</strong></div>
+              </div>
+            </div>
+            <div class="panel">
+              <span class="prompt">// target_roles[]</span>
+              <div class="tags" style="margin-top:14px">
+                ${plan.persona.targetRoles.map((r) => `<span>${escapeHtml(r)}</span>`).join("")}
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <span class="prompt">// tracks.select()</span>
+            <div class="tracks" style="margin-top:14px">
+              ${plan.tracks.map((t) => `
+                <button class="track-btn ${t.id === activeTrackId ? "is-active" : ""}" data-track="${t.id}">
+                  ${escapeHtml(t.title)} · ${calculateTrackProgress(t, progress)}%
+                </button>
+              `).join("")}
+            </div>
+            <p class="sub">${escapeHtml(track.focus)}</p>
+            ${track.modules.map((m, i) => {
+              const st = progress[moduleKey(track.id, m.id)] || "todo";
+              return `
+                <article class="module">
+                  <span class="idx">${String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3>${escapeHtml(m.title)}</h3>
+                    <p>${escapeHtml(m.task)}</p>
+                  </div>
+                  <button class="status ${st}" data-track="${track.id}" data-module="${m.id}">${statusLabels[st]}</button>
+                </article>
+              `;
+            }).join("")}
+          </section>
+
+          <section class="feedback-grid">
+            <div class="panel">
+              <span class="prompt">// reflection.prompt</span>
+              <h3 style="margin:14px 0 8px">${escapeHtml(mod.title)}</h3>
+              <p class="sub">${escapeHtml(mod.feedbackPrompt)}</p>
+              <div class="tags">${mod.keywords.map((k) => `<span>${escapeHtml(k)}</span>`).join("")}</div>
+            </div>
+            <div class="panel">
+              <span class="prompt">// reflection.input</span>
+              <textarea id="reflection">${escapeHtml(reflection)}</textarea>
+              <div class="actions">
+                <button class="btn" id="score">run scoreReflection()</button>
+                <button class="btn ghost" id="reset">reset progress</button>
+              </div>
+              ${feedback ? `<div class="result"><strong>${feedback.score} pts</strong><p>${escapeHtml(feedback.message)}</p></div>` : ""}
+            </div>
+          </section>
+        `;
+
+        app.querySelectorAll("[data-track]").forEach((btn) => {
+          if (btn.classList.contains("status")) return;
+          btn.onclick = () => { activeTrackId = btn.dataset.track; reflection = ""; feedback = null; render(); };
+        });
+        app.querySelectorAll(".status").forEach((btn) => {
+          btn.onclick = () => cycleStatus(btn.dataset.track, btn.dataset.module);
+        });
+        app.querySelector("#reflection").oninput = (e) => { reflection = e.target.value; };
+        app.querySelector("#score").onclick = () => {
+          feedback = scoreReflection(reflection, mod.keywords);
+          render();
+        };
+        app.querySelector("#reset").onclick = () => {
+          progress = {}; reflection = ""; feedback = null; saveProgress(progress); render();
+        };
+      }
+
+      loadPlan().then((data) => {
+        plan = data;
+        activeTrackId = plan.tracks[0].id;
+        render();
+      });
+    </script>
+  </body>
+</html>

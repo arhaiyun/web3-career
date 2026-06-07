@@ -1,0 +1,144 @@
+{
+  "resources": [
+    {
+      "id": "res-feishu-wiki",
+      "title": "社区区块链 Wiki（飞书）",
+      "type": "文档",
+      "trackId": "web3-foundation",
+      "difficulty": "入门",
+      "purpose": "补概念",
+      "url": "https://kcno38rbm7bc.feishu.cn/wiki/TiwGwp1huiE6olkZkudcoE3LnZe",
+      "summary": "社区整理的 Web3 概念与路径索引，适合建立全局地图。"
+    },
+    {
+      "id": "res-tuling-search",
+      "title": "图灵学院 · 区块链课程检索",
+      "type": "视频",
+      "trackId": "web3-foundation",
+      "difficulty": "入门",
+      "purpose": "补概念",
+      "url": "https://vip.tulingxueyuan.cn/search/区块链",
+      "summary": "系统化视频课程，按章节补齐链上与合约基础。"
+    },
+    {
+      "id": "res-sgg-blockchain",
+      "title": "尚硅谷区块链全套教程",
+      "type": "视频",
+      "trackId": "web3-foundation",
+      "difficulty": "进阶",
+      "purpose": "学工具",
+      "url": "https://www.bilibili.com/video/BV1NJ411D7rf/",
+      "summary": "B 站完整教程，配合 Hardhat 实践消化 Solidity 与以太坊机制。"
+    },
+    {
+      "id": "res-chainlink-tutorial",
+      "title": "Web3_tutorial_Chinese（GitHub）",
+      "type": "项目",
+      "trackId": "web3-foundation",
+      "difficulty": "进阶",
+      "purpose": "做项目",
+      "url": "https://github.com/smartcontractkit/Web3_tutorial_Chinese",
+      "summary": "中文 Web3 教程仓库，适合跟做小型链上项目。"
+    },
+    {
+      "id": "res-hardhat-notes",
+      "title": "Hardhat 学习路径笔记",
+      "type": "文档",
+      "trackId": "web3-foundation",
+      "difficulty": "入门",
+      "purpose": "学工具",
+      "url": "notes/hardhat/",
+      "summary": "本仓库 Hardhat 四篇笔记，对接 projects/hardhat-learning。"
+    },
+    {
+      "id": "res-hardhat-project",
+      "title": "hardhat-learning 入门实践",
+      "type": "项目",
+      "trackId": "web3-foundation",
+      "difficulty": "入门",
+      "purpose": "做项目",
+      "url": "projects/hardhat-learning/",
+      "summary": "Greeter 合约编译、测试、部署，建立链上工程手感。"
+    },
+    {
+      "id": "res-cex-risk-framework",
+      "title": "交易所提现风控决策框架（自研笔记）",
+      "type": "面试素材",
+      "trackId": "exchange-risk",
+      "difficulty": "面试",
+      "purpose": "准备面试",
+      "url": "notes/career/web3-job-landscape.md",
+      "summary": "把阿里/小红书提现与活动风控经验改写成 CEX 语境。"
+    },
+    {
+      "id": "res-onchain-labeling",
+      "title": "地址标签与风险画像设计稿",
+      "type": "文档",
+      "trackId": "onchain-data",
+      "difficulty": "作品集",
+      "purpose": "做项目",
+      "url": "notes/career/",
+      "summary": "定义标签来源、置信度、更新机制，服务链上看板 Demo。"
+    },
+    {
+      "id": "res-aml-checklist",
+      "title": "AML/KYT 检查点清单",
+      "type": "文档",
+      "trackId": "compliance-aml",
+      "difficulty": "面试",
+      "purpose": "准备面试",
+      "url": "docs/learning-resources.md",
+      "summary": "开户—交易—提现全链路合规检查点，用于合规岗面试。"
+    },
+    {
+      "id": "res-dify-workflows",
+      "title": "Dify 工作流与 Cursor 协作",
+      "type": "文档",
+      "trackId": "ai-agent-risk",
+      "difficulty": "进阶",
+      "purpose": "学工具",
+      "url": "docs/dify.md",
+      "summary": "用 Dify 编排 repeatable 学习流程，审定后写入 notes。"
+    },
+    {
+      "id": "res-dify-notes",
+      "title": "Dify Agent 配方笔记",
+      "type": "文档",
+      "trackId": "ai-agent-risk",
+      "difficulty": "作品集",
+      "purpose": "做项目",
+      "url": "notes/dify/",
+      "summary": "Risk Copilot 类 Agent 的输入、工具、护栏设计参考。"
+    },
+    {
+      "id": "res-career-map",
+      "title": "Web3 岗位体系与职业路径",
+      "type": "文档",
+      "trackId": "portfolio-career",
+      "difficulty": "面试",
+      "purpose": "准备面试",
+      "url": "notes/career/web3-job-landscape.md",
+      "summary": "目标岗位划分、能力映射与求职叙事框架。"
+    },
+    {
+      "id": "res-answer-index",
+      "title": "学习模块参考答案库（18 篇 + 架构图）",
+      "type": "文档",
+      "trackId": "portfolio-career",
+      "difficulty": "面试",
+      "purpose": "准备面试",
+      "url": "notes/answers/",
+      "summary": "每条 Track 每个模块的完整解答、架构图、面试要点与迁移对照。"
+    },
+    {
+      "id": "res-star-stories",
+      "title": "STAR 面试故事库模板",
+      "type": "面试素材",
+      "trackId": "portfolio-career",
+      "difficulty": "面试",
+      "purpose": "准备面试",
+      "url": "docs/note-template.md",
+      "summary": "把大厂风控案例改写成 Web3 可讲述的 STAR 结构。"
+    }
+  ]
+}

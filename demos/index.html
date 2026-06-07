@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web3 Career OS — 界面方案选型</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Newsreader:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f1210;
+        --card: #1a1f1c;
+        --ink: #eef3ef;
+        --muted: #8fa198;
+        --line: #2d3832;
+        --accent: #5ee4a8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(ellipse 80% 50% at 50% -10%, rgba(94, 228, 168, 0.12), transparent),
+          var(--bg);
+        color: var(--ink);
+        font-family: "Instrument Sans", system-ui, sans-serif;
+        line-height: 1.5;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+      .eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 12px;
+      }
+      h1 {
+        font-family: "Newsreader", Georgia, serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 500;
+        margin: 0 0 12px;
+        line-height: 1.15;
+      }
+      .lead {
+        color: var(--muted);
+        max-width: 52ch;
+        margin: 0 0 40px;
+      }
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: border-color 0.2s, transform 0.2s;
+      }
+      .card:hover {
+        border-color: rgba(94, 228, 168, 0.45);
+        transform: translateY(-2px);
+      }
+      .swatch {
+        height: 120px;
+        display: flex;
+        align-items: flex-end;
+        padding: 16px;
+        gap: 6px;
+      }
+      .swatch span {
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+      }
+      .body { padding: 20px 22px 24px; flex: 1; display: flex; flex-direction: column; }
+      .body h2 { margin: 0 0 6px; font-size: 1.15rem; }
+      .tag {
+        display: inline-block;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+      .body p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        font-size: 0.92rem;
+        flex: 1;
+      }
+      .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 16px;
+        border-radius: 999px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--bg);
+        background: var(--accent);
+      }
+      a.ghost {
+        color: var(--ink);
+        background: transparent;
+        border: 1px solid var(--line);
+      }
+      .back {
+        display: inline-block;
+        margin-top: 48px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+      .back:hover { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p class="eyebrow">UI Redesign · 5 Concepts</p>
+      <h1>选一套你喜欢的界面方向</h1>
+      <p class="lead">
+        以下是 5 个独立 demo，保留相同的信息架构（画像、轨道、模块进度、反思反馈），但视觉与交互气质完全不同。点「预览」打开全屏方案，选定后告诉我编号即可正式重构。
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="swatch" style="background: linear-gradient(135deg, #050807 55%, #0d1a12)">
+            <span style="background:#39ff14"></span>
+            <span style="background:#ffb000"></span>
+            <span style="background:#0a0e0d"></span>
+          </div>
+          <div class="body">
+            <span class="tag">01 · Terminal Noir</span>
+            <h2>终端暗房</h2>
+            <p>黑客终端 + 风控日志感。等宽字体、扫描线、命令行式进度。适合强调「工程 / 链上 / 实时系统」气质。</p>
+            <div class="actions">
+              <a class="btn" href="01-terminal-noir.html">预览 Demo 01</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="swatch" style="background: linear-gradient(135deg, #f4efe6 55%, #e8dfd0)">
+            <span style="background:#1a1510"></span>
+            <span style="background:#c45c26"></span>
+            <span style="background:#f4efe6"></span>
+          </div>
+          <div class="body">
+            <span class="tag">02 · Editorial Brief</span>
+            <h2>杂志简报</h2>
+            <p>衬线标题 + 分栏排版，像职业转型简报 / 行业内参。克制、可信，适合面试叙事与 STAR 故事沉淀。</p>
+            <div class="actions">
+              <a class="btn" href="02-editorial-brief.html">预览 Demo 02</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="swatch" style="background: linear-gradient(135deg, #141820 55%, #1e2430)">
+            <span style="background:#ff6b4a"></span>
+            <span style="background:#8b9cff"></span>
+            <span style="background:#141820"></span>
+          </div>
+          <div class="body">
+            <span class="tag">03 · Bento Command</span>
+            <h2>Bento 指挥台</h2>
+            <p>暗色 Bento 网格仪表盘，进度、下一步、模块一屏扫读。现代 SaaS 感，信息密度高但不乱。</p>
+            <div class="actions">
+              <a class="btn" href="03-bento-command.html">预览 Demo 03</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="swatch" style="background: linear-gradient(135deg, #0a1628 55%, #0d2240)">
+            <span style="background:#4de8ff"></span>
+            <span style="background:#1a4a7a"></span>
+            <span style="background:#0a1628"></span>
+          </div>
+          <div class="body">
+            <span class="tag">04 · Blueprint Grid</span>
+            <h2>蓝图工程图</h2>
+            <p>深蓝底 + 网格线 + 青色标注，像风控系统架构图。强调「系统设计 / 规则引擎 / 图谱」专业感。</p>
+            <div class="actions">
+              <a class="btn" href="04-blueprint-grid.html">预览 Demo 04</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="swatch" style="background: linear-gradient(135deg, #eceae6 55%, #d8d4cc)">
+            <span style="background:#2c3440"></span>
+            <span style="background:#3d7a5c"></span>
+            <span style="background:#ffffff"></span>
+          </div>
+          <div class="body">
+            <span class="tag">05 · Ops Console</span>
+            <h2>风控运营台</h2>
+            <p>左侧轨道导航 + 右侧工单式模块列表，类 IDE / SOC 控制台。适合长期日常使用与高频切换轨道。</p>
+            <div class="actions">
+              <a class="btn" href="05-ops-console.html">预览 Demo 05</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <a class="back" href="../index.html">← 返回当前正式版</a>
+    </div>
+  </body>
+</html>

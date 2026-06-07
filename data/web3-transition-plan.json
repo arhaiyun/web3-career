@@ -24,33 +24,93 @@
     "活动风控、交易风控、内容安全审核",
     "Java / Python / AI Agent"
   ],
+  "weeklyGoals": [
+    "完成 1 个学习模块并写反思",
+    "推进 1 个作品集子任务",
+    "复习 1 条可讲述的 STAR 案例"
+  ],
   "tracks": [
     {
       "id": "web3-foundation",
       "title": "Web3 基础与交易所语境",
       "focus": "建立足够面试和项目实践使用的链上基础，不陷入泛泛概念学习。",
+      "whyLearn": "风控决策必须理解链上账户、交易、钱包与 CEX/DEX 业务边界，否则策略无法落地。",
       "outcome": "能解释账户、交易、钱包、CEX/DEX、Gas、合约、跨链和常见风险的关系。",
+      "targetRoles": [
+        "Crypto Fraud Risk Engineer",
+        "On-chain Risk Intelligence Engineer"
+      ],
+      "prerequisites": [
+        "大厂风控业务经验",
+        "基础编程能力"
+      ],
       "modules": [
         {
           "id": "ethereum-basics",
           "title": "Ethereum 账户、交易与 Gas",
           "task": "用自己的话画出 EOA 发起一笔交易到链上确认的流程。",
           "feedbackPrompt": "解释账户、nonce、gas、签名、区块确认之间的关系。",
-          "keywords": ["账户", "nonce", "gas", "签名"]
+          "keywords": [
+            "账户",
+            "nonce",
+            "gas",
+            "签名",
+            "区块",
+            "EOA"
+          ],
+          "outputs": [
+            "流程笔记",
+            "面试口述稿"
+          ],
+          "resourceIds": [
+            "res-feishu-wiki",
+            "res-sgg-blockchain"
+          ],
+          "answerPath": "notes/answers/web3-foundation/ethereum-basics.md"
         },
         {
           "id": "wallets-transactions",
           "title": "钱包、私钥、授权与钓鱼入口",
           "task": "整理 5 种用户资产被盗的入口，并标出可检测信号。",
           "feedbackPrompt": "描述钱包授权、恶意链接、approval scam 的风险链路。",
-          "keywords": ["钱包", "授权", "钓鱼", "信号"]
+          "keywords": [
+            "钱包",
+            "授权",
+            "钓鱼",
+            "信号",
+            "approval"
+          ],
+          "outputs": [
+            "风险入口清单",
+            "检测信号表"
+          ],
+          "resourceIds": [
+            "res-feishu-wiki",
+            "res-chainlink-tutorial"
+          ],
+          "answerPath": "notes/answers/web3-foundation/wallets-transactions.md"
         },
         {
           "id": "cex-dex-map",
           "title": "CEX / DEX / DeFi 业务地图",
           "task": "对比 CEX 充值提现风控与 DEX 交易风险的差异。",
           "feedbackPrompt": "说明中心化账户风控和链上协议风险的边界。",
-          "keywords": ["CEX", "DEX", "充值", "提现"]
+          "keywords": [
+            "CEX",
+            "DEX",
+            "充值",
+            "提现",
+            "DeFi"
+          ],
+          "outputs": [
+            "业务地图",
+            "系统设计草图"
+          ],
+          "resourceIds": [
+            "res-tuling-search",
+            "res-hardhat-notes"
+          ],
+          "answerPath": "notes/answers/web3-foundation/cex-dex-map.md"
         }
       ]
     },
@@ -58,28 +118,79 @@
       "id": "exchange-risk",
       "title": "交易所风控与反欺诈",
       "focus": "把你已有的活动风控、交易风控经验迁移到 Crypto 交易所。",
+      "whyLearn": "这是你最强的可迁移区，CEX 风控岗最看重充值、提现、活动套利与异常交易能力。",
       "outcome": "能设计充值、提现、账户、设备、交易、活动套利的风险策略框架。",
+      "targetRoles": [
+        "Crypto Fraud Risk Engineer",
+        "Web3 Risk AI Architect"
+      ],
+      "prerequisites": [
+        "Web3 基础与交易所语境"
+      ],
       "modules": [
         {
           "id": "withdrawal-risk",
           "title": "提现风控决策链路",
           "task": "设计一套提现前置拦截与人工复核策略。",
           "feedbackPrompt": "覆盖账户、设备、链上地址、交易行为和人工复核闭环。",
-          "keywords": ["提现", "账户", "链上地址", "人工复核"]
+          "keywords": [
+            "提现",
+            "账户",
+            "链上地址",
+            "人工复核",
+            "拦截"
+          ],
+          "outputs": [
+            "规则清单",
+            "面试故事",
+            "系统设计稿"
+          ],
+          "resourceIds": [
+            "res-cex-risk-framework"
+          ],
+          "answerPath": "notes/answers/exchange-risk/withdrawal-risk.md"
         },
         {
           "id": "sybil-bonus-abuse",
           "title": "羊毛党、Sybil 与活动套利",
           "task": "把传统活动风控规则改写成 Web3 空投/返佣滥用识别方案。",
           "feedbackPrompt": "说明多账号、设备、资金归集和行为相似度信号。",
-          "keywords": ["Sybil", "多账号", "资金归集", "相似度"]
+          "keywords": [
+            "Sybil",
+            "多账号",
+            "资金归集",
+            "相似度",
+            "空投"
+          ],
+          "outputs": [
+            "策略文档",
+            "指标看板草案"
+          ],
+          "resourceIds": [
+            "res-cex-risk-framework"
+          ],
+          "answerPath": "notes/answers/exchange-risk/sybil-bonus-abuse.md"
         },
         {
           "id": "market-manipulation",
           "title": "Wash Trading 与市场操纵",
           "task": "设计一张异常交易监控看板的核心指标。",
           "feedbackPrompt": "解释 wash trading、成交量异常、关联账户和风控处置。",
-          "keywords": ["wash trading", "成交量", "关联账户", "处置"]
+          "keywords": [
+            "wash trading",
+            "成交量",
+            "关联账户",
+            "处置",
+            "监控"
+          ],
+          "outputs": [
+            "看板指标",
+            "处置流程"
+          ],
+          "resourceIds": [
+            "res-career-map"
+          ],
+          "answerPath": "notes/answers/exchange-risk/market-manipulation.md"
         }
       ]
     },
@@ -87,28 +198,80 @@
       "id": "onchain-data",
       "title": "链上数据与风险智能",
       "focus": "把链上地址、资金流、标签和图谱变成可面试的风险分析能力。",
+      "whyLearn": "链上风险智能岗需要你能解释地址画像、资金流与图谱调查，不是只会写合约。",
       "outcome": "能做一个地址风险画像和资金流解释 demo。",
+      "targetRoles": [
+        "On-chain Risk Intelligence Engineer",
+        "Crypto Fraud Risk Engineer"
+      ],
+      "prerequisites": [
+        "Web3 基础",
+        "交易所风控框架"
+      ],
       "modules": [
         {
           "id": "address-labeling",
           "title": "地址标签与风险画像",
           "task": "定义一套地址风险标签体系。",
           "feedbackPrompt": "说明标签来源、置信度、更新机制和误伤处理。",
-          "keywords": ["地址", "标签", "置信度", "误伤"]
+          "keywords": [
+            "地址",
+            "标签",
+            "置信度",
+            "误伤",
+            "画像"
+          ],
+          "outputs": [
+            "标签体系",
+            "作品集模块"
+          ],
+          "resourceIds": [
+            "res-onchain-labeling"
+          ],
+          "answerPath": "notes/answers/onchain-data/address-labeling.md"
         },
         {
           "id": "fund-flow",
           "title": "资金流追踪与可视化",
           "task": "画出黑产资金从受害者到交易所入金的路径。",
           "feedbackPrompt": "描述资金流、跳转地址、Mixer、交易所入金节点。",
-          "keywords": ["资金流", "Mixer", "入金", "路径"]
+          "keywords": [
+            "资金流",
+            "Mixer",
+            "入金",
+            "路径",
+            "追踪"
+          ],
+          "outputs": [
+            "路径图",
+            "Demo 原型"
+          ],
+          "resourceIds": [
+            "res-onchain-labeling",
+            "res-chainlink-tutorial"
+          ],
+          "answerPath": "notes/answers/onchain-data/fund-flow.md"
         },
         {
           "id": "graph-risk",
           "title": "图谱风控与关联发现",
           "task": "把传统设备关联图迁移成链上地址关联图方案。",
           "feedbackPrompt": "解释节点、边、权重、聚类和风控动作。",
-          "keywords": ["图谱", "节点", "聚类", "风控动作"]
+          "keywords": [
+            "图谱",
+            "节点",
+            "聚类",
+            "风控动作",
+            "关联"
+          ],
+          "outputs": [
+            "图谱方案",
+            "面试系统设计"
+          ],
+          "resourceIds": [
+            "res-onchain-labeling"
+          ],
+          "answerPath": "notes/answers/onchain-data/graph-risk.md"
         }
       ]
     },
@@ -116,28 +279,80 @@
       "id": "compliance-aml",
       "title": "合规 AML / KYC / KYT",
       "focus": "补齐交易所和合规科技岗位高频要求。",
+      "whyLearn": "AML/KYT 是合规科技岗硬门槛，需要能讲清技术实现边界与案件审核流。",
       "outcome": "能解释 KYC、AML、KYT、制裁筛查、可疑交易报告的技术实现边界。",
+      "targetRoles": [
+        "Compliance AI Agent Engineer",
+        "Crypto Fraud Risk Engineer"
+      ],
+      "prerequisites": [
+        "交易所风控",
+        "链上数据基础"
+      ],
       "modules": [
         {
           "id": "kyc-kyb-kyc",
           "title": "KYC / KYB / KYT 基础",
           "task": "整理交易所开户到提现全链路的合规检查点。",
           "feedbackPrompt": "覆盖身份、企业、交易、地址和制裁筛查。",
-          "keywords": ["KYC", "KYT", "制裁", "交易"]
+          "keywords": [
+            "KYC",
+            "KYT",
+            "制裁",
+            "交易",
+            "KYB"
+          ],
+          "outputs": [
+            "检查点清单",
+            "面试问答"
+          ],
+          "resourceIds": [
+            "res-aml-checklist"
+          ],
+          "answerPath": "notes/answers/compliance-aml/kyc-kyb-kyt.md"
         },
         {
           "id": "aml-scenarios",
           "title": "AML 可疑场景建模",
           "task": "写出 6 类可疑交易模式和对应信号。",
           "feedbackPrompt": "结合分层转账、快速进出、Mixer、黑名单地址。",
-          "keywords": ["AML", "Mixer", "黑名单", "可疑"]
+          "keywords": [
+            "AML",
+            "Mixer",
+            "黑名单",
+            "可疑",
+            "分层"
+          ],
+          "outputs": [
+            "场景库",
+            "信号表"
+          ],
+          "resourceIds": [
+            "res-aml-checklist"
+          ],
+          "answerPath": "notes/answers/compliance-aml/aml-scenarios.md"
         },
         {
           "id": "case-review",
           "title": "案件审核与处置工作流",
           "task": "设计一个合规案件 review 台的字段和操作。",
           "feedbackPrompt": "说明证据、审核结论、升级路径和审计留痕。",
-          "keywords": ["案件", "证据", "升级", "审计"]
+          "keywords": [
+            "案件",
+            "证据",
+            "升级",
+            "审计",
+            "复核"
+          ],
+          "outputs": [
+            "Review 台设计",
+            "流程图"
+          ],
+          "resourceIds": [
+            "res-aml-checklist",
+            "res-dify-workflows"
+          ],
+          "answerPath": "notes/answers/compliance-aml/case-review.md"
         }
       ]
     },
@@ -145,28 +360,80 @@
       "id": "ai-agent-risk",
       "title": "AI Agent 风控与调查助手",
       "focus": "把你熟悉的 AI Agent 能力转成 Web3 风控作品集。",
+      "whyLearn": "Risk AI / Agent 岗需要你证明能把 LLM 放进有护栏的调查工作流，而不是 demo 聊天。",
       "outcome": "能设计 Risk Copilot：输入案件，输出摘要、风险解释、下一步动作。",
+      "targetRoles": [
+        "Compliance AI Agent Engineer",
+        "Web3 Risk AI Architect"
+      ],
+      "prerequisites": [
+        "合规 AML 基础",
+        "AI Agent 开发经验"
+      ],
       "modules": [
         {
           "id": "risk-copilot",
           "title": "Risk Copilot 产品形态",
           "task": "定义一个合规调查 AI Agent 的输入、工具和输出。",
           "feedbackPrompt": "覆盖案件摘要、链上查询、规则解释、人工确认。",
-          "keywords": ["Agent", "案件摘要", "链上查询", "人工确认"]
+          "keywords": [
+            "Agent",
+            "案件摘要",
+            "链上查询",
+            "人工确认",
+            "工具"
+          ],
+          "outputs": [
+            "产品定义",
+            "作品集 PRD"
+          ],
+          "resourceIds": [
+            "res-dify-workflows",
+            "res-dify-notes"
+          ],
+          "answerPath": "notes/answers/ai-agent-risk/risk-copilot.md"
         },
         {
           "id": "guardrails",
           "title": "AI 风险护栏与红队",
           "task": "列出 AI Agent 在合规场景下不能直接自动决策的边界。",
           "feedbackPrompt": "说明误伤、幻觉、权限、审计和人工兜底。",
-          "keywords": ["幻觉", "权限", "审计", "人工兜底"]
+          "keywords": [
+            "幻觉",
+            "权限",
+            "审计",
+            "人工兜底",
+            "红队"
+          ],
+          "outputs": [
+            "护栏清单",
+            "红队案例"
+          ],
+          "resourceIds": [
+            "res-dify-notes"
+          ],
+          "answerPath": "notes/answers/ai-agent-risk/guardrails.md"
         },
         {
           "id": "evaluation",
           "title": "AI 反馈质量评估",
           "task": "设计一套案件摘要和风险建议的评估指标。",
           "feedbackPrompt": "覆盖准确性、召回、可解释性、操作价值。",
-          "keywords": ["准确性", "召回", "可解释性", "操作"]
+          "keywords": [
+            "准确性",
+            "召回",
+            "可解释性",
+            "操作",
+            "评估"
+          ],
+          "outputs": [
+            "评估指标表",
+            "面试回答"
+          ],
+          "resourceIds": [
+            "res-dify-workflows"
+          ],
+          "answerPath": "notes/answers/ai-agent-risk/evaluation.md"
         }
       ]
     },
@@ -174,28 +441,82 @@
       "id": "portfolio-career",
       "title": "作品集与求职转化",
       "focus": "把学习成果变成面试官能看懂的证据。",
+      "whyLearn": "学习必须沉淀为简历、Demo 和 STAR 故事，否则无法完成转型闭环。",
       "outcome": "完成 2 个可展示 demo、1 版 Web3 风控简历、1 套面试故事库。",
+      "targetRoles": [
+        "Crypto Fraud Risk Engineer",
+        "Web3 Risk AI Architect",
+        "Compliance AI Agent Engineer",
+        "On-chain Risk Intelligence Engineer"
+      ],
+      "prerequisites": [
+        "至少完成 2 条 Track 的核心模块"
+      ],
       "modules": [
         {
           "id": "portfolio-map",
           "title": "作品集选题矩阵",
           "task": "选择两个主项目：链上风险看板与 AI 调查助手。",
           "feedbackPrompt": "说明每个项目对应哪个目标岗位和业务价值。",
-          "keywords": ["作品集", "岗位", "业务价值", "项目"]
+          "keywords": [
+            "作品集",
+            "岗位",
+            "业务价值",
+            "项目",
+            "Demo"
+          ],
+          "outputs": [
+            "选题矩阵",
+            "roadmap"
+          ],
+          "resourceIds": [
+            "res-career-map"
+          ],
+          "answerPath": "notes/answers/portfolio-career/portfolio-map.md"
         },
         {
           "id": "resume-rewrite",
           "title": "简历 Web3 化",
           "task": "把阿里/小红书风控经历改写成 Web3 风控语言。",
           "feedbackPrompt": "突出规模、实时性、策略闭环、AI 工具和风险结果。",
-          "keywords": ["规模", "实时", "策略", "AI"]
+          "keywords": [
+            "规模",
+            "实时",
+            "策略",
+            "AI",
+            "简历"
+          ],
+          "outputs": [
+            "Web3 版简历",
+            "亮点 bullet"
+          ],
+          "resourceIds": [
+            "res-career-map",
+            "res-star-stories"
+          ],
+          "answerPath": "notes/answers/portfolio-career/resume-rewrite.md"
         },
         {
           "id": "interview-stories",
           "title": "面试故事库",
           "task": "沉淀 8 个 STAR 案例，覆盖风控、内容安全、AI Agent 和系统设计。",
           "feedbackPrompt": "说明背景、动作、技术取舍、结果和可迁移价值。",
-          "keywords": ["STAR", "系统设计", "结果", "迁移"]
+          "keywords": [
+            "STAR",
+            "系统设计",
+            "结果",
+            "迁移",
+            "案例"
+          ],
+          "outputs": [
+            "8 个 STAR",
+            "讲述提纲"
+          ],
+          "resourceIds": [
+            "res-star-stories",
+            "res-career-map"
+          ],
+          "answerPath": "notes/answers/portfolio-career/interview-stories.md"
         }
       ]
     }
