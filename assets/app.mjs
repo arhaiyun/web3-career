@@ -9,6 +9,7 @@ export const statusLabels = {
 };
 
 export const VIEWS = [
+  { id: "study", label: "Study Guides", subtitle: "系统学习" },
   { id: "dashboard", label: "Dashboard", subtitle: "总览" },
   { id: "path", label: "Learning Path", subtitle: "学习路径" },
   { id: "resources", label: "Resources", subtitle: "资料库" },
@@ -32,7 +33,7 @@ let state = {
   portfolio: null,
   questionManifest: null,
   questionBanks: {},
-  view: "dashboard",
+  view: "study",
   activeTrackId: null,
   selectedModule: null,
   selectedQuestion: null,
@@ -115,6 +116,29 @@ export function getNextModule(tracks, progress) {
     }
   }
   return null;
+}
+
+export function buildStudyCurriculum(plan) {
+  let order = 0;
+  return plan.tracks.flatMap((track) =>
+    track.modules.map((module) => {
+      order += 1;
+      return {
+        order,
+        phase: "先学系统讲义",
+        trackId: track.id,
+        trackTitle: track.title,
+        moduleId: module.id,
+        moduleTitle: module.title,
+        task: module.task,
+        outcome: track.outcome,
+        guideUrl: studyGuideViewerUrl(module.studyGuidePath),
+        answerUrl: answerViewerUrl(module.answerPath),
+        outputs: module.outputs ?? [],
+        keywords: module.keywords ?? [],
+      };
+    }),
+  );
 }
 
 export function analyzeReflection(text, keywords = []) {
@@ -608,6 +632,114 @@ function renderDashboard(plan) {
         </ul>
       </section>
     </div>
+  `;
+}
+
+function renderStudyGuides(plan) {
+  const curriculum = buildStudyCurriculum(plan);
+  const next = getNextModule(plan.tracks, progressMap());
+  const nextKey = next ? `${next.trackId}.${next.id.replace(/^[^.]+\./, "")}` : "";
+  const completed = curriculum.filter((item) => {
+    const status = state.storage.progress[moduleKey(item.trackId, item.moduleId)];
+    return status === "done" || status === "review";
+  }).length;
+  const currentItem =
+    curriculum.find(
+      (item) => moduleKey(item.trackId, item.moduleId) === nextKey,
+    ) ?? curriculum[0];
+
+  return `
+    <div class="view-header study-header">
+      <div>
+        <p class="view-kicker">先完整学习，再做验证</p>
+        <h1>系统学习资料</h1>
+        <p>当前阶段先不要被交互题库拖慢：按顺序读完 18 节系统讲义，建立 Web3 风控知识框架，再进入题库、反思和作品集验证。</p>
+      </div>
+      <div class="study-summary-card">
+        <span>讲义进度</span>
+        <strong>${completed} / ${curriculum.length}</strong>
+        <div class="progress-line"><span style="width:${Math.round((completed / curriculum.length) * 100)}%"></span></div>
+      </div>
+    </div>
+
+    <section class="study-focus card">
+      <div>
+        <div class="card-label">建议现在学习</div>
+        <h2>${escapeHtml(currentItem.moduleTitle)}</h2>
+        <p>${escapeHtml(currentItem.trackTitle)} · ${escapeHtml(currentItem.task)}</p>
+        <div class="tag-row">
+          ${currentItem.outputs.map((item) => `<span class="tag tag-slate">${escapeHtml(item)}</span>`).join("")}
+        </div>
+      </div>
+      <div class="study-focus-actions">
+        <a class="btn" href="${escapeHtml(currentItem.guideUrl)}">打开系统讲义</a>
+        <button type="button" class="btn btn-ghost" data-study-module="${currentItem.trackId}" data-study-mod="${currentItem.moduleId}">查看模块详情</button>
+      </div>
+    </section>
+
+    <section class="study-protocol">
+      <article class="protocol-step is-active">
+        <span>01</span>
+        <h3>通读系统讲义</h3>
+        <p>先看精讲、架构图、参考答案，目标是建立完整知识框架。</p>
+      </article>
+      <article class="protocol-step">
+        <span>02</span>
+        <h3>整理学习笔记</h3>
+        <p>把关键概念、风控迁移点、面试口述稿记录到模块笔记。</p>
+      </article>
+      <article class="protocol-step">
+        <span>03</span>
+        <h3>再做验证题库</h3>
+        <p>学完后再进入 100 题验证和反思反馈，避免一开始就被题目打断。</p>
+      </article>
+    </section>
+
+    <section class="study-track-stack">
+      ${plan.tracks
+        .map((track) => {
+          const lessons = curriculum.filter((item) => item.trackId === track.id);
+          const percent = calculateTrackProgress(track, progressMap());
+          return `
+            <article class="study-track card">
+              <header class="study-track-head">
+                <div>
+                  <span class="card-label">${percent}% · ${escapeHtml(track.outcome)}</span>
+                  <h2>${escapeHtml(track.title)}</h2>
+                  <p>${escapeHtml(track.whyLearn ?? track.focus)}</p>
+                </div>
+                <button type="button" class="btn btn-sm btn-ghost" data-study-track="${track.id}">切到路径</button>
+              </header>
+              <div class="lesson-list">
+                ${lessons
+                  .map((lesson) => {
+                    const key = moduleKey(lesson.trackId, lesson.moduleId);
+                    const status = state.storage.progress[key] || "todo";
+                    return `
+                      <div class="lesson-row ${status}">
+                        <div class="lesson-order">${String(lesson.order).padStart(2, "0")}</div>
+                        <div class="lesson-main">
+                          <div class="lesson-title-line">
+                            <strong>${escapeHtml(lesson.moduleTitle)}</strong>
+                            <span class="status-pill ${status}">${statusLabels[status]}</span>
+                          </div>
+                          <p>${escapeHtml(lesson.task)}</p>
+                          <div class="lesson-links">
+                            <a class="btn btn-sm" href="${escapeHtml(lesson.guideUrl)}">读系统讲义</a>
+                            <button type="button" class="btn btn-sm btn-ghost" data-study-module="${lesson.trackId}" data-study-mod="${lesson.moduleId}">模块详情</button>
+                            <span class="after-study">学完后：题库验证 / 反思反馈 / 面试素材</span>
+                          </div>
+                        </div>
+                      </div>
+                    `;
+                  })
+                  .join("")}
+              </div>
+            </article>
+          `;
+        })
+        .join("")}
+    </section>
   `;
 }
 
@@ -1125,6 +1257,8 @@ function renderCareer(plan) {
 function renderMainContent() {
   const plan = state.plan;
   switch (state.view) {
+    case "study":
+      return renderStudyGuides(plan);
     case "dashboard":
       return renderDashboard(plan);
     case "path":
@@ -1140,7 +1274,7 @@ function renderMainContent() {
     case "career":
       return renderCareer(plan);
     default:
-      return renderDashboard(plan);
+      return renderStudyGuides(plan);
   }
 }
 
@@ -1178,6 +1312,20 @@ function bindEvents() {
   document.querySelectorAll("[data-goto-module]").forEach((btn) => {
     btn.addEventListener("click", () => {
       selectModule(btn.dataset.gotoModule, btn.dataset.moduleId);
+    });
+  });
+
+  document.querySelectorAll("[data-study-module]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      selectModule(btn.dataset.studyModule, btn.dataset.studyMod);
+    });
+  });
+
+  document.querySelectorAll("[data-study-track]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.activeTrackId = btn.dataset.studyTrack;
+      state.view = "path";
+      render();
     });
   });
 
@@ -1268,7 +1416,7 @@ function render() {
         ${renderTopbar(state.plan)}
         <div class="workspace-body">
           <main class="primary-panel">${renderMainContent()}</main>
-          ${state.view === "dashboard" || state.view === "path" ? renderAsidePanel(state.plan) : ""}
+          ${state.view === "study" || state.view === "dashboard" || state.view === "path" ? renderAsidePanel(state.plan) : ""}
         </div>
       </div>
     </div>

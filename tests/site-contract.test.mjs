@@ -135,8 +135,17 @@ assert.ok(analyzed.dimensions.every((d) => typeof d.score === "number"));
 assert.ok(analyzed.overall >= 0 && analyzed.overall <= 100);
 
 assert.ok(app.VIEWS.some((v) => v.id === "dashboard"));
+assert.equal(app.VIEWS[0].id, "study");
+assert.ok(app.VIEWS.some((v) => v.id === "study"));
 assert.ok(app.VIEWS.some((v) => v.id === "path"));
 assert.ok(app.statusLabels.review === "需要复盘");
+
+const curriculum = app.buildStudyCurriculum(plan);
+assert.equal(curriculum.length, 18);
+assert.equal(curriculum[0].trackId, "web3-foundation");
+assert.equal(curriculum[0].moduleId, "ethereum-basics");
+assert.match(curriculum[0].guideUrl, /notes\/study-guides\/view\.html\?f=/);
+assert.ok(curriculum.every((item) => item.phase === "先学系统讲义"));
 
 const sample = plan.tracks[0].modules[0];
 assert.match(
