@@ -5,3 +5,4 @@
 | 文档 | 说明 |
 |------|------|
 | [Web3 岗位体系说明](web3-job-landscape.md) | 按赛道 × 职能的系统化岗位地图 |
+| [Web3 Risk AI 面试冲刺](../../docs/career/web3-interview/README.md) | **聚焦准备**：4 周计划、映射话术、题库、Week 01 drill |

@@ -22,15 +22,17 @@
 | [岗位定位与投递策略](job-positioning.md) | 判断投什么、不投什么、怎么介绍自己 |
 | [面试故事库](interview-story-bank.md) | 10 个 STAR 故事，覆盖小红书、阿里、AI Agent、Web3 迁移 |
 | [8 周求职与面试准备计划](8-week-interview-plan.md) | 7-8 月准备节奏，9 月开始投递 |
+| [**Web3 Risk AI 面试冲刺（7–8 月两月）**](web3-interview/7-8月两月冲刺计划.md) | **主计划**：7–8 月准备，9 月投递 |
 | [旧版简历 PDF](../周海云的简历_北理工_阿里.pdf) | 2023 年旧版简历，作为经历事实来源 |
 
 ## 推荐执行顺序
 
-1. 先精修 `resume-ai-architect.md`，形成可投大厂主简历。
-2. 再精修 `resume-web3-risk-ai.md`，形成 Web3 定制版。
-3. 每天从 `interview-story-bank.md` 选一个故事，练 2 分钟口述。
-4. 每周按 `8-week-interview-plan.md` 产出一个明确资产。
-5. 投递前用 `job-positioning.md` 判断岗位匹配度和简历版本。
+1. **Web3 风控岗投递**：先读 [`web3-interview/README.md`](web3-interview/README.md)，从 [Week 01 drill](web3-interview/week-01-drill.md) 开始。
+2. 精修 `resume-web3-risk-ai.md`，形成 Web3 定制版。
+3. 精修 `resume-ai-architect.md`，形成可投大厂主简历。
+4. 每天从 `interview-story-bank.md` 选一个故事，练 2 分钟口述。
+5. 每周按 `8-week-interview-plan.md` 或 `web3-interview/4-week-focus-plan.md` 产出一个明确资产。
+6. 投递前用 `job-positioning.md` 判断岗位匹配度和简历版本。
 
 ## 后续迭代清单
 

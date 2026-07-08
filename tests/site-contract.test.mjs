@@ -85,6 +85,8 @@ assert.ok(existsSync(resolve(root, "notes/answers/view.html")));
 assert.ok(existsSync(resolve(root, "notes/study-guides/README.md")));
 assert.ok(existsSync(resolve(root, "notes/study-guides/view.html")));
 assert.ok(existsSync(resolve(root, "notes/study-guides/manifest.json")));
+assert.ok(existsSync(resolve(root, "docs/career/index.html")));
+assert.ok(existsSync(resolve(root, "docs/career/view.html")));
 
 assert.ok(resources.resources.length >= 10);
 for (const resource of resources.resources) {

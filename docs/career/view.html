@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>职业材料预览 · Web3 Career OS</title>
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --surface: #fff;
+        --ink: #1a2332;
+        --muted: #5c6678;
+        --line: #dde1e8;
+        --green: #2d6a4f;
+        --blue: #3d5a80;
+        --radius: 8px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        font-size: 15px;
+        line-height: 1.65;
+      }
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 12px 20px;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .bar a {
+        color: var(--blue);
+        text-decoration: none;
+        font-size: 0.88rem;
+      }
+      .bar a:hover { text-decoration: underline; }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 28px 20px 64px;
+      }
+      .article {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 30px 34px;
+        overflow-x: auto;
+      }
+      .loading,
+      .error {
+        text-align: center;
+        color: var(--muted);
+        padding: 48px 20px;
+      }
+      .error { color: #9b4422; }
+      .article h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+        margin: 0 0 18px;
+      }
+      .article h2 {
+        font-size: 1.18rem;
+        margin: 30px 0 12px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid var(--line);
+      }
+      .article h3 {
+        font-size: 1.02rem;
+        margin: 22px 0 8px;
+      }
+      .article h4 {
+        font-size: 0.94rem;
+        margin: 16px 0 6px;
+        color: var(--muted);
+      }
+      .article p { margin: 0 0 12px; }
+      .article ul,
+      .article ol {
+        margin: 0 0 14px;
+        padding-left: 22px;
+      }
+      .article li { margin-bottom: 5px; }
+      .article table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.88rem;
+        margin: 12px 0 16px;
+      }
+      .article th,
+      .article td {
+        border: 1px solid var(--line);
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+      .article th { background: var(--bg); }
+      .article blockquote {
+        margin: 14px 0;
+        padding: 10px 14px;
+        border-left: 3px solid var(--green);
+        background: #e8f2ec;
+      }
+      .article code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.86em;
+        background: var(--bg);
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      .article hr {
+        border: none;
+        border-top: 1px solid var(--line);
+        margin: 24px 0;
+      }
+      @media print {
+        body { background: #fff; }
+        .bar { display: none; }
+        .wrap { max-width: none; padding: 0; }
+        .article { border: none; padding: 0; }
+      }
+      @media (max-width: 640px) {
+        .wrap { padding: 18px 12px 42px; }
+        .article { padding: 20px 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <strong id="doc-title">职业材料预览</strong>
+      <nav>
+        <a href="index.html">材料索引</a>
+        <a href="../../index.html">学习工作台</a>
+        <a id="raw-link" href="#">Markdown</a>
+      </nav>
+    </header>
+    <main class="wrap">
+      <article id="content" class="loading">正在加载…</article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      const allowed = new Set([
+        "README.md",
+        "resume-ai-architect.md",
+        "resume-web3-risk-ai.md",
+        "job-positioning.md",
+        "interview-story-bank.md",
+        "8-week-interview-plan.md",
+      ]);
+      const params = new URLSearchParams(location.search);
+      const file = params.get("f") || "resume-ai-architect.md";
+      const contentEl = document.getElementById("content");
+      const rawLink = document.getElementById("raw-link");
+
+      if (!allowed.has(file)) {
+        contentEl.className = "error";
+        contentEl.textContent = "无效的文件参数。";
+      } else {
+        rawLink.href = file;
+        fetch(file)
+          .then((r) => {
+            if (!r.ok) throw new Error("文件不存在");
+            return r.text();
+          })
+          .then((md) => {
+            marked.setOptions({ gfm: true, breaks: false });
+            contentEl.className = "article";
+            contentEl.innerHTML = marked.parse(md);
+            const h1 = contentEl.querySelector("h1");
+            if (h1) document.getElementById("doc-title").textContent = h1.textContent;
+          })
+          .catch((error) => {
+            contentEl.className = "error";
+            contentEl.textContent = "加载失败：" + error.message;
+          });
+      }
+    </script>
+  </body>
+</html>

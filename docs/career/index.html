@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>职业规划材料 · Web3 Career OS</title>
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --surface: #fff;
+        --ink: #1a2332;
+        --muted: #5c6678;
+        --line: #dde1e8;
+        --green: #2d6a4f;
+        --blue: #3d5a80;
+        --radius: 8px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      a { color: inherit; text-decoration: none; }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 24px;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar a {
+        color: var(--blue);
+        font-size: 0.9rem;
+      }
+      main {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 36px 20px 72px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 280px;
+        gap: 20px;
+        align-items: end;
+        margin-bottom: 22px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 2rem;
+        line-height: 1.15;
+      }
+      p { margin: 0 0 12px; color: var(--muted); }
+      .summary {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--surface);
+        padding: 16px;
+      }
+      .summary strong {
+        display: block;
+        font-size: 1.4rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .card {
+        display: grid;
+        gap: 10px;
+        min-height: 190px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--surface);
+        padding: 18px;
+      }
+      .card.primary {
+        border-left: 4px solid var(--green);
+      }
+      .eyebrow {
+        color: var(--green);
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      h2 {
+        margin: 0;
+        font-size: 1.18rem;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-self: end;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 36px;
+        border-radius: var(--radius);
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--ink);
+        padding: 0 12px;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+      .btn.main {
+        border-color: var(--green);
+        background: var(--green);
+        color: #fff;
+      }
+      .note {
+        margin-top: 18px;
+        border: 1px dashed var(--line);
+        border-radius: var(--radius);
+        padding: 14px 16px;
+        color: var(--muted);
+        background: #fbfcfd;
+      }
+      @media (max-width: 760px) {
+        .hero,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 12px 16px;
+        }
+        main {
+          padding: 24px 14px 48px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <strong>Web3 Career OS · 职业规划材料</strong>
+      <nav>
+        <a href="../../index.html">返回学习工作台</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Resume · Interview · Career Plan</p>
+          <h1>简历与面试准备预览</h1>
+          <p>这里集中预览大厂 AI 架构版简历、Web3 Risk AI 派生版、岗位定位、面试故事库和 8 周准备计划。</p>
+        </div>
+        <aside class="summary">
+          <span>核心材料</span>
+          <strong>5 份</strong>
+          <p>主简历、定制简历、定位、故事库、计划</p>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <article class="card primary">
+          <span class="eyebrow">主简历</span>
+          <h2>大厂 AI 架构版中文简历</h2>
+          <p>用于投 AI Agent 工程负责人、AI 应用架构师、内容安全 AI 平台架构师、风控平台架构师。</p>
+          <div class="actions">
+            <a class="btn main" href="view.html?f=resume-ai-architect.md">预览</a>
+            <a class="btn" href="resume-ai-architect.md">Markdown</a>
+          </div>
+        </article>
+
+        <article class="card primary">
+          <span class="eyebrow">派生简历</span>
+          <h2>Web3 Risk AI 定制版简历</h2>
+          <p>用于投交易所、钱包、链上数据、合规科技、Web3 Trust & Safety 岗位。</p>
+          <div class="actions">
+            <a class="btn main" href="view.html?f=resume-web3-risk-ai.md">预览</a>
+            <a class="btn" href="resume-web3-risk-ai.md">Markdown</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="eyebrow">定位</span>
+          <h2>岗位定位与投递策略</h2>
+          <p>判断投什么、不投什么、怎么介绍自己，以及不同简历版本如何使用。</p>
+          <div class="actions">
+            <a class="btn main" href="view.html?f=job-positioning.md">预览</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="eyebrow">面试</span>
+          <h2>面试故事库</h2>
+          <p>10 个 STAR 故事，覆盖小红书、阿里、AI Agent、Web3 迁移。</p>
+          <div class="actions">
+            <a class="btn main" href="view.html?f=interview-story-bank.md">预览</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="eyebrow">计划</span>
+          <h2>8 周求职与面试准备计划</h2>
+          <p>7-8 月系统准备，9 月开始投递和面试。</p>
+          <div class="actions">
+            <a class="btn main" href="view.html?f=8-week-interview-plan.md">预览</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="eyebrow">旧版材料</span>
+          <h2>2023 旧版简历 PDF</h2>
+          <p>作为经历事实来源，后续可用于对照新版简历。</p>
+          <div class="actions">
+            <a class="btn" href="../周海云的简历_北理工_阿里.pdf">打开 PDF</a>
+          </div>
+        </article>
+      </section>
+
+      <p class="note">建议先看「大厂 AI 架构版中文简历」，再看「Web3 Risk AI 定制版简历」，最后用故事库练习口述。</p>
+    </main>
+  </body>
+</html>
